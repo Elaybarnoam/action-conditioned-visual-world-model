@@ -2,9 +2,9 @@
 
 Publication checks performed on 17 October 2026:
 
-- All 166 local tests passed, including checkpoint continuation, archive
+- All 168 local tests passed, including checkpoint continuation, archive
   containment, checksum failures and offline artifact reuse.
-- Ruff lint and format checks passed for all 89 Python files.
+- Ruff lint and format checks passed for all 90 Python files.
 - CFF metadata validated against the Citation File Format 1.2 schema.
 - All curated result files passed their SHA-256 checks. The main table was
   reconstructed from the released per-window records using Python's standard

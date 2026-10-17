@@ -78,9 +78,13 @@ roughly 20 GB available for raw/prepared subset and optional packed cache;
 requirements depend on retained files/compression. The entire tar is not
 downloaded for this subset.
 
-The frozen prepared manifest is in the inference bundle. Evaluation requires
-its SHA; upstream/preparation changes are reported rather than silently
-scoring different data. No independent upstream member SHA is claimed.
+The frozen prepared manifest is in the inference bundle. Preparation verifies
+every episode hash, the complete split and manifest content against this copy.
+Only JSON serialization and the locally serialized precursor-manifest hash
+may differ. After validation, it retains the generated manifest as a separate
+local receipt and restores the frozen manifest bytes. Evaluation requires the
+frozen SHA. Content changes are refused rather than silently scoring different
+data. No independent upstream member SHA is claimed.
 Evaluate all 1,122 validation windows and all three samples, or restrict a new
 head with --mode deterministic / --mode diffusion. LPIPS downloads external
 frozen weights under data/.cache/torch/.

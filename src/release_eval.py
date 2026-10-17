@@ -2,6 +2,7 @@
 
 import argparse
 import os
+from copy import deepcopy
 from dataclasses import replace
 from pathlib import Path
 
@@ -71,7 +72,30 @@ def verify_examples(directory, device):
     }
 
 
-def prepare_data(run):
+def restore_frozen_manifest(root, frozen):
+    """Accept serialization differences only after validating every episode and split."""
+    actual = load_manifest(root, verify_files=True)
+    expected = read(frozen)
+    comparable = deepcopy(actual)
+    # This provenance hash covers the locally serialized precursor, not episode content.
+    if "expansion" in comparable and "expansion" in expected:
+        comparable["expansion"]["original_manifest_sha256"] = expected["expansion"][
+            "original_manifest_sha256"
+        ]
+    if comparable != expected:
+        raise ValueError("Prepared content or split differs from the frozen dataset")
+    path = root / "manifest.json"
+    generated_hash = sha256(path)
+    expected_hash = sha256(frozen)
+    if generated_hash != expected_hash:
+        (root / f"manifest-generated-{generated_hash}.json").write_bytes(path.read_bytes())
+        temporary = root / "manifest-frozen.tmp"
+        temporary.write_bytes(frozen.read_bytes())
+        os.replace(temporary, path)
+    return {"generated_sha256": generated_hash, "frozen_sha256": expected_hash}
+
+
+def prepare_data(run, artifacts):
     from .data.expansion import prepare_expansion
     from .data.fetch import fetch_subset
     from .data.prepare import prepare_subset
@@ -79,7 +103,11 @@ def prepare_data(run):
     initial = PROJECT_ROOT / "data/bair"
     sources = fetch_subset(initial / "raw")
     prepare_subset(initial / "raw", initial / "prepared", sources, 3)
-    manifest = prepare_expansion(initial / "prepared", PROJECT_ROOT / "data/bair-10000", 10000)
+    destination = PROJECT_ROOT / "data/bair-10000"
+    prepare_expansion(initial / "prepared", destination, 10000)
+    receipt = restore_frozen_manifest(destination / "prepared", artifacts / "dataset-manifest.json")
+    manifest = load_manifest(destination / "prepared", verify_files=False)
+    run.save_json("manifest-serialization.json", receipt)
     run.save_json("dataset-manifest.json", manifest)
     run.save_json("results.json", {"counts": {k: len(v) for k, v in manifest["splits"].items()}})
 
@@ -114,7 +142,10 @@ def main():
         device = initialize(config)
         run.save_json("environment.json", environment_info(device))
         if args.prepare_data:
-            prepare_data(run)
+            from .publication import fetch
+
+            fetch("inference", args.artifacts)
+            prepare_data(run, args.artifacts)
             print(f"Data prepared: {run.path}")
             return
         asset = read(PROJECT_ROOT / "results/release-manifest.json")["assets"]["inference"]
