@@ -1,0 +1,51 @@
+{
+  "method": "Paired percentile bootstrap; resample whole recordings with replacement; retain all overlapping windows and all fixed noise seeds within each recording",
+  "seed": 17,
+  "replicates": 5000,
+  "recordings": 51,
+  "estimand": "Percent error change relative to original, pooled over valid rows",
+  "limitation": "Conditional on this split, trained checkpoint and three noise seeds. Does not measure variability across training runs; validation was used for selection.",
+  "intervals_95_percent": {
+    "deterministic": {
+      "mse": [
+        -39.94682256581281,
+        -27.414702943664082
+      ],
+      "changed_mse": [
+        -31.920947767529324,
+        -22.460199440411266
+      ],
+      "gradient_mae": [
+        -33.05497119884002,
+        -28.803025210323376
+      ],
+      "lpips": [
+        -55.45615440751483,
+        -51.55050074503395
+      ]
+    },
+    "diffusion": {
+      "mse": [
+        22.759755450747868,
+        26.66555696248766
+      ],
+      "changed_mse": [
+        38.08107318556352,
+        44.019575790641724
+      ],
+      "gradient_mae": [
+        -15.35414253117601,
+        -9.857631675275758
+      ],
+      "lpips": [
+        -63.68794851947036,
+        -60.013068171462805
+      ]
+    }
+  },
+  "inputs_sha256": {
+    "deterministic.json": "4eed5e9afac3dfb173a6351692df4572ae2a1f7275e2d8b1184033908eea206b",
+    "diffusion.json": "216db7aae0ccb1e63e383eb42997843b94fd9fbda90f6af288b23743693f1c4a",
+    "reference.json": "9776f0e1ba2469ccc5ffcef541a74017406442124e47cc100c16589c8791ec54"
+  }
+}

@@ -1,0 +1,1132 @@
+{
+  "runs": [
+    {
+      "run": "run-001",
+      "kind": "dataset_fetch",
+      "purpose": "Fetch original BAIR training/test TFRecord shards",
+      "status": "completed",
+      "started_at": "2026-10-16T14:28:24.167931+00:00",
+      "finished_at": "2026-10-16T14:36:57.891310+00:00"
+    },
+    {
+      "run": "run-002",
+      "kind": "dataset_verification",
+      "purpose": "Fetch and verify BAIR image/action sequences",
+      "status": "completed",
+      "started_at": "2026-10-16T14:37:28.602086+00:00",
+      "finished_at": "2026-10-16T14:38:54.005893+00:00"
+    },
+    {
+      "run": "run-003",
+      "kind": "encoder_inspection",
+      "purpose": "Trace BAIR images through the untrained CNN",
+      "status": "completed",
+      "started_at": "2026-10-16T14:56:36.666430+00:00",
+      "finished_at": "2026-10-16T14:56:38.707747+00:00"
+    },
+    {
+      "run": "run-004",
+      "kind": "memory_inspection",
+      "purpose": "Trace real observed history into latent memory",
+      "status": "completed",
+      "started_at": "2026-10-16T15:02:39.311766+00:00",
+      "finished_at": "2026-10-16T15:02:41.160035+00:00"
+    },
+    {
+      "run": "run-005",
+      "kind": "training",
+      "purpose": "First joint one-step visual world-model experiment",
+      "status": "failed",
+      "started_at": "2026-10-16T15:16:29.596807+00:00",
+      "finished_at": "2026-10-16T15:20:26.792509+00:00",
+      "failure": "Process exited with code 1 after epoch 9; no Python traceback was captured. Checkpoints through epoch 9 are preserved.",
+      "results_sha256": "c0bb20155c7dad875d1845267a03031a7050380cde22376bba438f2e8fd8b7b7"
+    },
+    {
+      "run": "run-006",
+      "kind": "diagnosis",
+      "purpose": "Checkpoint history-gradient reproduction",
+      "status": "failed",
+      "started_at": "2026-10-16T15:21:05.974702+00:00",
+      "finished_at": "2026-10-16T15:21:07.719486+00:00",
+      "exit_code": 1,
+      "failure": "Diagnostic reproduced exactly zero encoder gradients; the health assertion failed as expected."
+    },
+    {
+      "run": "run-007",
+      "kind": "training",
+      "purpose": "First joint one-step visual world-model experiment",
+      "status": "completed",
+      "started_at": "2026-10-16T15:22:42.676388+00:00",
+      "finished_at": "2026-10-16T15:25:06.407929+00:00",
+      "results_sha256": "ee5e9149e098c15ed84e8544cbe1e9a1b7b61be9346dd6f92bc29fd21cd294fa"
+    },
+    {
+      "run": "run-008",
+      "kind": "evaluation",
+      "purpose": "Frozen checkpoint comparison on test",
+      "status": "completed",
+      "started_at": "2026-10-16T15:25:06.413817+00:00",
+      "finished_at": "2026-10-16T15:25:33.880600+00:00",
+      "results_sha256": "569861ce7d32683046a013724ea8cc4491e6b73643006be069e0edd69cae95bc"
+    },
+    {
+      "run": "run-009",
+      "kind": "diagnosis",
+      "purpose": "Checkpoint history-gradient reproduction",
+      "status": "completed",
+      "started_at": "2026-10-16T15:26:27.819764+00:00",
+      "finished_at": "2026-10-16T15:26:30.806968+00:00"
+    },
+    {
+      "run": "run-010",
+      "kind": "experiment-suite",
+      "purpose": "World-model diagnosis: all",
+      "status": "failed",
+      "started_at": "2026-10-16T15:54:29.072313+00:00",
+      "finished_at": "2026-10-16T16:06:06.970826+00:00"
+    },
+    {
+      "run": "run-011",
+      "kind": "controlled-training",
+      "purpose": "Tiny fixed-window overfit",
+      "status": "completed",
+      "started_at": "2026-10-16T15:54:32.007655+00:00",
+      "finished_at": "2026-10-16T15:56:54.304638+00:00",
+      "results_sha256": "5a4fd56ba5e54363b989d223123f686d79bf85b4bce78e692ec79d2abaccd266"
+    },
+    {
+      "run": "run-012",
+      "kind": "frozen-diagnostic",
+      "purpose": "history diagnostic",
+      "status": "completed",
+      "started_at": "2026-10-16T15:56:54.349497+00:00",
+      "finished_at": "2026-10-16T15:57:01.754034+00:00",
+      "results_sha256": "4f5720b7bf2aa8cc16aa560957985a7f944ad06e5897ffbb385c96227d2b9084"
+    },
+    {
+      "run": "run-013",
+      "kind": "controlled-training",
+      "purpose": "one_step_control",
+      "status": "completed",
+      "started_at": "2026-10-16T15:57:03.660356+00:00",
+      "finished_at": "2026-10-16T15:59:39.132809+00:00",
+      "results_sha256": "890fac1e2e65623cd99de9c5feba84679ec95871d92250fced69f97586ff0782"
+    },
+    {
+      "run": "run-014",
+      "kind": "controlled-training",
+      "purpose": "multi_step",
+      "status": "completed",
+      "started_at": "2026-10-16T15:59:39.140920+00:00",
+      "finished_at": "2026-10-16T16:02:46.518302+00:00",
+      "results_sha256": "f5041666251a8e85b994640046fd4a6fb0a4c11e6e32d649df149327b0fb6e9a"
+    },
+    {
+      "run": "run-015",
+      "kind": "frozen-diagnostic",
+      "purpose": "history diagnostic",
+      "status": "completed",
+      "started_at": "2026-10-16T16:02:46.600437+00:00",
+      "finished_at": "2026-10-16T16:02:53.891524+00:00",
+      "results_sha256": "c603d9f6826265f72af9ceee5f66e2c7f488a10e5b1b446ee11f70c17208685d"
+    },
+    {
+      "run": "run-016",
+      "kind": "frozen-diagnostic",
+      "purpose": "history diagnostic",
+      "status": "completed",
+      "started_at": "2026-10-16T16:02:53.940348+00:00",
+      "finished_at": "2026-10-16T16:03:01.147242+00:00",
+      "results_sha256": "32dc442488634f0bcab5236c7590fcdd3b48b398800422b5ca683b5f1db8185f"
+    },
+    {
+      "run": "run-017",
+      "kind": "frozen-diagnostic",
+      "purpose": "actions diagnostic",
+      "status": "completed",
+      "started_at": "2026-10-16T16:03:01.167873+00:00",
+      "finished_at": "2026-10-16T16:03:09.750328+00:00",
+      "results_sha256": "a01fac10a0390c2f191ac7759b5478f06392ae03cb911151c81666bcd9de9143"
+    },
+    {
+      "run": "run-018",
+      "kind": "frozen-diagnostic",
+      "purpose": "actions diagnostic",
+      "status": "completed",
+      "started_at": "2026-10-16T16:03:09.777778+00:00",
+      "finished_at": "2026-10-16T16:03:18.285920+00:00",
+      "results_sha256": "f7acfb0a3ca6179ee40931821b4c749e6c0003a952004ce00b181cf17970b3e3"
+    },
+    {
+      "run": "run-019",
+      "kind": "controlled-training",
+      "purpose": "no_actions",
+      "status": "failed",
+      "started_at": "2026-10-16T16:03:20.181788+00:00",
+      "finished_at": "2026-10-16T16:06:06.970826+00:00",
+      "failure": "All 2570 training updates completed; final status replacement raised PermissionError (WinError 5). Checkpoints and metrics are intact.",
+      "results_sha256": "c007ec2f4aa01fcb2c40da2667638549896ad5cd05d6a212a120f8d7693bf2bc"
+    },
+    {
+      "run": "run-020",
+      "kind": "experiment-suite-recovery",
+      "purpose": "Finish frozen action ablation and report",
+      "status": "completed",
+      "started_at": "2026-10-16T16:10:32.355383+00:00",
+      "finished_at": "2026-10-16T16:10:43.425471+00:00",
+      "results_sha256": "badef592a105730d6bc4879ba9d463a8dfa02d736afe71edb21ebc9622b3c9d8"
+    },
+    {
+      "run": "run-021",
+      "kind": "frozen-diagnostic",
+      "purpose": "actions diagnostic",
+      "status": "completed",
+      "started_at": "2026-10-16T16:10:34.803832+00:00",
+      "finished_at": "2026-10-16T16:10:43.164565+00:00",
+      "results_sha256": "03a872ac3f8d6840f4b89338446383c1e17bbecef3b34155996f866c8504e241"
+    },
+    {
+      "run": "run-022",
+      "kind": "dataset-expansion",
+      "purpose": "Verify exactly 10000 training recordings",
+      "status": "failed",
+      "started_at": "2026-10-16T17:42:39.308572+00:00",
+      "finished_at": "2026-10-16T17:43:47.111986+00:00"
+    },
+    {
+      "run": "run-023",
+      "kind": "dataset-expansion",
+      "purpose": "Verify exactly 10000 training recordings",
+      "status": "failed",
+      "started_at": "2026-10-16T17:45:47.321666+00:00",
+      "finished_at": "2026-10-16T17:45:55.580992+00:00"
+    },
+    {
+      "run": "run-024",
+      "kind": "dataset-expansion",
+      "purpose": "Verify exactly 10000 training recordings",
+      "status": "failed",
+      "started_at": "2026-10-16T17:47:45.000741+00:00",
+      "finished_at": "2026-10-16T17:55:07.718870+00:00",
+      "failure": "Acquisition restarted with six workers after measured low throughput. Verified committed prefixes and completed downloads are retained for resumption."
+    },
+    {
+      "run": "run-025",
+      "kind": "dataset-expansion",
+      "purpose": "Verify exactly 10000 training recordings",
+      "status": "completed",
+      "started_at": "2026-10-16T17:55:09.273239+00:00",
+      "finished_at": "2026-10-16T18:42:18.610543+00:00",
+      "results_sha256": "67da97ae5e5ee1db1c93b6a2c26c694135aedcfa179ee90824bce4a22657efb9"
+    },
+    {
+      "run": "run-026",
+      "kind": "scaling-integration-check",
+      "purpose": "Verify the large-data GPU path on existing records",
+      "status": "completed",
+      "started_at": "2026-10-16T18:07:00.647981+00:00",
+      "finished_at": "2026-10-16T18:07:14.941667+00:00",
+      "results_sha256": "e1bdc06f491ebad763562ca95900afb17445166e409deb03a2e670daaf1435ef"
+    },
+    {
+      "run": "run-027",
+      "kind": "controlled-training",
+      "purpose": "GPU packed-loader verification",
+      "status": "completed",
+      "started_at": "2026-10-16T18:07:03.761519+00:00",
+      "finished_at": "2026-10-16T18:07:14.688821+00:00",
+      "results_sha256": "436c11e14216bfb257740e64afc3883784c4ead45a9afb34ea1bb2b24af87d2e"
+    },
+    {
+      "run": "run-028",
+      "kind": "scaled-training-pipeline",
+      "purpose": "Expand to 10000 training recordings end to end",
+      "status": "completed",
+      "started_at": "2026-10-16T18:42:28.562511+00:00",
+      "finished_at": "2026-10-16T18:54:52.608613+00:00",
+      "results_sha256": "d9f84bc2b816f8d4ef03bbabf82f085959ceb6494a8b6866ab13f1ad6e84e199"
+    },
+    {
+      "run": "run-029",
+      "kind": "dataset-expansion",
+      "purpose": "Verify exactly 10000 training recordings",
+      "status": "completed",
+      "started_at": "2026-10-16T18:42:30.378060+00:00",
+      "finished_at": "2026-10-16T18:43:40.759525+00:00",
+      "results_sha256": "67da97ae5e5ee1db1c93b6a2c26c694135aedcfa179ee90824bce4a22657efb9"
+    },
+    {
+      "run": "run-030",
+      "kind": "controlled-training",
+      "purpose": "10000-record three-step training",
+      "status": "completed",
+      "started_at": "2026-10-16T18:45:28.917072+00:00",
+      "finished_at": "2026-10-16T18:53:39.621084+00:00",
+      "results_sha256": "a9934847ba8f735c668cd75dc3cf1c3a5a8a9e0dbf3e07a462d3e2df5adfffb1"
+    },
+    {
+      "run": "run-031",
+      "kind": "expanded-data-evaluation",
+      "purpose": "Frozen validation comparison of training data sizes",
+      "status": "completed",
+      "started_at": "2026-10-16T18:53:40.433703+00:00",
+      "finished_at": "2026-10-16T18:54:09.778346+00:00",
+      "results_sha256": "74cb8f34ed3cca6e684b0b9f07c39c93a762b9f41037ff94055f18cc1a9768b4"
+    },
+    {
+      "run": "run-032",
+      "kind": "expanded-data-evaluation",
+      "purpose": "Frozen test comparison of training data sizes",
+      "status": "completed",
+      "started_at": "2026-10-16T18:54:09.795280+00:00",
+      "finished_at": "2026-10-16T18:54:52.592281+00:00",
+      "results_sha256": "352e99e414b36ecbdf6f347daba73508cba2d907e60df2f6e320b4e75c2d6e60"
+    },
+    {
+      "run": "run-033",
+      "kind": "viewer",
+      "purpose": "Interactive recorded one-step predictions",
+      "status": "running",
+      "started_at": "2026-10-17T10:00:55.634714+00:00",
+      "finished_at": null
+    },
+    {
+      "run": "run-034",
+      "kind": "blur_benchmark",
+      "purpose": "B0 fixed validation blur comparison",
+      "status": "completed",
+      "started_at": "2026-10-17T10:20:38.807809+00:00",
+      "finished_at": "2026-10-17T10:20:58.152508+00:00",
+      "results_sha256": "505e9931af52fa139a35bb99dd0cc6bc776e64a8eab4316062e0a7213456f7af"
+    },
+    {
+      "run": "run-035",
+      "kind": "blur-suite",
+      "purpose": "B1-B5 controlled blur investigation",
+      "status": "failed",
+      "started_at": "2026-10-17T10:25:53.696736+00:00",
+      "finished_at": "2026-10-17T10:35:36.749808+00:00"
+    },
+    {
+      "run": "run-036",
+      "kind": "blur-training",
+      "purpose": "B1 reconstruction",
+      "status": "completed",
+      "started_at": "2026-10-17T10:26:06.595183+00:00",
+      "finished_at": "2026-10-17T10:29:14.689975+00:00",
+      "results_sha256": "8ab9b6330ecb3914ba72b9b85abbadee0f345d13ad61cd6651a0d08d06e227c4"
+    },
+    {
+      "run": "run-037",
+      "kind": "reconstruction-evaluation",
+      "purpose": "B1 held-out appearance versus prediction",
+      "status": "completed",
+      "started_at": "2026-10-17T10:29:14.700922+00:00",
+      "finished_at": "2026-10-17T10:29:19.146148+00:00",
+      "results_sha256": "ddc470fc802013328a62111e8efe222c5cc392828986f793e4b53eb29eae4631"
+    },
+    {
+      "run": "run-038",
+      "kind": "blur-training",
+      "purpose": "B2 one additional epoch",
+      "status": "completed",
+      "started_at": "2026-10-17T10:29:19.155203+00:00",
+      "finished_at": "2026-10-17T10:35:27.400816+00:00",
+      "results_sha256": "939c459ffa8f0651c86e96ad3370615d96a53222b783c42030e0390894b2b843"
+    },
+    {
+      "run": "run-039",
+      "kind": "blur_benchmark",
+      "purpose": "B0 fixed validation blur comparison",
+      "status": "failed",
+      "started_at": "2026-10-17T10:35:27.479368+00:00",
+      "finished_at": "2026-10-17T10:35:36.749808+00:00"
+    },
+    {
+      "run": "run-040",
+      "kind": "blur-suite",
+      "purpose": "B1-B5 controlled blur investigation",
+      "status": "completed",
+      "started_at": "2026-10-17T10:37:17.385597+00:00",
+      "finished_at": "2026-10-17T11:05:12.970151+00:00",
+      "results_sha256": "7dfe61869286fba49f2b4cb4ddaa2f0a1931ea659ae827dd608f91a9ddc10a8a"
+    },
+    {
+      "run": "run-041",
+      "kind": "blur_benchmark",
+      "purpose": "B0 fixed validation blur comparison",
+      "status": "completed",
+      "started_at": "2026-10-17T10:37:30.337119+00:00",
+      "finished_at": "2026-10-17T10:37:46.876478+00:00",
+      "results_sha256": "f587b8206aff87064f82388daa2e7ae40ddb452bb68b3dad75452bc481da8870"
+    },
+    {
+      "run": "run-042",
+      "kind": "blur-training",
+      "purpose": "B3 mse_branch",
+      "status": "completed",
+      "started_at": "2026-10-17T10:37:46.910524+00:00",
+      "finished_at": "2026-10-17T10:44:05.332230+00:00",
+      "results_sha256": "75aec027a4fa79252c748c460cfab8249ef0be8d29fe7af93bfc2efb5103d884"
+    },
+    {
+      "run": "run-043",
+      "kind": "blur_benchmark",
+      "purpose": "B0 fixed validation blur comparison",
+      "status": "completed",
+      "started_at": "2026-10-17T10:44:05.570468+00:00",
+      "finished_at": "2026-10-17T10:45:11.170782+00:00",
+      "results_sha256": "f3cb583f2b43f1fc20c0f9024a1eea2a7b36cf11f8bfd5c13f2fa49054b82584"
+    },
+    {
+      "run": "run-044",
+      "kind": "blur-training",
+      "purpose": "B3 l1_gradient_branch",
+      "status": "completed",
+      "started_at": "2026-10-17T10:45:11.222574+00:00",
+      "finished_at": "2026-10-17T10:51:25.732146+00:00",
+      "results_sha256": "616997ae9217ec3c1b3d4d0805e644976c82c0ad22403243e0db4690516540ae"
+    },
+    {
+      "run": "run-045",
+      "kind": "blur_benchmark",
+      "purpose": "B0 fixed validation blur comparison",
+      "status": "completed",
+      "started_at": "2026-10-17T10:51:25.814219+00:00",
+      "finished_at": "2026-10-17T10:51:41.784206+00:00",
+      "results_sha256": "a2e1d60dfd89eb709b5cbe0ee400be4b059878fdea7074ef515ffb61839ac3f1"
+    },
+    {
+      "run": "run-046",
+      "kind": "blur-training",
+      "purpose": "B4 capacity_128",
+      "status": "completed",
+      "started_at": "2026-10-17T10:51:41.850836+00:00",
+      "finished_at": "2026-10-17T10:57:49.208256+00:00",
+      "results_sha256": "24acee71b994ca8b0fd5070f146c6068bc11a3d7492f6f487a8cf5daaebf2eba"
+    },
+    {
+      "run": "run-047",
+      "kind": "blur_benchmark",
+      "purpose": "B0 fixed validation blur comparison",
+      "status": "completed",
+      "started_at": "2026-10-17T10:57:49.272791+00:00",
+      "finished_at": "2026-10-17T10:58:05.902556+00:00",
+      "results_sha256": "ceda6a58fc0d30b478d9745f61766f001f47321965c9b9e1c2b4ca1730a794ea"
+    },
+    {
+      "run": "run-048",
+      "kind": "blur-training",
+      "purpose": "B4 capacity_256",
+      "status": "completed",
+      "started_at": "2026-10-17T10:58:05.928555+00:00",
+      "finished_at": "2026-10-17T11:04:19.026015+00:00",
+      "results_sha256": "93ca909b403147d47a17de05c74e753938a29421f7050f546a41dc0ba851d9e0"
+    },
+    {
+      "run": "run-049",
+      "kind": "blur_benchmark",
+      "purpose": "B0 fixed validation blur comparison",
+      "status": "completed",
+      "started_at": "2026-10-17T11:04:19.093848+00:00",
+      "finished_at": "2026-10-17T11:04:35.204306+00:00",
+      "results_sha256": "2a516e419609d4faf21d2b05c94ffb0ca9cbff2e475c5250cbfc097b6396006e"
+    },
+    {
+      "run": "run-050",
+      "kind": "blur-final-evaluation",
+      "purpose": "B5 fixed test comparison",
+      "status": "completed",
+      "started_at": "2026-10-17T11:04:35.311874+00:00",
+      "finished_at": "2026-10-17T11:05:12.713528+00:00",
+      "results_sha256": "1779fb63b26805031af0a236bff0a02ddf9d55be21e2f4452af2757b0a641370"
+    },
+    {
+      "run": "run-051",
+      "kind": "viewer",
+      "purpose": "Interactive recorded one-step predictions",
+      "status": "running",
+      "started_at": "2026-10-17T11:06:08.272191+00:00",
+      "finished_at": null
+    },
+    {
+      "run": "run-052",
+      "kind": "appearance-suite",
+      "purpose": "C0-C5 execution through c1",
+      "status": "completed",
+      "started_at": "2026-10-17T12:17:49.769682+00:00",
+      "finished_at": "2026-10-17T12:31:47.420181+00:00"
+    },
+    {
+      "run": "run-053",
+      "kind": "appearance-evaluation",
+      "purpose": "Fixed validation detail and movement",
+      "status": "completed",
+      "started_at": "2026-10-17T12:17:52.797681+00:00",
+      "finished_at": "2026-10-17T12:18:05.168923+00:00",
+      "results_sha256": "d025db707388384eb369bebe9903c1f0e82a1affdeba5e7466589539cb2357a9"
+    },
+    {
+      "run": "run-054",
+      "kind": "blur-training",
+      "purpose": "C1_control",
+      "status": "completed",
+      "started_at": "2026-10-17T12:18:11.238896+00:00",
+      "finished_at": "2026-10-17T12:24:19.904262+00:00",
+      "results_sha256": "43e7d975b7296446720fc4586bce8e7118b44b993e796886f5a4c12e90696bf2"
+    },
+    {
+      "run": "run-055",
+      "kind": "appearance-evaluation",
+      "purpose": "Fixed validation detail and movement",
+      "status": "completed",
+      "started_at": "2026-10-17T12:24:19.939100+00:00",
+      "finished_at": "2026-10-17T12:24:33.457998+00:00",
+      "results_sha256": "d025db707388384eb369bebe9903c1f0e82a1affdeba5e7466589539cb2357a9"
+    },
+    {
+      "run": "run-056",
+      "kind": "blur-training",
+      "purpose": "C1_appearance",
+      "status": "completed",
+      "started_at": "2026-10-17T12:24:33.508806+00:00",
+      "finished_at": "2026-10-17T12:31:32.594974+00:00",
+      "results_sha256": "1171246894778a3d33457e99ab0d80489b47d82541c8902d65fa1f635579c69c"
+    },
+    {
+      "run": "run-057",
+      "kind": "appearance-evaluation",
+      "purpose": "Fixed validation detail and movement",
+      "status": "completed",
+      "started_at": "2026-10-17T12:25:38.400850+00:00",
+      "finished_at": "2026-10-17T12:25:59.237722+00:00",
+      "results_sha256": "36b20cf2902948aed35bb5f697d0aad4aa5eb969519b039323e15c09bd080aff"
+    },
+    {
+      "run": "run-058",
+      "kind": "appearance-evaluation",
+      "purpose": "Fixed validation detail and movement",
+      "status": "completed",
+      "started_at": "2026-10-17T12:31:32.652409+00:00",
+      "finished_at": "2026-10-17T12:31:47.381872+00:00",
+      "results_sha256": "98c7b52669860af6496b0b5de8ed4832f157d6c407b2223a509b4b06683826f2"
+    },
+    {
+      "run": "run-059",
+      "kind": "appearance-suite",
+      "purpose": "C0-C5 execution through c5",
+      "status": "completed",
+      "started_at": "2026-10-17T12:32:32.035287+00:00",
+      "finished_at": "2026-10-17T13:42:47.431979+00:00",
+      "results_sha256": "db323c2099f517d4bbf31674f204b5c51720d5801136ef3386726066ad69c600"
+    },
+    {
+      "run": "run-060",
+      "kind": "appearance-evaluation",
+      "purpose": "Fixed validation detail and movement",
+      "status": "completed",
+      "started_at": "2026-10-17T12:32:41.195694+00:00",
+      "finished_at": "2026-10-17T12:32:53.666093+00:00",
+      "results_sha256": "fbfab3b71b4d794bafccf205f5f42637661f8d33f37ff7b35d473b47892e6bbe"
+    },
+    {
+      "run": "run-061",
+      "kind": "appearance-evaluation",
+      "purpose": "Fixed validation detail and movement",
+      "status": "completed",
+      "started_at": "2026-10-17T12:32:53.787700+00:00",
+      "finished_at": "2026-10-17T12:33:05.626955+00:00",
+      "results_sha256": "4e4f04106bd7d1ebdfbc7261b6f6db4c93d451d042871d91d6cfd889a5ecc8bf"
+    },
+    {
+      "run": "run-062",
+      "kind": "blur-training",
+      "purpose": "C2_direct",
+      "status": "completed",
+      "started_at": "2026-10-17T12:33:05.670583+00:00",
+      "finished_at": "2026-10-17T12:40:13.708592+00:00",
+      "results_sha256": "7ee15f7ec0e0131cfef369256399181adef84d3281c690bc2fbda0e673975f10"
+    },
+    {
+      "run": "run-063",
+      "kind": "appearance-evaluation",
+      "purpose": "Fixed validation detail and movement",
+      "status": "completed",
+      "started_at": "2026-10-17T12:40:13.766866+00:00",
+      "finished_at": "2026-10-17T12:40:30.125106+00:00",
+      "results_sha256": "3c3b23069fd7b0054f264a25b690964db09ea90751cc41a6ede341a7462ab6be"
+    },
+    {
+      "run": "run-064",
+      "kind": "blur-training",
+      "purpose": "C2_motion",
+      "status": "completed",
+      "started_at": "2026-10-17T12:40:30.157530+00:00",
+      "finished_at": "2026-10-17T12:56:38.266988+00:00",
+      "results_sha256": "7431da0898a58519a8434866d5481d8335fbc75a23e799c4bc5e6fee198c6ad7"
+    },
+    {
+      "run": "run-065",
+      "kind": "appearance-pair-audit",
+      "purpose": "Verify actual C1/C2 initial checkpoints",
+      "status": "completed",
+      "started_at": "2026-10-17T12:41:37.376601+00:00",
+      "finished_at": "2026-10-17T12:41:37.768017+00:00",
+      "results_sha256": "9926bfc809735e7e844b07ec45199628135692c2fc5fb7bf0e7ac86540256004"
+    },
+    {
+      "run": "run-066",
+      "kind": "appearance-visual-inspection",
+      "purpose": "Fixed C2 motion example at update 3000; exploratory",
+      "status": "failed",
+      "started_at": "2026-10-17T12:46:30.730705+00:00",
+      "finished_at": "2026-10-17T12:46:38.090945+00:00"
+    },
+    {
+      "run": "run-067",
+      "kind": "appearance-visual-inspection",
+      "purpose": "Fixed C2 motion example at update 3000; exploratory",
+      "status": "completed",
+      "started_at": "2026-10-17T12:46:49.468454+00:00",
+      "finished_at": "2026-10-17T12:46:56.338374+00:00",
+      "results_sha256": "c7c65e33310f51d55374022760b69f1532c975679c7a229b934bf896895df8da"
+    },
+    {
+      "run": "run-068",
+      "kind": "appearance-evaluation",
+      "purpose": "Fixed validation detail and movement",
+      "status": "completed",
+      "started_at": "2026-10-17T12:56:38.306529+00:00",
+      "finished_at": "2026-10-17T12:56:55.330054+00:00",
+      "results_sha256": "49996259b4f48fbf97d99027ed8fe9e1d9ecaa3bd051271b56401bf75d0fe7f1"
+    },
+    {
+      "run": "run-069",
+      "kind": "appearance-action-diagnostic",
+      "purpose": "C3 motion controls",
+      "status": "completed",
+      "started_at": "2026-10-17T12:56:55.372116+00:00",
+      "finished_at": "2026-10-17T12:57:03.837601+00:00",
+      "results_sha256": "7564a852d981bc32a309e06147127c5ef826539b1b2d49bc363534a9c416f555"
+    },
+    {
+      "run": "run-070",
+      "kind": "blur-training",
+      "purpose": "C4_vector",
+      "status": "completed",
+      "started_at": "2026-10-17T12:57:03.872492+00:00",
+      "finished_at": "2026-10-17T13:11:56.752595+00:00",
+      "results_sha256": "5cc4a1d375ca25f19b18a4d32fca7728398c7e2851d9a52f3f475d28b100b194"
+    },
+    {
+      "run": "run-071",
+      "kind": "appearance-evaluation",
+      "purpose": "Fixed validation detail and movement",
+      "status": "completed",
+      "started_at": "2026-10-17T13:11:56.804213+00:00",
+      "finished_at": "2026-10-17T13:12:15.309792+00:00",
+      "results_sha256": "487432dd73a01365d94a45c341727b44f59bab933810a9994f204f52b60ee2ac"
+    },
+    {
+      "run": "run-072",
+      "kind": "blur-training",
+      "purpose": "C4_spatial",
+      "status": "completed",
+      "started_at": "2026-10-17T13:12:15.331010+00:00",
+      "finished_at": "2026-10-17T13:27:41.004325+00:00",
+      "results_sha256": "eb9e56d6afadd45e338d512fdb374f7466e42b509e44c4ee56a67a634b8e37ad"
+    },
+    {
+      "run": "run-073",
+      "kind": "appearance-pair-audit",
+      "purpose": "Verify fresh C4 vector/spatial shared renderer and data order",
+      "status": "completed",
+      "started_at": "2026-10-17T13:12:50.246778+00:00",
+      "finished_at": "2026-10-17T13:12:50.366385+00:00",
+      "results_sha256": "8d3dc1de5a1ffc4e4453d4fcc398a066c91677d35bd18e5735e7150ee58f274f"
+    },
+    {
+      "run": "run-074",
+      "kind": "appearance-evaluation",
+      "purpose": "Fixed validation detail and movement",
+      "status": "completed",
+      "started_at": "2026-10-17T13:27:41.035857+00:00",
+      "finished_at": "2026-10-17T13:28:01.935697+00:00",
+      "results_sha256": "fd70ef9d80eb493677d4000a5c3a3d416465703e018dbf7379aa145817653be3"
+    },
+    {
+      "run": "run-075",
+      "kind": "blur-training",
+      "purpose": "C5_confirmation_control",
+      "status": "completed",
+      "started_at": "2026-10-17T13:28:01.993438+00:00",
+      "finished_at": "2026-10-17T13:34:54.388024+00:00",
+      "results_sha256": "f5a9af1d96030a749ba94eb4dd2c10f2301f177651057241bb66b8c39115d871"
+    },
+    {
+      "run": "run-076",
+      "kind": "appearance-evaluation",
+      "purpose": "Fixed validation detail and movement",
+      "status": "completed",
+      "started_at": "2026-10-17T13:34:54.435310+00:00",
+      "finished_at": "2026-10-17T13:35:07.836258+00:00",
+      "results_sha256": "fcb844ffacb9e0e86fd9eb2d29aa1c861e55996cbe44d70b030d772835139263"
+    },
+    {
+      "run": "run-077",
+      "kind": "blur-training",
+      "purpose": "C5_confirmation_candidate",
+      "status": "completed",
+      "started_at": "2026-10-17T13:35:07.871004+00:00",
+      "finished_at": "2026-10-17T13:41:57.058620+00:00",
+      "results_sha256": "086339a1d41d14d1da70fd5d8486cf2bd4a86ddfc262db183dfad73693769cdb"
+    },
+    {
+      "run": "run-078",
+      "kind": "appearance-pair-audit",
+      "purpose": "Verify C5 seed-7 initialization and shuffle replication",
+      "status": "completed",
+      "started_at": "2026-10-17T13:36:00.678946+00:00",
+      "finished_at": "2026-10-17T13:36:00.859105+00:00",
+      "results_sha256": "c794553da77c0d72ab213b1c4b1edec9e9a568dd846956b75c64a1f6a3ed2d92"
+    },
+    {
+      "run": "run-079",
+      "kind": "appearance-evaluation",
+      "purpose": "Fixed validation detail and movement",
+      "status": "completed",
+      "started_at": "2026-10-17T13:41:57.093459+00:00",
+      "finished_at": "2026-10-17T13:42:09.945730+00:00",
+      "results_sha256": "03eded9dda2bbaca1824f3054baebb487f096bb867796ea00ca5549c709dcc6b"
+    },
+    {
+      "run": "run-080",
+      "kind": "appearance-evaluation",
+      "purpose": "Fixed test detail and movement",
+      "status": "completed",
+      "started_at": "2026-10-17T13:42:10.004563+00:00",
+      "finished_at": "2026-10-17T13:42:28.748706+00:00",
+      "results_sha256": "40c4df058c8880f32330d7f536ef8f6760b516d9ad567632216dfd9d2d8f5eb7"
+    },
+    {
+      "run": "run-081",
+      "kind": "appearance-evaluation",
+      "purpose": "Fixed test detail and movement",
+      "status": "completed",
+      "started_at": "2026-10-17T13:42:28.776600+00:00",
+      "finished_at": "2026-10-17T13:42:47.228555+00:00",
+      "results_sha256": "e0128bd5ae2eb407c49a810f6881d0d06289293083ff74ad6891b839000d1cb9"
+    },
+    {
+      "run": "run-082",
+      "kind": "appearance-action-diagnostic",
+      "purpose": "Post-selection descriptive validation of selected C1 model",
+      "status": "completed",
+      "started_at": "2026-10-17T13:43:19.373847+00:00",
+      "finished_at": "2026-10-17T13:43:26.852016+00:00",
+      "results_sha256": "f3073bddf901d6c9875339480b1e919a3ab2ed42741fb6eb68cb00c88e2646d9"
+    },
+    {
+      "run": "run-083",
+      "kind": "viewer",
+      "purpose": "Interactive recorded one-step predictions",
+      "status": "running",
+      "started_at": "2026-10-17T13:44:07.402448+00:00",
+      "finished_at": null
+    },
+    {
+      "run": "run-084",
+      "kind": "blur-diagnostic",
+      "purpose": "Replay fixed selected-model one-step softness",
+      "status": "completed",
+      "started_at": "2026-10-17T13:47:26.104383+00:00",
+      "finished_at": "2026-10-17T13:47:26.195826+00:00",
+      "results_sha256": "5daceaac2c5b9542a73996db381e8f9e8b28c141678c350cb9bbb4e09cea1dc2"
+    },
+    {
+      "run": "run-085",
+      "kind": "blur-diagnostic",
+      "purpose": "Replay fixed selected-model one-step softness",
+      "status": "completed",
+      "started_at": "2026-10-17T13:47:27.761076+00:00",
+      "finished_at": "2026-10-17T13:47:27.840380+00:00",
+      "results_sha256": "5daceaac2c5b9542a73996db381e8f9e8b28c141678c350cb9bbb4e09cea1dc2"
+    },
+    {
+      "run": "run-086",
+      "kind": "blur-diagnostic",
+      "purpose": "Compare changed/static detail in six archived fixed visual examples",
+      "status": "completed",
+      "started_at": "2026-10-17T13:48:02.905041+00:00",
+      "finished_at": "2026-10-17T13:48:03.194658+00:00",
+      "results_sha256": "bf13b776da588f8d4a466040f5bec907571ad68fee18100f86334482c0b23f3a"
+    },
+    {
+      "run": "run-087",
+      "kind": "detail-suite",
+      "purpose": "Phase D through tiny",
+      "status": "completed",
+      "started_at": "2026-10-17T13:58:58.038254+00:00",
+      "finished_at": "2026-10-17T14:01:34.915172+00:00"
+    },
+    {
+      "run": "run-088",
+      "kind": "detail-evaluation",
+      "purpose": "Frozen D validation evaluation",
+      "status": "completed",
+      "started_at": "2026-10-17T13:59:02.075598+00:00",
+      "finished_at": "2026-10-17T13:59:19.202315+00:00",
+      "results_sha256": "ee03dfe43097298c47a6b055ac5eef5cdc414fe5140af3c7ca815662b50d484f"
+    },
+    {
+      "run": "run-089",
+      "kind": "detail-training",
+      "purpose": "D1_single",
+      "status": "completed",
+      "started_at": "2026-10-17T13:59:25.402518+00:00",
+      "finished_at": "2026-10-17T13:59:37.607345+00:00",
+      "results_sha256": "f43f4235d7d9bd9b19e557aa5bb42b3406c5885b21172b8a72da768af2d6298b"
+    },
+    {
+      "run": "run-090",
+      "kind": "detail-training",
+      "purpose": "D1_multi",
+      "status": "completed",
+      "started_at": "2026-10-17T13:59:37.637053+00:00",
+      "finished_at": "2026-10-17T14:00:52.261397+00:00",
+      "results_sha256": "78305af6a250b4223264f5eefefc8fd0e673e129da87cd523c3451b25740edc7"
+    },
+    {
+      "run": "run-091",
+      "kind": "detail-training",
+      "purpose": "D1_multi_extension",
+      "status": "completed",
+      "started_at": "2026-10-17T14:00:52.281409+00:00",
+      "finished_at": "2026-10-17T14:01:34.892106+00:00",
+      "results_sha256": "5a0c999f880cd2e6289bcb5c1c7e0a3bb9d59f2932d9c2f8b62dd04c7ae3b94f"
+    },
+    {
+      "run": "run-092",
+      "kind": "detail-suite",
+      "purpose": "Phase D through flow",
+      "status": "completed",
+      "started_at": "2026-10-17T14:03:47.526856+00:00",
+      "finished_at": "2026-10-17T14:04:15.725858+00:00"
+    },
+    {
+      "run": "run-093",
+      "kind": "synthetic-flow-training",
+      "purpose": "Mask-free known translations; held-out sources/offsets",
+      "status": "completed",
+      "started_at": "2026-10-17T14:03:58.695107+00:00",
+      "finished_at": "2026-10-17T14:04:15.698527+00:00",
+      "results_sha256": "3a8250749bcc68519ade65abd3baefe8b66ad0821ba5a92f48910e0b3041648e"
+    },
+    {
+      "run": "run-094",
+      "kind": "detail-suite",
+      "purpose": "Phase D through all",
+      "status": "completed",
+      "started_at": "2026-10-17T14:09:45.632722+00:00",
+      "finished_at": "2026-10-17T14:28:09.871765+00:00",
+      "results_sha256": "504b212d462a895d3bfbf77d9ba00d84c65f84ff7f7eda11b1422cad3320451b"
+    },
+    {
+      "run": "run-095",
+      "kind": "detail-training",
+      "purpose": "D3_fixed",
+      "status": "completed",
+      "started_at": "2026-10-17T14:09:58.084460+00:00",
+      "finished_at": "2026-10-17T14:12:53.099795+00:00",
+      "results_sha256": "3051ae6f91fb4c37e340b615b15dfc5f606c0e72b98c5798ca080cebfa009906"
+    },
+    {
+      "run": "run-096",
+      "kind": "detail-evaluation",
+      "purpose": "Frozen D validation evaluation",
+      "status": "completed",
+      "started_at": "2026-10-17T14:12:53.146821+00:00",
+      "finished_at": "2026-10-17T14:13:18.551634+00:00",
+      "results_sha256": "2f0d21921b394b2948d4b5ae92b2e9ece4d46f34884e167b2df404405ebc2e44"
+    },
+    {
+      "run": "run-097",
+      "kind": "detail-training",
+      "purpose": "D3_aligned",
+      "status": "completed",
+      "started_at": "2026-10-17T14:13:18.592625+00:00",
+      "finished_at": "2026-10-17T14:16:33.211518+00:00",
+      "results_sha256": "6e81c1d8fb96e294743560ef08308c984ffa9ceb8edc64021df2ad9bc77b26d3"
+    },
+    {
+      "run": "run-098",
+      "kind": "transport-health-diagnostic",
+      "purpose": "Matched archived C2 versus D3 fixed-source render components",
+      "status": "completed",
+      "started_at": "2026-10-17T14:14:03.189536+00:00",
+      "finished_at": "2026-10-17T14:14:03.860127+00:00",
+      "results_sha256": "66e71a52dd84bbef0d6181c7dd3b874fea53acdb2dcdbf7651d0078e0a216aba"
+    },
+    {
+      "run": "run-099",
+      "kind": "detail-pair-audit",
+      "purpose": "Verify actual fixed/aligned initial model, optimizer and shuffle",
+      "status": "completed",
+      "started_at": "2026-10-17T14:15:40.893423+00:00",
+      "finished_at": "2026-10-17T14:15:41.122803+00:00",
+      "results_sha256": "5defcf6b03ea137ff76cc0c6b44b963c5d1a915e77c78852d466ed37e8146b82"
+    },
+    {
+      "run": "run-100",
+      "kind": "detail-evaluation",
+      "purpose": "Frozen D validation evaluation",
+      "status": "completed",
+      "started_at": "2026-10-17T14:16:33.268660+00:00",
+      "finished_at": "2026-10-17T14:16:58.619480+00:00",
+      "results_sha256": "cf0749e67fbfc6ee0d7b020ea48b9ec416a85b8c37f3f35eb643eb4ff5083f54"
+    },
+    {
+      "run": "run-101",
+      "kind": "detail-training",
+      "purpose": "D4_mse",
+      "status": "completed",
+      "started_at": "2026-10-17T14:16:58.660837+00:00",
+      "finished_at": "2026-10-17T14:18:01.855758+00:00",
+      "results_sha256": "9860339e21c10f1de8aa97e76896177d0363aba278a53b24eff33d77211edb1b"
+    },
+    {
+      "run": "run-102",
+      "kind": "detail-evaluation",
+      "purpose": "Frozen D validation evaluation",
+      "status": "completed",
+      "started_at": "2026-10-17T14:18:01.896967+00:00",
+      "finished_at": "2026-10-17T14:18:17.965086+00:00",
+      "results_sha256": "ee03dfe43097298c47a6b055ac5eef5cdc414fe5140af3c7ca815662b50d484f"
+    },
+    {
+      "run": "run-103",
+      "kind": "detail-training",
+      "purpose": "D4_balanced",
+      "status": "completed",
+      "started_at": "2026-10-17T14:18:17.998074+00:00",
+      "finished_at": "2026-10-17T14:19:23.094300+00:00",
+      "results_sha256": "8c8c54cc041d0329a5fa5a7fb8e97e784429674fec89fcfb7d2f8babcfa4485a"
+    },
+    {
+      "run": "run-104",
+      "kind": "detail-evaluation",
+      "purpose": "Frozen D validation evaluation",
+      "status": "completed",
+      "started_at": "2026-10-17T14:19:23.124083+00:00",
+      "finished_at": "2026-10-17T14:19:40.282596+00:00",
+      "results_sha256": "ee03dfe43097298c47a6b055ac5eef5cdc414fe5140af3c7ca815662b50d484f"
+    },
+    {
+      "run": "run-105",
+      "kind": "detail-training",
+      "purpose": "D4_balanced_boundary",
+      "status": "completed",
+      "started_at": "2026-10-17T14:19:40.331850+00:00",
+      "finished_at": "2026-10-17T14:20:49.231803+00:00",
+      "results_sha256": "c68da47b30032a1b0dab6ecb2cac4d997f955a2e9b89800eb9dcbd2ecc2a0eee"
+    },
+    {
+      "run": "run-106",
+      "kind": "detail-evaluation",
+      "purpose": "Frozen D validation evaluation",
+      "status": "completed",
+      "started_at": "2026-10-17T14:20:49.264715+00:00",
+      "finished_at": "2026-10-17T14:21:05.714608+00:00",
+      "results_sha256": "ee03dfe43097298c47a6b055ac5eef5cdc414fe5140af3c7ca815662b50d484f"
+    },
+    {
+      "run": "run-107",
+      "kind": "detail-training",
+      "purpose": "D5_fixed",
+      "status": "completed",
+      "started_at": "2026-10-17T14:21:05.755705+00:00",
+      "finished_at": "2026-10-17T14:23:06.757501+00:00",
+      "results_sha256": "5bd1e7787c26982ca90138db6821ae8e42ac5d8541182eed786b0cf5da438a69"
+    },
+    {
+      "run": "run-108",
+      "kind": "detail-evaluation",
+      "purpose": "Frozen D validation evaluation",
+      "status": "completed",
+      "started_at": "2026-10-17T14:23:06.798254+00:00",
+      "finished_at": "2026-10-17T14:23:23.177786+00:00",
+      "results_sha256": "ee03dfe43097298c47a6b055ac5eef5cdc414fe5140af3c7ca815662b50d484f"
+    },
+    {
+      "run": "run-109",
+      "kind": "detail-training",
+      "purpose": "D5_curriculum",
+      "status": "completed",
+      "started_at": "2026-10-17T14:23:23.210351+00:00",
+      "finished_at": "2026-10-17T14:26:07.979660+00:00",
+      "results_sha256": "5f350517c0d3b7dff68d6b1e4f8478b5c8c66b75fde7202cd4e432f831a98940"
+    },
+    {
+      "run": "run-110",
+      "kind": "detail-evaluation",
+      "purpose": "Frozen D validation evaluation",
+      "status": "completed",
+      "started_at": "2026-10-17T14:26:08.053552+00:00",
+      "finished_at": "2026-10-17T14:26:54.556212+00:00",
+      "results_sha256": "ee03dfe43097298c47a6b055ac5eef5cdc414fe5140af3c7ca815662b50d484f"
+    },
+    {
+      "run": "run-111",
+      "kind": "detail-evaluation",
+      "purpose": "Frozen D test evaluation",
+      "status": "completed",
+      "started_at": "2026-10-17T14:26:54.762291+00:00",
+      "finished_at": "2026-10-17T14:27:57.337416+00:00",
+      "results_sha256": "f230b29903bcb73bb4d32422aebb5fe6e90f1bbf82ea21a8852c445faa0e78b2"
+    },
+    {
+      "run": "run-112",
+      "kind": "detail-action-diagnostic",
+      "purpose": "Frozen final selected model controls",
+      "status": "completed",
+      "started_at": "2026-10-17T14:27:57.463244+00:00",
+      "finished_at": "2026-10-17T14:28:09.349500+00:00",
+      "results_sha256": "f3073bddf901d6c9875339480b1e919a3ab2ed42741fb6eb68cb00c88e2646d9"
+    },
+    {
+      "run": "run-113",
+      "kind": "conditional-diffusion-suite",
+      "purpose": "E one-step conditional generation pilot",
+      "status": "completed",
+      "started_at": "2026-10-17T15:40:37.815108+00:00",
+      "finished_at": "2026-10-17T15:41:03.639774+00:00"
+    },
+    {
+      "run": "run-114",
+      "kind": "conditional-head-evaluation",
+      "purpose": "E reference quick",
+      "status": "completed",
+      "started_at": "2026-10-17T15:40:45.568828+00:00",
+      "finished_at": "2026-10-17T15:40:48.911037+00:00",
+      "results_sha256": "3b7eaf169de1794b8e31dba47cbbf3c386f824af3232d3983acfbd0f2ebd3628"
+    },
+    {
+      "run": "run-115",
+      "kind": "conditional-head-training",
+      "purpose": "E diffusion one-step pilot",
+      "status": "completed",
+      "started_at": "2026-10-17T15:40:55.173475+00:00",
+      "finished_at": "2026-10-17T15:41:03.631640+00:00",
+      "results_sha256": "ba2ceecda75340219eebbc4ce39bd5f8addc6700c157a4a04f2883f35ad3884b"
+    },
+    {
+      "run": "run-116",
+      "kind": "conditional-diffusion-suite",
+      "purpose": "E one-step conditional generation pilot",
+      "status": "completed",
+      "started_at": "2026-10-17T15:41:37.558248+00:00",
+      "finished_at": "2026-10-17T15:56:00.635941+00:00",
+      "results_sha256": "e622873aa671d0737431b36d08e2caf04fa018c932b29049d496ce06025cc2f7"
+    },
+    {
+      "run": "run-117",
+      "kind": "conditional-head-evaluation",
+      "purpose": "E training probe samples",
+      "status": "completed",
+      "started_at": "2026-10-17T15:41:54.378322+00:00",
+      "finished_at": "2026-10-17T15:41:59.260199+00:00",
+      "results_sha256": "393fa5c6f5f380183557ddefcd795a53684e34c176b5a95da727fd3164589ffc"
+    },
+    {
+      "run": "run-118",
+      "kind": "conditional-head-training",
+      "purpose": "E deterministic one-step pilot",
+      "status": "completed",
+      "started_at": "2026-10-17T15:41:59.268409+00:00",
+      "finished_at": "2026-10-17T15:46:42.369790+00:00",
+      "results_sha256": "142adec303028f8dac04e386421f93aca58e8462817a0a3b985f05c349091e32"
+    },
+    {
+      "run": "run-119",
+      "kind": "conditional-head-evaluation",
+      "purpose": "E deterministic full validation",
+      "status": "completed",
+      "started_at": "2026-10-17T15:46:42.408619+00:00",
+      "finished_at": "2026-10-17T15:46:47.382213+00:00",
+      "results_sha256": "115e293f10f19081e96b25398cb3ccac3dd8f3b698f46b1a6e9784ad220b54c3"
+    },
+    {
+      "run": "run-120",
+      "kind": "conditional-head-evaluation",
+      "purpose": "E deterministic zero-action control",
+      "status": "completed",
+      "started_at": "2026-10-17T15:46:47.410641+00:00",
+      "finished_at": "2026-10-17T15:46:50.379227+00:00",
+      "results_sha256": "d20d4ad56c994e8022e9f8ca5c3e0b467a155aeb578786927234a93229bda32a"
+    },
+    {
+      "run": "run-121",
+      "kind": "conditional-head-training",
+      "purpose": "E diffusion one-step pilot",
+      "status": "completed",
+      "started_at": "2026-10-17T15:46:50.407759+00:00",
+      "finished_at": "2026-10-17T15:52:23.781676+00:00",
+      "results_sha256": "21b9bd56fa1f21e3860b03e5dce3dde845bd27bccd4bcfae5d8529ab1e8c7cb0"
+    },
+    {
+      "run": "run-122",
+      "kind": "conditional-head-evaluation",
+      "purpose": "E diffusion full validation",
+      "status": "completed",
+      "started_at": "2026-10-17T15:52:23.798210+00:00",
+      "finished_at": "2026-10-17T15:55:22.232980+00:00",
+      "results_sha256": "094d13d5e4c320678735e438436c1da1454078b59d1a28cd8440aabf585d5d34"
+    },
+    {
+      "run": "run-123",
+      "kind": "conditional-head-evaluation",
+      "purpose": "E diffusion zero-action control",
+      "status": "completed",
+      "started_at": "2026-10-17T15:55:22.270030+00:00",
+      "finished_at": "2026-10-17T15:55:49.195510+00:00",
+      "results_sha256": "1238510755e0ecd13075d5d3fb77a000842de28408ba3380f52555153ed5bb69"
+    },
+    {
+      "run": "run-124",
+      "kind": "conditional-head-evaluation",
+      "purpose": "E reference full validation",
+      "status": "completed",
+      "started_at": "2026-10-17T15:55:49.253630+00:00",
+      "finished_at": "2026-10-17T15:56:00.602281+00:00",
+      "results_sha256": "0505dbbd79e2f5f96d557e08675ea9809be57361ab77436ea406925667bbd06f"
+    },
+    {
+      "run": "run-125",
+      "kind": "saved-results-viewer",
+      "purpose": "Browse E fixed validation comparisons",
+      "status": "running",
+      "started_at": "2026-10-17T16:16:59.869109+00:00",
+      "finished_at": null
+    },
+    {
+      "run": "run-126",
+      "kind": "publication-export",
+      "purpose": "Export frozen portable research artifacts",
+      "status": "completed",
+      "started_at": "2026-10-17T16:50:18.932690+00:00",
+      "finished_at": "2026-10-17T16:50:43.502813+00:00",
+      "results_sha256": "a9554440520eb476796a62e7a16471f53fea8876377f48c35e28038b3e5f2ef0"
+    },
+    {
+      "run": "run-127",
+      "kind": "publication-export",
+      "purpose": "Export frozen portable research artifacts",
+      "status": "completed",
+      "started_at": "2026-10-17T16:57:43.184085+00:00",
+      "finished_at": "2026-10-17T16:58:06.207743+00:00",
+      "results_sha256": "dc640b98d22650edd656d0ec7a40a2970472a8e8874f41c54f99e358f85cbe10"
+    }
+  ],
+  "scope": "Historical run IDs and preserved result hashes; viewers are live sessions, not frozen experiments"
+}

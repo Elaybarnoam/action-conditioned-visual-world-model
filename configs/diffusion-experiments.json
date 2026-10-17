@@ -1,0 +1,20 @@
+{
+  "reference": "evaluation/runs/run-056/checkpoints/best.pt",
+  "dataset": "data/bair-10000/prepared",
+  "cache": "data/bair-10000/.cache/training",
+  "device": "cuda:0",
+  "seed": 3,
+  "batch_size": 16,
+  "width": 32,
+  "updates": 6000,
+  "validate_every": 1000,
+  "learning_rate": 0.0002,
+  "ema_decay": 0.999,
+  "timesteps": 100,
+  "sampling_steps": 50,
+  "sample_seeds": [1301, 2603, 3907],
+  "loader_workers": 2,
+  "error_tolerance": 0.05,
+  "lpips_improvement": 0.05,
+  "boundary_improvement": 0.01
+}

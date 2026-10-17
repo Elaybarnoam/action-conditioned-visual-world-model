@@ -1,0 +1,20 @@
+{
+  "dataset": "data/bair-10000/prepared",
+  "cache": "data/bair-10000/.cache/training",
+  "reference": "evaluation/runs/run-042/checkpoints/best.pt",
+  "base_protocol": "configs/blur-protocol.json",
+  "protocol": "configs/appearance-protocol.json",
+  "device": "cuda:0",
+  "seed": 3,
+  "confirmation_seed": 7,
+  "updates": 12500,
+  "validate_every": 1000,
+  "loader_workers": 2,
+  "loss": "mse",
+  "gradient_weight": 1.0,
+  "error_tolerance": 0.02,
+  "ssim_tolerance": 0.01,
+  "boundary_improvement": 0.01,
+  "spatial_trigger_h20_copy_ratio": 0.35,
+  "flow_limit": 64.0
+}

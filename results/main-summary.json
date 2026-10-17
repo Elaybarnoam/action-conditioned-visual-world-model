@@ -1,0 +1,176 @@
+{
+  "reference": {
+    "mode": "reference",
+    "windows": 1122,
+    "aggregate": {
+      "samples": 1122,
+      "mse": 0.008158266101196016,
+      "changed_mse": 0.02608910116853492,
+      "gradient_mae": 0.041478533687903385,
+      "ssim": 0.8291224637558541,
+      "lpips": 0.1220697232799309,
+      "edge_ratio": 0.7735227535008959,
+      "boundary_channel_fraction": 0.0
+    },
+    "per_sample_seed": [
+      {
+        "samples": 1122,
+        "mse": 0.008158266101196016,
+        "changed_mse": 0.02608910116853492,
+        "gradient_mae": 0.041478533687903385,
+        "ssim": 0.8291224637558541,
+        "lpips": 0.1220697232799309,
+        "edge_ratio": 0.7735227535008959,
+        "boundary_channel_fraction": 0.0
+      }
+    ],
+    "mean_pairwise_sample_mse": 0,
+    "elapsed_seconds": 3.37279649998527,
+    "noise_seeds": [],
+    "limitation": "All individual samples scored; no best-of-K or sample-mean prediction. Changed pixels are an image-change proxy, not object labels.",
+    "artifacts": {
+      "train__traj_9406_to_9661__0019-start-01.pt": "703f56fd6dbfa234bf02b37e577132dd39a87bb4ca74718ae26ac4a8d4982228",
+      "train__traj_9406_to_9661__0086-start-02.pt": "675abe235f0245d149346342412ce674cc0ec7d55b8e861869f9f78bfc522246",
+      "train__traj_9406_to_9661__0117-start-00.pt": "240c0c7bc1c3061f09dedb6e965c435cf4f479073cbb6a611b44820c3ed36649",
+      "train__traj_9406_to_9661__0133-start-02.pt": "c7279ecff3ce587463336deae16e065c7b5a25408a77720af137a34cdf865f00",
+      "train__traj_9406_to_9661__0204-start-01.pt": "af0de63d8a52a21a4f18e819c512e832b54407c0a6a79228a91db81f81e2da02",
+      "train__traj_9406_to_9661__0220-start-00.pt": "a88a2f194ea9abcc3362135791130171afd7d00751346c7a54195369d09d0304"
+    }
+  },
+  "candidates": {
+    "deterministic": {
+      "mode": "deterministic",
+      "windows": 1122,
+      "aggregate": {
+        "samples": 1122,
+        "mse": 0.005388066275500768,
+        "changed_mse": 0.01890772460392327,
+        "gradient_mae": 0.028624060409352742,
+        "ssim": 0.9040012568394769,
+        "lpips": 0.05671027378982627,
+        "edge_ratio": 0.8907998063985039,
+        "boundary_channel_fraction": 0.006687175827899024
+      },
+      "per_sample_seed": [
+        {
+          "samples": 1122,
+          "mse": 0.005388066275500768,
+          "changed_mse": 0.01890772460392327,
+          "gradient_mae": 0.028624060409352742,
+          "ssim": 0.9040012568394769,
+          "lpips": 0.05671027378982627,
+          "edge_ratio": 0.8907998063985039,
+          "boundary_channel_fraction": 0.006687175827899024
+        }
+      ],
+      "mean_pairwise_sample_mse": 0,
+      "elapsed_seconds": 1.9557153999921866,
+      "noise_seeds": [],
+      "limitation": "All individual samples scored; no best-of-K or sample-mean prediction. Changed pixels are an image-change proxy, not object labels.",
+      "artifacts": {
+        "train__traj_9406_to_9661__0019-start-01.pt": "bdb60d3d5acc296e22f142402fe47b4863b845d277b770ae786ba2b078a2f394",
+        "train__traj_9406_to_9661__0086-start-02.pt": "84b460a35066777ca06596effb975a5612bab1f468690c990a442753c496fdf0",
+        "train__traj_9406_to_9661__0117-start-00.pt": "c0517df2ca14e31736303d263d66b3bee5492cb8bc5689ce63bfa900bf0967e9",
+        "train__traj_9406_to_9661__0133-start-02.pt": "9bd8586f91be7d7f5731e021d2d69431cce9f08b900785cf72276f6b89baedf7",
+        "train__traj_9406_to_9661__0204-start-01.pt": "ba030bc919dcd9c4576d6c1a4425159c95a68c6ebdc58e4699f6efe5a718e883",
+        "train__traj_9406_to_9661__0220-start-00.pt": "0ce92b3eacacd480761613512d0813620303574a40bae4cc37e5093a8f691030"
+      }
+    },
+    "diffusion": {
+      "mode": "diffusion",
+      "windows": 1122,
+      "aggregate": {
+        "samples": 3366,
+        "mse": 0.010173870480266044,
+        "changed_mse": 0.036780177620572174,
+        "gradient_mae": 0.03628376281620471,
+        "ssim": 0.8482244783969274,
+        "lpips": 0.04643325163485882,
+        "edge_ratio": 1.0199101735493008,
+        "boundary_channel_fraction": 0.008895393755133527
+      },
+      "per_sample_seed": [
+        {
+          "samples": 1122,
+          "mse": 0.01018600580456821,
+          "changed_mse": 0.03677581000208322,
+          "gradient_mae": 0.036344686596954834,
+          "ssim": 0.8478799921040442,
+          "lpips": 0.04606128791795376,
+          "edge_ratio": 1.020101894563107,
+          "boundary_channel_fraction": 0.008835410292897106
+        },
+        {
+          "samples": 1122,
+          "mse": 0.010101315491221041,
+          "changed_mse": 0.036503679674102125,
+          "gradient_mae": 0.036196242463434655,
+          "ssim": 0.8491362228113062,
+          "lpips": 0.04659736054408266,
+          "edge_ratio": 1.019466074552128,
+          "boundary_channel_fraction": 0.008807920909092383
+        },
+        {
+          "samples": 1122,
+          "mse": 0.01023429014500888,
+          "changed_mse": 0.03706104318553116,
+          "gradient_mae": 0.03631035938822463,
+          "ssim": 0.8476572202754318,
+          "lpips": 0.046641106442540034,
+          "edge_ratio": 1.020162551532667,
+          "boundary_channel_fraction": 0.009042850063411094
+        }
+      ],
+      "mean_pairwise_sample_mse": 0.007247395043069606,
+      "elapsed_seconds": 175.2395816000062,
+      "noise_seeds": [
+        1301,
+        2603,
+        3907
+      ],
+      "limitation": "All individual samples scored; no best-of-K or sample-mean prediction. Changed pixels are an image-change proxy, not object labels.",
+      "artifacts": {
+        "train__traj_9406_to_9661__0019-start-01.pt": "48e03a78042ce89096a0cbfbedfa5e4511b6adbc14c5a6752de8ffdc90248bec",
+        "train__traj_9406_to_9661__0086-start-02.pt": "7b20f810f4d0ce40a5a4f5dc8ef1d2ea2d883dfcf3e577e4bf030329062e4ad1",
+        "train__traj_9406_to_9661__0117-start-00.pt": "4252fbca7a06e712d1289570a2734986d6088751c469c048c587aa5926a5cda9",
+        "train__traj_9406_to_9661__0133-start-02.pt": "6946c9c825b8f62d18583e3f228d451235e6175fa1724e1a19b5c2c011484992",
+        "train__traj_9406_to_9661__0204-start-01.pt": "8b7bb0c7ddc76c4b7662e47711c4ba6a4d2ec74f5366980a1888345caa8b0bc0",
+        "train__traj_9406_to_9661__0220-start-00.pt": "3687a508b4e544d4837469c42b035122c24cc479e9c415d79b1a7fee67d39d57"
+      }
+    }
+  },
+  "decisions": {
+    "deterministic": {
+      "promising": true,
+      "failures": []
+    },
+    "diffusion": {
+      "promising": false,
+      "failures": [
+        "mse",
+        "changed_mse"
+      ]
+    }
+  },
+  "viewer_unchanged": true,
+  "official_test_used": false,
+  "action_controls": {
+    "deterministic": {
+      "zero_minus_correct": {
+        "mse": 0.012666940503050665,
+        "changed_mse": 0.04625165063486088,
+        "lpips": 0.004638871232814659
+      },
+      "scope": "Same 51 selection windows and paired initial noise. Perturbed actions may be implausible; sensitivity is not proof of causality."
+    },
+    "diffusion": {
+      "zero_minus_correct": {
+        "mse": 0.011402405138748385,
+        "changed_mse": 0.04036424126403004,
+        "lpips": 0.007318214044656629
+      },
+      "scope": "Same 51 selection windows and paired initial noise. Perturbed actions may be implausible; sensitivity is not proof of causality."
+    }
+  },
+  "limitation": "Small one-step pilot with frozen history/dynamics; no convergence, multistep quality or irreducible-uncertainty claim. No automatic promotion."
+}

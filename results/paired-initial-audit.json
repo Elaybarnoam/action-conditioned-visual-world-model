@@ -1,0 +1,12 @@
+{
+  "runs": [
+    "run-118",
+    "run-121"
+  ],
+  "identical_head_parameters": true,
+  "identical_training_order": true,
+  "fresh_adam": true,
+  "same_frozen_backbone": true,
+  "backbone_sha256": "51b62349df5115ccf1002a58c93053edf66364dd8a1df18f8096e2a2d415b6a9",
+  "initial_checkpoint_sha256_note": "Serialized files differ due to run metadata; parameter tensors match exactly."
+}

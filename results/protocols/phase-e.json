@@ -1,0 +1,4779 @@
+{
+  "phase": "E",
+  "settings": {
+    "reference": "evaluation/runs/run-056/checkpoints/best.pt",
+    "dataset": "data/bair-10000/prepared",
+    "cache": "data/bair-10000/.cache/training",
+    "device": "cuda:0",
+    "seed": 3,
+    "batch_size": 16,
+    "width": 32,
+    "updates": 6000,
+    "validate_every": 1000,
+    "learning_rate": 0.0002,
+    "ema_decay": 0.999,
+    "timesteps": 100,
+    "sampling_steps": 50,
+    "sample_seeds": [
+      1301,
+      2603,
+      3907
+    ],
+    "loader_workers": 2,
+    "error_tolerance": 0.05,
+    "lpips_improvement": 0.05,
+    "boundary_improvement": 0.01
+  },
+  "reference_sha256": "51b62349df5115ccf1002a58c93053edf66364dd8a1df18f8096e2a2d415b6a9",
+  "dataset_manifest_sha256": "198376e49c0cd94b1163e52321504f4118ea79443b7d32d4100add7db3072649",
+  "metric": {
+    "implementation": "lpips 0.1.4, net=squeeze, version=0.1",
+    "input": "RGB 64x64 [0,1] converted to [-1,1]; no resize",
+    "state_sha256": "19427870bdb29ae7a3c12b93d6f9acf630b0bcedb770d4bfe3e861cf8130c1c9",
+    "frozen": true
+  },
+  "selection_windows": [
+    {
+      "episode_id": "train__traj_9406_to_9661__0006",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0019",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0023",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0024",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0027",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0028",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0034",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0042",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0043",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0060",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0062",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0072",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0085",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0086",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0092",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0099",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0104",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0108",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0112",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0114",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0117",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0120",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0123",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0124",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0131",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0133",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0143",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0146",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0156",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0159",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0163",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0164",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0169",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0170",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0172",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0173",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0180",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0181",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0182",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0183",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0188",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0189",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0192",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0200",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0204",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0205",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0216",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0220",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0240",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0242",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0250",
+      "start_frame": 0
+    }
+  ],
+  "final_validation_windows": [
+    {
+      "episode_id": "train__traj_9406_to_9661__0006",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0006",
+      "start_frame": 1
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0006",
+      "start_frame": 2
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0006",
+      "start_frame": 3
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0006",
+      "start_frame": 4
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0006",
+      "start_frame": 5
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0006",
+      "start_frame": 6
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0006",
+      "start_frame": 7
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0006",
+      "start_frame": 8
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0006",
+      "start_frame": 9
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0006",
+      "start_frame": 10
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0006",
+      "start_frame": 11
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0006",
+      "start_frame": 12
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0006",
+      "start_frame": 13
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0006",
+      "start_frame": 14
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0006",
+      "start_frame": 15
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0006",
+      "start_frame": 16
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0006",
+      "start_frame": 17
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0006",
+      "start_frame": 18
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0006",
+      "start_frame": 19
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0006",
+      "start_frame": 20
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0006",
+      "start_frame": 21
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0019",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0019",
+      "start_frame": 1
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0019",
+      "start_frame": 2
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0019",
+      "start_frame": 3
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0019",
+      "start_frame": 4
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0019",
+      "start_frame": 5
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0019",
+      "start_frame": 6
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0019",
+      "start_frame": 7
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0019",
+      "start_frame": 8
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0019",
+      "start_frame": 9
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0019",
+      "start_frame": 10
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0019",
+      "start_frame": 11
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0019",
+      "start_frame": 12
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0019",
+      "start_frame": 13
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0019",
+      "start_frame": 14
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0019",
+      "start_frame": 15
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0019",
+      "start_frame": 16
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0019",
+      "start_frame": 17
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0019",
+      "start_frame": 18
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0019",
+      "start_frame": 19
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0019",
+      "start_frame": 20
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0019",
+      "start_frame": 21
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0023",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0023",
+      "start_frame": 1
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0023",
+      "start_frame": 2
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0023",
+      "start_frame": 3
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0023",
+      "start_frame": 4
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0023",
+      "start_frame": 5
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0023",
+      "start_frame": 6
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0023",
+      "start_frame": 7
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0023",
+      "start_frame": 8
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0023",
+      "start_frame": 9
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0023",
+      "start_frame": 10
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0023",
+      "start_frame": 11
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0023",
+      "start_frame": 12
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0023",
+      "start_frame": 13
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0023",
+      "start_frame": 14
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0023",
+      "start_frame": 15
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0023",
+      "start_frame": 16
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0023",
+      "start_frame": 17
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0023",
+      "start_frame": 18
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0023",
+      "start_frame": 19
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0023",
+      "start_frame": 20
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0023",
+      "start_frame": 21
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0024",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0024",
+      "start_frame": 1
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0024",
+      "start_frame": 2
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0024",
+      "start_frame": 3
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0024",
+      "start_frame": 4
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0024",
+      "start_frame": 5
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0024",
+      "start_frame": 6
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0024",
+      "start_frame": 7
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0024",
+      "start_frame": 8
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0024",
+      "start_frame": 9
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0024",
+      "start_frame": 10
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0024",
+      "start_frame": 11
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0024",
+      "start_frame": 12
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0024",
+      "start_frame": 13
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0024",
+      "start_frame": 14
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0024",
+      "start_frame": 15
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0024",
+      "start_frame": 16
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0024",
+      "start_frame": 17
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0024",
+      "start_frame": 18
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0024",
+      "start_frame": 19
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0024",
+      "start_frame": 20
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0024",
+      "start_frame": 21
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0027",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0027",
+      "start_frame": 1
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0027",
+      "start_frame": 2
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0027",
+      "start_frame": 3
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0027",
+      "start_frame": 4
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0027",
+      "start_frame": 5
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0027",
+      "start_frame": 6
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0027",
+      "start_frame": 7
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0027",
+      "start_frame": 8
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0027",
+      "start_frame": 9
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0027",
+      "start_frame": 10
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0027",
+      "start_frame": 11
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0027",
+      "start_frame": 12
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0027",
+      "start_frame": 13
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0027",
+      "start_frame": 14
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0027",
+      "start_frame": 15
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0027",
+      "start_frame": 16
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0027",
+      "start_frame": 17
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0027",
+      "start_frame": 18
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0027",
+      "start_frame": 19
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0027",
+      "start_frame": 20
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0027",
+      "start_frame": 21
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0028",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0028",
+      "start_frame": 1
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0028",
+      "start_frame": 2
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0028",
+      "start_frame": 3
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0028",
+      "start_frame": 4
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0028",
+      "start_frame": 5
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0028",
+      "start_frame": 6
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0028",
+      "start_frame": 7
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0028",
+      "start_frame": 8
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0028",
+      "start_frame": 9
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0028",
+      "start_frame": 10
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0028",
+      "start_frame": 11
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0028",
+      "start_frame": 12
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0028",
+      "start_frame": 13
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0028",
+      "start_frame": 14
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0028",
+      "start_frame": 15
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0028",
+      "start_frame": 16
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0028",
+      "start_frame": 17
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0028",
+      "start_frame": 18
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0028",
+      "start_frame": 19
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0028",
+      "start_frame": 20
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0028",
+      "start_frame": 21
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0034",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0034",
+      "start_frame": 1
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0034",
+      "start_frame": 2
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0034",
+      "start_frame": 3
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0034",
+      "start_frame": 4
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0034",
+      "start_frame": 5
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0034",
+      "start_frame": 6
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0034",
+      "start_frame": 7
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0034",
+      "start_frame": 8
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0034",
+      "start_frame": 9
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0034",
+      "start_frame": 10
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0034",
+      "start_frame": 11
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0034",
+      "start_frame": 12
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0034",
+      "start_frame": 13
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0034",
+      "start_frame": 14
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0034",
+      "start_frame": 15
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0034",
+      "start_frame": 16
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0034",
+      "start_frame": 17
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0034",
+      "start_frame": 18
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0034",
+      "start_frame": 19
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0034",
+      "start_frame": 20
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0034",
+      "start_frame": 21
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0042",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0042",
+      "start_frame": 1
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0042",
+      "start_frame": 2
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0042",
+      "start_frame": 3
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0042",
+      "start_frame": 4
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0042",
+      "start_frame": 5
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0042",
+      "start_frame": 6
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0042",
+      "start_frame": 7
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0042",
+      "start_frame": 8
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0042",
+      "start_frame": 9
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0042",
+      "start_frame": 10
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0042",
+      "start_frame": 11
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0042",
+      "start_frame": 12
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0042",
+      "start_frame": 13
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0042",
+      "start_frame": 14
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0042",
+      "start_frame": 15
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0042",
+      "start_frame": 16
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0042",
+      "start_frame": 17
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0042",
+      "start_frame": 18
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0042",
+      "start_frame": 19
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0042",
+      "start_frame": 20
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0042",
+      "start_frame": 21
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0043",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0043",
+      "start_frame": 1
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0043",
+      "start_frame": 2
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0043",
+      "start_frame": 3
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0043",
+      "start_frame": 4
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0043",
+      "start_frame": 5
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0043",
+      "start_frame": 6
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0043",
+      "start_frame": 7
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0043",
+      "start_frame": 8
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0043",
+      "start_frame": 9
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0043",
+      "start_frame": 10
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0043",
+      "start_frame": 11
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0043",
+      "start_frame": 12
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0043",
+      "start_frame": 13
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0043",
+      "start_frame": 14
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0043",
+      "start_frame": 15
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0043",
+      "start_frame": 16
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0043",
+      "start_frame": 17
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0043",
+      "start_frame": 18
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0043",
+      "start_frame": 19
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0043",
+      "start_frame": 20
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0043",
+      "start_frame": 21
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0060",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0060",
+      "start_frame": 1
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0060",
+      "start_frame": 2
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0060",
+      "start_frame": 3
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0060",
+      "start_frame": 4
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0060",
+      "start_frame": 5
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0060",
+      "start_frame": 6
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0060",
+      "start_frame": 7
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0060",
+      "start_frame": 8
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0060",
+      "start_frame": 9
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0060",
+      "start_frame": 10
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0060",
+      "start_frame": 11
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0060",
+      "start_frame": 12
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0060",
+      "start_frame": 13
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0060",
+      "start_frame": 14
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0060",
+      "start_frame": 15
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0060",
+      "start_frame": 16
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0060",
+      "start_frame": 17
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0060",
+      "start_frame": 18
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0060",
+      "start_frame": 19
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0060",
+      "start_frame": 20
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0060",
+      "start_frame": 21
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0062",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0062",
+      "start_frame": 1
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0062",
+      "start_frame": 2
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0062",
+      "start_frame": 3
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0062",
+      "start_frame": 4
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0062",
+      "start_frame": 5
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0062",
+      "start_frame": 6
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0062",
+      "start_frame": 7
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0062",
+      "start_frame": 8
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0062",
+      "start_frame": 9
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0062",
+      "start_frame": 10
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0062",
+      "start_frame": 11
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0062",
+      "start_frame": 12
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0062",
+      "start_frame": 13
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0062",
+      "start_frame": 14
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0062",
+      "start_frame": 15
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0062",
+      "start_frame": 16
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0062",
+      "start_frame": 17
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0062",
+      "start_frame": 18
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0062",
+      "start_frame": 19
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0062",
+      "start_frame": 20
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0062",
+      "start_frame": 21
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0072",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0072",
+      "start_frame": 1
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0072",
+      "start_frame": 2
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0072",
+      "start_frame": 3
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0072",
+      "start_frame": 4
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0072",
+      "start_frame": 5
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0072",
+      "start_frame": 6
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0072",
+      "start_frame": 7
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0072",
+      "start_frame": 8
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0072",
+      "start_frame": 9
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0072",
+      "start_frame": 10
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0072",
+      "start_frame": 11
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0072",
+      "start_frame": 12
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0072",
+      "start_frame": 13
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0072",
+      "start_frame": 14
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0072",
+      "start_frame": 15
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0072",
+      "start_frame": 16
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0072",
+      "start_frame": 17
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0072",
+      "start_frame": 18
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0072",
+      "start_frame": 19
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0072",
+      "start_frame": 20
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0072",
+      "start_frame": 21
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0085",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0085",
+      "start_frame": 1
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0085",
+      "start_frame": 2
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0085",
+      "start_frame": 3
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0085",
+      "start_frame": 4
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0085",
+      "start_frame": 5
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0085",
+      "start_frame": 6
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0085",
+      "start_frame": 7
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0085",
+      "start_frame": 8
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0085",
+      "start_frame": 9
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0085",
+      "start_frame": 10
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0085",
+      "start_frame": 11
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0085",
+      "start_frame": 12
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0085",
+      "start_frame": 13
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0085",
+      "start_frame": 14
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0085",
+      "start_frame": 15
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0085",
+      "start_frame": 16
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0085",
+      "start_frame": 17
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0085",
+      "start_frame": 18
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0085",
+      "start_frame": 19
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0085",
+      "start_frame": 20
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0085",
+      "start_frame": 21
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0086",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0086",
+      "start_frame": 1
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0086",
+      "start_frame": 2
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0086",
+      "start_frame": 3
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0086",
+      "start_frame": 4
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0086",
+      "start_frame": 5
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0086",
+      "start_frame": 6
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0086",
+      "start_frame": 7
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0086",
+      "start_frame": 8
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0086",
+      "start_frame": 9
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0086",
+      "start_frame": 10
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0086",
+      "start_frame": 11
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0086",
+      "start_frame": 12
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0086",
+      "start_frame": 13
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0086",
+      "start_frame": 14
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0086",
+      "start_frame": 15
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0086",
+      "start_frame": 16
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0086",
+      "start_frame": 17
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0086",
+      "start_frame": 18
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0086",
+      "start_frame": 19
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0086",
+      "start_frame": 20
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0086",
+      "start_frame": 21
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0092",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0092",
+      "start_frame": 1
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0092",
+      "start_frame": 2
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0092",
+      "start_frame": 3
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0092",
+      "start_frame": 4
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0092",
+      "start_frame": 5
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0092",
+      "start_frame": 6
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0092",
+      "start_frame": 7
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0092",
+      "start_frame": 8
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0092",
+      "start_frame": 9
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0092",
+      "start_frame": 10
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0092",
+      "start_frame": 11
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0092",
+      "start_frame": 12
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0092",
+      "start_frame": 13
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0092",
+      "start_frame": 14
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0092",
+      "start_frame": 15
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0092",
+      "start_frame": 16
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0092",
+      "start_frame": 17
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0092",
+      "start_frame": 18
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0092",
+      "start_frame": 19
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0092",
+      "start_frame": 20
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0092",
+      "start_frame": 21
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0099",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0099",
+      "start_frame": 1
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0099",
+      "start_frame": 2
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0099",
+      "start_frame": 3
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0099",
+      "start_frame": 4
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0099",
+      "start_frame": 5
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0099",
+      "start_frame": 6
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0099",
+      "start_frame": 7
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0099",
+      "start_frame": 8
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0099",
+      "start_frame": 9
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0099",
+      "start_frame": 10
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0099",
+      "start_frame": 11
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0099",
+      "start_frame": 12
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0099",
+      "start_frame": 13
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0099",
+      "start_frame": 14
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0099",
+      "start_frame": 15
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0099",
+      "start_frame": 16
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0099",
+      "start_frame": 17
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0099",
+      "start_frame": 18
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0099",
+      "start_frame": 19
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0099",
+      "start_frame": 20
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0099",
+      "start_frame": 21
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0104",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0104",
+      "start_frame": 1
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0104",
+      "start_frame": 2
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0104",
+      "start_frame": 3
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0104",
+      "start_frame": 4
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0104",
+      "start_frame": 5
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0104",
+      "start_frame": 6
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0104",
+      "start_frame": 7
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0104",
+      "start_frame": 8
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0104",
+      "start_frame": 9
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0104",
+      "start_frame": 10
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0104",
+      "start_frame": 11
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0104",
+      "start_frame": 12
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0104",
+      "start_frame": 13
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0104",
+      "start_frame": 14
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0104",
+      "start_frame": 15
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0104",
+      "start_frame": 16
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0104",
+      "start_frame": 17
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0104",
+      "start_frame": 18
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0104",
+      "start_frame": 19
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0104",
+      "start_frame": 20
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0104",
+      "start_frame": 21
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0108",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0108",
+      "start_frame": 1
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0108",
+      "start_frame": 2
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0108",
+      "start_frame": 3
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0108",
+      "start_frame": 4
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0108",
+      "start_frame": 5
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0108",
+      "start_frame": 6
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0108",
+      "start_frame": 7
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0108",
+      "start_frame": 8
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0108",
+      "start_frame": 9
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0108",
+      "start_frame": 10
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0108",
+      "start_frame": 11
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0108",
+      "start_frame": 12
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0108",
+      "start_frame": 13
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0108",
+      "start_frame": 14
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0108",
+      "start_frame": 15
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0108",
+      "start_frame": 16
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0108",
+      "start_frame": 17
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0108",
+      "start_frame": 18
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0108",
+      "start_frame": 19
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0108",
+      "start_frame": 20
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0108",
+      "start_frame": 21
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0112",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0112",
+      "start_frame": 1
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0112",
+      "start_frame": 2
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0112",
+      "start_frame": 3
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0112",
+      "start_frame": 4
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0112",
+      "start_frame": 5
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0112",
+      "start_frame": 6
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0112",
+      "start_frame": 7
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0112",
+      "start_frame": 8
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0112",
+      "start_frame": 9
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0112",
+      "start_frame": 10
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0112",
+      "start_frame": 11
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0112",
+      "start_frame": 12
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0112",
+      "start_frame": 13
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0112",
+      "start_frame": 14
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0112",
+      "start_frame": 15
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0112",
+      "start_frame": 16
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0112",
+      "start_frame": 17
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0112",
+      "start_frame": 18
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0112",
+      "start_frame": 19
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0112",
+      "start_frame": 20
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0112",
+      "start_frame": 21
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0114",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0114",
+      "start_frame": 1
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0114",
+      "start_frame": 2
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0114",
+      "start_frame": 3
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0114",
+      "start_frame": 4
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0114",
+      "start_frame": 5
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0114",
+      "start_frame": 6
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0114",
+      "start_frame": 7
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0114",
+      "start_frame": 8
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0114",
+      "start_frame": 9
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0114",
+      "start_frame": 10
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0114",
+      "start_frame": 11
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0114",
+      "start_frame": 12
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0114",
+      "start_frame": 13
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0114",
+      "start_frame": 14
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0114",
+      "start_frame": 15
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0114",
+      "start_frame": 16
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0114",
+      "start_frame": 17
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0114",
+      "start_frame": 18
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0114",
+      "start_frame": 19
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0114",
+      "start_frame": 20
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0114",
+      "start_frame": 21
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0117",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0117",
+      "start_frame": 1
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0117",
+      "start_frame": 2
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0117",
+      "start_frame": 3
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0117",
+      "start_frame": 4
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0117",
+      "start_frame": 5
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0117",
+      "start_frame": 6
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0117",
+      "start_frame": 7
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0117",
+      "start_frame": 8
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0117",
+      "start_frame": 9
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0117",
+      "start_frame": 10
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0117",
+      "start_frame": 11
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0117",
+      "start_frame": 12
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0117",
+      "start_frame": 13
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0117",
+      "start_frame": 14
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0117",
+      "start_frame": 15
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0117",
+      "start_frame": 16
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0117",
+      "start_frame": 17
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0117",
+      "start_frame": 18
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0117",
+      "start_frame": 19
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0117",
+      "start_frame": 20
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0117",
+      "start_frame": 21
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0120",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0120",
+      "start_frame": 1
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0120",
+      "start_frame": 2
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0120",
+      "start_frame": 3
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0120",
+      "start_frame": 4
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0120",
+      "start_frame": 5
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0120",
+      "start_frame": 6
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0120",
+      "start_frame": 7
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0120",
+      "start_frame": 8
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0120",
+      "start_frame": 9
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0120",
+      "start_frame": 10
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0120",
+      "start_frame": 11
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0120",
+      "start_frame": 12
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0120",
+      "start_frame": 13
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0120",
+      "start_frame": 14
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0120",
+      "start_frame": 15
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0120",
+      "start_frame": 16
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0120",
+      "start_frame": 17
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0120",
+      "start_frame": 18
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0120",
+      "start_frame": 19
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0120",
+      "start_frame": 20
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0120",
+      "start_frame": 21
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0123",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0123",
+      "start_frame": 1
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0123",
+      "start_frame": 2
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0123",
+      "start_frame": 3
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0123",
+      "start_frame": 4
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0123",
+      "start_frame": 5
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0123",
+      "start_frame": 6
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0123",
+      "start_frame": 7
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0123",
+      "start_frame": 8
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0123",
+      "start_frame": 9
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0123",
+      "start_frame": 10
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0123",
+      "start_frame": 11
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0123",
+      "start_frame": 12
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0123",
+      "start_frame": 13
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0123",
+      "start_frame": 14
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0123",
+      "start_frame": 15
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0123",
+      "start_frame": 16
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0123",
+      "start_frame": 17
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0123",
+      "start_frame": 18
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0123",
+      "start_frame": 19
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0123",
+      "start_frame": 20
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0123",
+      "start_frame": 21
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0124",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0124",
+      "start_frame": 1
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0124",
+      "start_frame": 2
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0124",
+      "start_frame": 3
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0124",
+      "start_frame": 4
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0124",
+      "start_frame": 5
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0124",
+      "start_frame": 6
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0124",
+      "start_frame": 7
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0124",
+      "start_frame": 8
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0124",
+      "start_frame": 9
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0124",
+      "start_frame": 10
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0124",
+      "start_frame": 11
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0124",
+      "start_frame": 12
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0124",
+      "start_frame": 13
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0124",
+      "start_frame": 14
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0124",
+      "start_frame": 15
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0124",
+      "start_frame": 16
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0124",
+      "start_frame": 17
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0124",
+      "start_frame": 18
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0124",
+      "start_frame": 19
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0124",
+      "start_frame": 20
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0124",
+      "start_frame": 21
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0131",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0131",
+      "start_frame": 1
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0131",
+      "start_frame": 2
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0131",
+      "start_frame": 3
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0131",
+      "start_frame": 4
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0131",
+      "start_frame": 5
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0131",
+      "start_frame": 6
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0131",
+      "start_frame": 7
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0131",
+      "start_frame": 8
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0131",
+      "start_frame": 9
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0131",
+      "start_frame": 10
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0131",
+      "start_frame": 11
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0131",
+      "start_frame": 12
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0131",
+      "start_frame": 13
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0131",
+      "start_frame": 14
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0131",
+      "start_frame": 15
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0131",
+      "start_frame": 16
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0131",
+      "start_frame": 17
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0131",
+      "start_frame": 18
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0131",
+      "start_frame": 19
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0131",
+      "start_frame": 20
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0131",
+      "start_frame": 21
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0133",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0133",
+      "start_frame": 1
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0133",
+      "start_frame": 2
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0133",
+      "start_frame": 3
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0133",
+      "start_frame": 4
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0133",
+      "start_frame": 5
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0133",
+      "start_frame": 6
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0133",
+      "start_frame": 7
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0133",
+      "start_frame": 8
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0133",
+      "start_frame": 9
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0133",
+      "start_frame": 10
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0133",
+      "start_frame": 11
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0133",
+      "start_frame": 12
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0133",
+      "start_frame": 13
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0133",
+      "start_frame": 14
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0133",
+      "start_frame": 15
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0133",
+      "start_frame": 16
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0133",
+      "start_frame": 17
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0133",
+      "start_frame": 18
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0133",
+      "start_frame": 19
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0133",
+      "start_frame": 20
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0133",
+      "start_frame": 21
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0143",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0143",
+      "start_frame": 1
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0143",
+      "start_frame": 2
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0143",
+      "start_frame": 3
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0143",
+      "start_frame": 4
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0143",
+      "start_frame": 5
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0143",
+      "start_frame": 6
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0143",
+      "start_frame": 7
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0143",
+      "start_frame": 8
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0143",
+      "start_frame": 9
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0143",
+      "start_frame": 10
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0143",
+      "start_frame": 11
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0143",
+      "start_frame": 12
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0143",
+      "start_frame": 13
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0143",
+      "start_frame": 14
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0143",
+      "start_frame": 15
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0143",
+      "start_frame": 16
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0143",
+      "start_frame": 17
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0143",
+      "start_frame": 18
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0143",
+      "start_frame": 19
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0143",
+      "start_frame": 20
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0143",
+      "start_frame": 21
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0146",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0146",
+      "start_frame": 1
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0146",
+      "start_frame": 2
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0146",
+      "start_frame": 3
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0146",
+      "start_frame": 4
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0146",
+      "start_frame": 5
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0146",
+      "start_frame": 6
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0146",
+      "start_frame": 7
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0146",
+      "start_frame": 8
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0146",
+      "start_frame": 9
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0146",
+      "start_frame": 10
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0146",
+      "start_frame": 11
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0146",
+      "start_frame": 12
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0146",
+      "start_frame": 13
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0146",
+      "start_frame": 14
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0146",
+      "start_frame": 15
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0146",
+      "start_frame": 16
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0146",
+      "start_frame": 17
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0146",
+      "start_frame": 18
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0146",
+      "start_frame": 19
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0146",
+      "start_frame": 20
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0146",
+      "start_frame": 21
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0156",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0156",
+      "start_frame": 1
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0156",
+      "start_frame": 2
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0156",
+      "start_frame": 3
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0156",
+      "start_frame": 4
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0156",
+      "start_frame": 5
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0156",
+      "start_frame": 6
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0156",
+      "start_frame": 7
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0156",
+      "start_frame": 8
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0156",
+      "start_frame": 9
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0156",
+      "start_frame": 10
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0156",
+      "start_frame": 11
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0156",
+      "start_frame": 12
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0156",
+      "start_frame": 13
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0156",
+      "start_frame": 14
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0156",
+      "start_frame": 15
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0156",
+      "start_frame": 16
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0156",
+      "start_frame": 17
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0156",
+      "start_frame": 18
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0156",
+      "start_frame": 19
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0156",
+      "start_frame": 20
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0156",
+      "start_frame": 21
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0159",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0159",
+      "start_frame": 1
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0159",
+      "start_frame": 2
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0159",
+      "start_frame": 3
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0159",
+      "start_frame": 4
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0159",
+      "start_frame": 5
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0159",
+      "start_frame": 6
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0159",
+      "start_frame": 7
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0159",
+      "start_frame": 8
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0159",
+      "start_frame": 9
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0159",
+      "start_frame": 10
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0159",
+      "start_frame": 11
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0159",
+      "start_frame": 12
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0159",
+      "start_frame": 13
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0159",
+      "start_frame": 14
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0159",
+      "start_frame": 15
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0159",
+      "start_frame": 16
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0159",
+      "start_frame": 17
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0159",
+      "start_frame": 18
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0159",
+      "start_frame": 19
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0159",
+      "start_frame": 20
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0159",
+      "start_frame": 21
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0163",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0163",
+      "start_frame": 1
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0163",
+      "start_frame": 2
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0163",
+      "start_frame": 3
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0163",
+      "start_frame": 4
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0163",
+      "start_frame": 5
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0163",
+      "start_frame": 6
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0163",
+      "start_frame": 7
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0163",
+      "start_frame": 8
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0163",
+      "start_frame": 9
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0163",
+      "start_frame": 10
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0163",
+      "start_frame": 11
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0163",
+      "start_frame": 12
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0163",
+      "start_frame": 13
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0163",
+      "start_frame": 14
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0163",
+      "start_frame": 15
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0163",
+      "start_frame": 16
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0163",
+      "start_frame": 17
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0163",
+      "start_frame": 18
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0163",
+      "start_frame": 19
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0163",
+      "start_frame": 20
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0163",
+      "start_frame": 21
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0164",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0164",
+      "start_frame": 1
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0164",
+      "start_frame": 2
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0164",
+      "start_frame": 3
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0164",
+      "start_frame": 4
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0164",
+      "start_frame": 5
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0164",
+      "start_frame": 6
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0164",
+      "start_frame": 7
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0164",
+      "start_frame": 8
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0164",
+      "start_frame": 9
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0164",
+      "start_frame": 10
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0164",
+      "start_frame": 11
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0164",
+      "start_frame": 12
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0164",
+      "start_frame": 13
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0164",
+      "start_frame": 14
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0164",
+      "start_frame": 15
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0164",
+      "start_frame": 16
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0164",
+      "start_frame": 17
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0164",
+      "start_frame": 18
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0164",
+      "start_frame": 19
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0164",
+      "start_frame": 20
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0164",
+      "start_frame": 21
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0169",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0169",
+      "start_frame": 1
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0169",
+      "start_frame": 2
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0169",
+      "start_frame": 3
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0169",
+      "start_frame": 4
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0169",
+      "start_frame": 5
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0169",
+      "start_frame": 6
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0169",
+      "start_frame": 7
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0169",
+      "start_frame": 8
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0169",
+      "start_frame": 9
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0169",
+      "start_frame": 10
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0169",
+      "start_frame": 11
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0169",
+      "start_frame": 12
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0169",
+      "start_frame": 13
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0169",
+      "start_frame": 14
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0169",
+      "start_frame": 15
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0169",
+      "start_frame": 16
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0169",
+      "start_frame": 17
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0169",
+      "start_frame": 18
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0169",
+      "start_frame": 19
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0169",
+      "start_frame": 20
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0169",
+      "start_frame": 21
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0170",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0170",
+      "start_frame": 1
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0170",
+      "start_frame": 2
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0170",
+      "start_frame": 3
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0170",
+      "start_frame": 4
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0170",
+      "start_frame": 5
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0170",
+      "start_frame": 6
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0170",
+      "start_frame": 7
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0170",
+      "start_frame": 8
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0170",
+      "start_frame": 9
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0170",
+      "start_frame": 10
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0170",
+      "start_frame": 11
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0170",
+      "start_frame": 12
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0170",
+      "start_frame": 13
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0170",
+      "start_frame": 14
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0170",
+      "start_frame": 15
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0170",
+      "start_frame": 16
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0170",
+      "start_frame": 17
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0170",
+      "start_frame": 18
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0170",
+      "start_frame": 19
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0170",
+      "start_frame": 20
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0170",
+      "start_frame": 21
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0172",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0172",
+      "start_frame": 1
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0172",
+      "start_frame": 2
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0172",
+      "start_frame": 3
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0172",
+      "start_frame": 4
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0172",
+      "start_frame": 5
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0172",
+      "start_frame": 6
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0172",
+      "start_frame": 7
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0172",
+      "start_frame": 8
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0172",
+      "start_frame": 9
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0172",
+      "start_frame": 10
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0172",
+      "start_frame": 11
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0172",
+      "start_frame": 12
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0172",
+      "start_frame": 13
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0172",
+      "start_frame": 14
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0172",
+      "start_frame": 15
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0172",
+      "start_frame": 16
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0172",
+      "start_frame": 17
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0172",
+      "start_frame": 18
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0172",
+      "start_frame": 19
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0172",
+      "start_frame": 20
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0172",
+      "start_frame": 21
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0173",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0173",
+      "start_frame": 1
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0173",
+      "start_frame": 2
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0173",
+      "start_frame": 3
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0173",
+      "start_frame": 4
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0173",
+      "start_frame": 5
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0173",
+      "start_frame": 6
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0173",
+      "start_frame": 7
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0173",
+      "start_frame": 8
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0173",
+      "start_frame": 9
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0173",
+      "start_frame": 10
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0173",
+      "start_frame": 11
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0173",
+      "start_frame": 12
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0173",
+      "start_frame": 13
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0173",
+      "start_frame": 14
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0173",
+      "start_frame": 15
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0173",
+      "start_frame": 16
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0173",
+      "start_frame": 17
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0173",
+      "start_frame": 18
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0173",
+      "start_frame": 19
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0173",
+      "start_frame": 20
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0173",
+      "start_frame": 21
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0180",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0180",
+      "start_frame": 1
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0180",
+      "start_frame": 2
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0180",
+      "start_frame": 3
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0180",
+      "start_frame": 4
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0180",
+      "start_frame": 5
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0180",
+      "start_frame": 6
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0180",
+      "start_frame": 7
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0180",
+      "start_frame": 8
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0180",
+      "start_frame": 9
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0180",
+      "start_frame": 10
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0180",
+      "start_frame": 11
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0180",
+      "start_frame": 12
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0180",
+      "start_frame": 13
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0180",
+      "start_frame": 14
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0180",
+      "start_frame": 15
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0180",
+      "start_frame": 16
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0180",
+      "start_frame": 17
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0180",
+      "start_frame": 18
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0180",
+      "start_frame": 19
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0180",
+      "start_frame": 20
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0180",
+      "start_frame": 21
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0181",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0181",
+      "start_frame": 1
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0181",
+      "start_frame": 2
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0181",
+      "start_frame": 3
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0181",
+      "start_frame": 4
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0181",
+      "start_frame": 5
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0181",
+      "start_frame": 6
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0181",
+      "start_frame": 7
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0181",
+      "start_frame": 8
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0181",
+      "start_frame": 9
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0181",
+      "start_frame": 10
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0181",
+      "start_frame": 11
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0181",
+      "start_frame": 12
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0181",
+      "start_frame": 13
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0181",
+      "start_frame": 14
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0181",
+      "start_frame": 15
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0181",
+      "start_frame": 16
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0181",
+      "start_frame": 17
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0181",
+      "start_frame": 18
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0181",
+      "start_frame": 19
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0181",
+      "start_frame": 20
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0181",
+      "start_frame": 21
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0182",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0182",
+      "start_frame": 1
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0182",
+      "start_frame": 2
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0182",
+      "start_frame": 3
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0182",
+      "start_frame": 4
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0182",
+      "start_frame": 5
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0182",
+      "start_frame": 6
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0182",
+      "start_frame": 7
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0182",
+      "start_frame": 8
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0182",
+      "start_frame": 9
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0182",
+      "start_frame": 10
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0182",
+      "start_frame": 11
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0182",
+      "start_frame": 12
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0182",
+      "start_frame": 13
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0182",
+      "start_frame": 14
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0182",
+      "start_frame": 15
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0182",
+      "start_frame": 16
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0182",
+      "start_frame": 17
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0182",
+      "start_frame": 18
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0182",
+      "start_frame": 19
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0182",
+      "start_frame": 20
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0182",
+      "start_frame": 21
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0183",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0183",
+      "start_frame": 1
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0183",
+      "start_frame": 2
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0183",
+      "start_frame": 3
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0183",
+      "start_frame": 4
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0183",
+      "start_frame": 5
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0183",
+      "start_frame": 6
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0183",
+      "start_frame": 7
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0183",
+      "start_frame": 8
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0183",
+      "start_frame": 9
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0183",
+      "start_frame": 10
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0183",
+      "start_frame": 11
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0183",
+      "start_frame": 12
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0183",
+      "start_frame": 13
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0183",
+      "start_frame": 14
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0183",
+      "start_frame": 15
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0183",
+      "start_frame": 16
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0183",
+      "start_frame": 17
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0183",
+      "start_frame": 18
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0183",
+      "start_frame": 19
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0183",
+      "start_frame": 20
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0183",
+      "start_frame": 21
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0188",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0188",
+      "start_frame": 1
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0188",
+      "start_frame": 2
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0188",
+      "start_frame": 3
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0188",
+      "start_frame": 4
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0188",
+      "start_frame": 5
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0188",
+      "start_frame": 6
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0188",
+      "start_frame": 7
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0188",
+      "start_frame": 8
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0188",
+      "start_frame": 9
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0188",
+      "start_frame": 10
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0188",
+      "start_frame": 11
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0188",
+      "start_frame": 12
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0188",
+      "start_frame": 13
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0188",
+      "start_frame": 14
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0188",
+      "start_frame": 15
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0188",
+      "start_frame": 16
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0188",
+      "start_frame": 17
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0188",
+      "start_frame": 18
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0188",
+      "start_frame": 19
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0188",
+      "start_frame": 20
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0188",
+      "start_frame": 21
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0189",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0189",
+      "start_frame": 1
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0189",
+      "start_frame": 2
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0189",
+      "start_frame": 3
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0189",
+      "start_frame": 4
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0189",
+      "start_frame": 5
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0189",
+      "start_frame": 6
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0189",
+      "start_frame": 7
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0189",
+      "start_frame": 8
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0189",
+      "start_frame": 9
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0189",
+      "start_frame": 10
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0189",
+      "start_frame": 11
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0189",
+      "start_frame": 12
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0189",
+      "start_frame": 13
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0189",
+      "start_frame": 14
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0189",
+      "start_frame": 15
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0189",
+      "start_frame": 16
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0189",
+      "start_frame": 17
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0189",
+      "start_frame": 18
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0189",
+      "start_frame": 19
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0189",
+      "start_frame": 20
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0189",
+      "start_frame": 21
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0192",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0192",
+      "start_frame": 1
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0192",
+      "start_frame": 2
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0192",
+      "start_frame": 3
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0192",
+      "start_frame": 4
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0192",
+      "start_frame": 5
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0192",
+      "start_frame": 6
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0192",
+      "start_frame": 7
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0192",
+      "start_frame": 8
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0192",
+      "start_frame": 9
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0192",
+      "start_frame": 10
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0192",
+      "start_frame": 11
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0192",
+      "start_frame": 12
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0192",
+      "start_frame": 13
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0192",
+      "start_frame": 14
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0192",
+      "start_frame": 15
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0192",
+      "start_frame": 16
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0192",
+      "start_frame": 17
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0192",
+      "start_frame": 18
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0192",
+      "start_frame": 19
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0192",
+      "start_frame": 20
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0192",
+      "start_frame": 21
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0200",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0200",
+      "start_frame": 1
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0200",
+      "start_frame": 2
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0200",
+      "start_frame": 3
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0200",
+      "start_frame": 4
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0200",
+      "start_frame": 5
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0200",
+      "start_frame": 6
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0200",
+      "start_frame": 7
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0200",
+      "start_frame": 8
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0200",
+      "start_frame": 9
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0200",
+      "start_frame": 10
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0200",
+      "start_frame": 11
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0200",
+      "start_frame": 12
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0200",
+      "start_frame": 13
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0200",
+      "start_frame": 14
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0200",
+      "start_frame": 15
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0200",
+      "start_frame": 16
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0200",
+      "start_frame": 17
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0200",
+      "start_frame": 18
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0200",
+      "start_frame": 19
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0200",
+      "start_frame": 20
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0200",
+      "start_frame": 21
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0204",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0204",
+      "start_frame": 1
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0204",
+      "start_frame": 2
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0204",
+      "start_frame": 3
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0204",
+      "start_frame": 4
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0204",
+      "start_frame": 5
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0204",
+      "start_frame": 6
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0204",
+      "start_frame": 7
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0204",
+      "start_frame": 8
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0204",
+      "start_frame": 9
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0204",
+      "start_frame": 10
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0204",
+      "start_frame": 11
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0204",
+      "start_frame": 12
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0204",
+      "start_frame": 13
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0204",
+      "start_frame": 14
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0204",
+      "start_frame": 15
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0204",
+      "start_frame": 16
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0204",
+      "start_frame": 17
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0204",
+      "start_frame": 18
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0204",
+      "start_frame": 19
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0204",
+      "start_frame": 20
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0204",
+      "start_frame": 21
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0205",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0205",
+      "start_frame": 1
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0205",
+      "start_frame": 2
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0205",
+      "start_frame": 3
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0205",
+      "start_frame": 4
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0205",
+      "start_frame": 5
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0205",
+      "start_frame": 6
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0205",
+      "start_frame": 7
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0205",
+      "start_frame": 8
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0205",
+      "start_frame": 9
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0205",
+      "start_frame": 10
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0205",
+      "start_frame": 11
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0205",
+      "start_frame": 12
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0205",
+      "start_frame": 13
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0205",
+      "start_frame": 14
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0205",
+      "start_frame": 15
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0205",
+      "start_frame": 16
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0205",
+      "start_frame": 17
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0205",
+      "start_frame": 18
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0205",
+      "start_frame": 19
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0205",
+      "start_frame": 20
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0205",
+      "start_frame": 21
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0216",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0216",
+      "start_frame": 1
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0216",
+      "start_frame": 2
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0216",
+      "start_frame": 3
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0216",
+      "start_frame": 4
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0216",
+      "start_frame": 5
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0216",
+      "start_frame": 6
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0216",
+      "start_frame": 7
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0216",
+      "start_frame": 8
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0216",
+      "start_frame": 9
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0216",
+      "start_frame": 10
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0216",
+      "start_frame": 11
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0216",
+      "start_frame": 12
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0216",
+      "start_frame": 13
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0216",
+      "start_frame": 14
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0216",
+      "start_frame": 15
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0216",
+      "start_frame": 16
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0216",
+      "start_frame": 17
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0216",
+      "start_frame": 18
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0216",
+      "start_frame": 19
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0216",
+      "start_frame": 20
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0216",
+      "start_frame": 21
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0220",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0220",
+      "start_frame": 1
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0220",
+      "start_frame": 2
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0220",
+      "start_frame": 3
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0220",
+      "start_frame": 4
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0220",
+      "start_frame": 5
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0220",
+      "start_frame": 6
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0220",
+      "start_frame": 7
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0220",
+      "start_frame": 8
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0220",
+      "start_frame": 9
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0220",
+      "start_frame": 10
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0220",
+      "start_frame": 11
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0220",
+      "start_frame": 12
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0220",
+      "start_frame": 13
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0220",
+      "start_frame": 14
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0220",
+      "start_frame": 15
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0220",
+      "start_frame": 16
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0220",
+      "start_frame": 17
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0220",
+      "start_frame": 18
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0220",
+      "start_frame": 19
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0220",
+      "start_frame": 20
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0220",
+      "start_frame": 21
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0240",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0240",
+      "start_frame": 1
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0240",
+      "start_frame": 2
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0240",
+      "start_frame": 3
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0240",
+      "start_frame": 4
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0240",
+      "start_frame": 5
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0240",
+      "start_frame": 6
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0240",
+      "start_frame": 7
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0240",
+      "start_frame": 8
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0240",
+      "start_frame": 9
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0240",
+      "start_frame": 10
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0240",
+      "start_frame": 11
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0240",
+      "start_frame": 12
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0240",
+      "start_frame": 13
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0240",
+      "start_frame": 14
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0240",
+      "start_frame": 15
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0240",
+      "start_frame": 16
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0240",
+      "start_frame": 17
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0240",
+      "start_frame": 18
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0240",
+      "start_frame": 19
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0240",
+      "start_frame": 20
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0240",
+      "start_frame": 21
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0242",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0242",
+      "start_frame": 1
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0242",
+      "start_frame": 2
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0242",
+      "start_frame": 3
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0242",
+      "start_frame": 4
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0242",
+      "start_frame": 5
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0242",
+      "start_frame": 6
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0242",
+      "start_frame": 7
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0242",
+      "start_frame": 8
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0242",
+      "start_frame": 9
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0242",
+      "start_frame": 10
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0242",
+      "start_frame": 11
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0242",
+      "start_frame": 12
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0242",
+      "start_frame": 13
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0242",
+      "start_frame": 14
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0242",
+      "start_frame": 15
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0242",
+      "start_frame": 16
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0242",
+      "start_frame": 17
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0242",
+      "start_frame": 18
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0242",
+      "start_frame": 19
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0242",
+      "start_frame": 20
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0242",
+      "start_frame": 21
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0250",
+      "start_frame": 0
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0250",
+      "start_frame": 1
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0250",
+      "start_frame": 2
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0250",
+      "start_frame": 3
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0250",
+      "start_frame": 4
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0250",
+      "start_frame": 5
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0250",
+      "start_frame": 6
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0250",
+      "start_frame": 7
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0250",
+      "start_frame": 8
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0250",
+      "start_frame": 9
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0250",
+      "start_frame": 10
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0250",
+      "start_frame": 11
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0250",
+      "start_frame": 12
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0250",
+      "start_frame": 13
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0250",
+      "start_frame": 14
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0250",
+      "start_frame": 15
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0250",
+      "start_frame": 16
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0250",
+      "start_frame": 17
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0250",
+      "start_frame": 18
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0250",
+      "start_frame": 19
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0250",
+      "start_frame": 20
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0250",
+      "start_frame": 21
+    }
+  ],
+  "visual_examples": [
+    {
+      "episode_id": "train__traj_9406_to_9661__0204",
+      "start_frame": 1,
+      "recursive_index": 133,
+      "change_group": "lower_change",
+      "mean_future_copy_mse": 0.005873076152056456
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0133",
+      "start_frame": 2,
+      "recursive_index": 77,
+      "change_group": "lower_change",
+      "mean_future_copy_mse": 0.021629540249705315
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0019",
+      "start_frame": 1,
+      "recursive_index": 4,
+      "change_group": "lower_change",
+      "mean_future_copy_mse": 0.021675702184438705
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0117",
+      "start_frame": 0,
+      "recursive_index": 60,
+      "change_group": "higher_change",
+      "mean_future_copy_mse": 0.10219191014766693
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0220",
+      "start_frame": 0,
+      "recursive_index": 141,
+      "change_group": "higher_change",
+      "mean_future_copy_mse": 0.09277837723493576
+    },
+    {
+      "episode_id": "train__traj_9406_to_9661__0086",
+      "start_frame": 2,
+      "recursive_index": 41,
+      "change_group": "higher_change",
+      "mean_future_copy_mse": 0.08620330691337585
+    }
+  ],
+  "prediction": "One step only; backbone fixed, new residual head random",
+  "diffusion": "100-step cosine schedule, v target, residual=2*(target-coarse), 50-step eta=0 DDIM; x0 clipped [-2,2], final RGB clipped [0,1]",
+  "selection": "All three fixed-seed samples; no oracle sample selection. Eligible first, then LPIPS + boundary normalized to original reference",
+  "scope": "Pilot validation only; no official test or viewer replacement"
+}

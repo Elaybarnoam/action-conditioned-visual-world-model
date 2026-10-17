@@ -1,7 +1,8 @@
 [project]
 name = "visual-world-model"
-version = "0.1.0"
-description = "A module-by-module visual world model learning practice"
+version = "1.0.0"
+description = "Frozen empirical study of action-conditioned deterministic and diffusion residual decoders"
+authors = [{name = "Elay Barnoam"}]
 requires-python = ">=3.11,<3.12"
 dependencies = [
     "torch==2.13.0",
@@ -16,6 +17,10 @@ dependencies = [
 
 [dependency-groups]
 dev = ["pytest>=8,<10", "ruff>=0.14,<1"]
+
+[project.urls]
+Repository = "https://github.com/Elaybarnoam/action-conditioned-visual-world-model"
+Documentation = "https://github.com/Elaybarnoam/action-conditioned-visual-world-model/tree/main/docs"
 
 [tool.uv]
 package = false

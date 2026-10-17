@@ -1,0 +1,14 @@
+{
+  "dataset": "data/bair-10000/prepared",
+  "cache": "data/bair-10000/.cache/training",
+  "reference": "evaluation/runs/run-030/checkpoints/best.pt",
+  "protocol": "configs/blur-protocol.json",
+  "device": "cuda:0",
+  "updates": 12500,
+  "validate_every": 1000,
+  "loader_workers": 2,
+  "gradient_weight": 1.0,
+  "capacity_latents": [128, 256],
+  "selection": "Lowest validation one-step MSE among reference and all world-model candidates",
+  "capacity_trigger": "Run matched capacity comparison if blur/edge error remains after loss comparison"
+}

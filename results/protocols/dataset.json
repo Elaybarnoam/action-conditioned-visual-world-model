@@ -1,0 +1,9 @@
+{
+  "manifest_sha256": "198376e49c0cd94b1163e52321504f4118ea79443b7d32d4100add7db3072649",
+  "counts": {
+    "train": 10000,
+    "validation": 51,
+    "test": 256
+  },
+  "full_manifest": "inference release bundle: dataset-manifest.json"
+}

@@ -1,0 +1,35 @@
+name: CI
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: '3.11'
+      - name: Install locked ordinary dependencies with official CPU Torch
+        run: |
+          uv venv --python 3.11
+          uv export --frozen --no-hashes --no-emit-project --no-emit-package torch --no-emit-package torchvision > /tmp/locked.txt
+          python - <<'PY'
+          from pathlib import Path
+          lines=Path('/tmp/locked.txt').read_text().splitlines()
+          clean=[line for line in lines if not line.startswith(('--', 'nvidia-', 'cuda-', 'triton=='))]
+          Path('/tmp/cpu-requirements.txt').write_text('\n'.join(clean)+'\n')
+          PY
+          uv pip install 'torch==2.13.0+cpu' 'torchvision==0.28.0+cpu' --index-url https://download.pytorch.org/whl/cpu
+          uv pip install -r /tmp/cpu-requirements.txt
+      - name: Lint, format and test
+        run: |
+          .venv/bin/ruff check src tests --no-cache
+          .venv/bin/ruff format src tests --check --no-cache
+          .venv/bin/pytest -q
+      - name: Verify frozen evidence and reproduction table
+        run: |
+          python -m src.publication verify
+          python -m src.evaluation.publication --check

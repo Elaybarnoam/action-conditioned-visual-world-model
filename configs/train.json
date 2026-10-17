@@ -1,0 +1,14 @@
+{
+  "seed": 3,
+  "device": "cuda:0",
+  "batch_size": 16,
+  "context_length": 8,
+  "feature_size": 256,
+  "latent_size": 128,
+  "epochs": 10,
+  "learning_rate": 0.0003,
+  "gradient_clip": 10.0,
+  "changed_region_epsilon": 0.05,
+  "normalize_features": true,
+  "runs_directory": "evaluation/runs"
+}

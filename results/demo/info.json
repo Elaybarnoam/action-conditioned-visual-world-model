@@ -1,0 +1,49 @@
+{
+  "episodes": [
+    "train__traj_9406_to_9661__0204",
+    "train__traj_9406_to_9661__0133",
+    "train__traj_9406_to_9661__0019",
+    "train__traj_9406_to_9661__0117",
+    "train__traj_9406_to_9661__0220",
+    "train__traj_9406_to_9661__0086"
+  ],
+  "run": "published-v1.0.0",
+  "source_run": "run-116",
+  "sample_seeds": [
+    1301,
+    2603,
+    3907
+  ],
+  "aggregate": {
+    "Original": {
+      "samples": 1122,
+      "mse": 0.008158266101196016,
+      "changed_mse": 0.02608910116853492,
+      "gradient_mae": 0.041478533687903385,
+      "ssim": 0.8291224637558541,
+      "lpips": 0.1220697232799309,
+      "edge_ratio": 0.7735227535008959,
+      "boundary_channel_fraction": 0.0
+    },
+    "MSE U-Net": {
+      "samples": 1122,
+      "mse": 0.005388066275500768,
+      "changed_mse": 0.01890772460392327,
+      "gradient_mae": 0.028624060409352742,
+      "ssim": 0.9040012568394769,
+      "lpips": 0.05671027378982627,
+      "edge_ratio": 0.8907998063985039,
+      "boundary_channel_fraction": 0.006687175827899024
+    },
+    "Diffusion": {
+      "samples": 3366,
+      "mse": 0.010173870480266044,
+      "changed_mse": 0.036780177620572174,
+      "gradient_mae": 0.03628376281620471,
+      "ssim": 0.8482244783969274,
+      "lpips": 0.04643325163485882,
+      "edge_ratio": 1.0199101735493008,
+      "boundary_channel_fraction": 0.008895393755133527
+    }
+  }
+}

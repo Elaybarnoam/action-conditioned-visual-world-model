@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "Please cite this versioned empirical research software and its frozen results."
+type: software
+title: "Action-Conditioned Visual Prediction: Deterministic and Diffusion Residual Decoders on BAIR"
+authors:
+  - family-names: Barnoam
+    given-names: Elay
+version: 1.0.0
+date-released: 2026-10-17
+url: "https://github.com/Elaybarnoam/action-conditioned-visual-world-model"
+repository-code: "https://github.com/Elaybarnoam/action-conditioned-visual-world-model"
+license: MIT
+abstract: "A frozen empirical study of one-step deterministic and diffusion residual image-generation heads conditioned on a shared action-conditioned visual world model. Includes paired controls, exact saved predictions, per-window scores, reproducible evaluation and negative results."
+keywords:
+  - world models
+  - video prediction
+  - diffusion
+  - representation learning
+  - reproducibility

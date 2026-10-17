@@ -1,0 +1,15 @@
+{
+  "seed": 3,
+  "device": "cuda:0",
+  "dtype": "float32",
+  "batch_size": 2,
+  "context_length": 8,
+  "image_channels": 3,
+  "image_height": 64,
+  "image_width": 64,
+  "action_size": 4,
+  "feature_size": 256,
+  "latent_size": 128,
+  "check_learning_rate": 0.1,
+  "runs_directory": "evaluation/runs"
+}

@@ -178,7 +178,9 @@ def train_head(
                 meta["best_report"],
             )
             # The selected EMA may precede the resume point. Preserve its original checkpoint.
-            previous_best = Path(meta["training_run"]) / "checkpoints/best.pt"
+            previous_best = (
+                Path(meta["training_run"]) / "checkpoints" / f"update-{best_update:06d}.pt"
+            )
             checkpoint_dir.mkdir(parents=True, exist_ok=True)
             shutil.copyfile(previous_best, checkpoint_dir / "best.pt")
         else:

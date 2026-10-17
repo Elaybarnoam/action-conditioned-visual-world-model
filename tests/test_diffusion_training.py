@@ -91,6 +91,28 @@ def test_diffusion_resume_reproduces_model_ema_optimizer_and_cursor(tmp_path, mo
             assert torch.equal(value, second["optimizer"]["state"][parameter][key])
     assert first["metadata"]["sampler"]["cursor"] == second["metadata"]["sampler"]["cursor"] == 2
     assert torch.equal(first["rng"]["torch"], second["rng"]["torch"])
+    # A later best file must not leak future weights into an earlier resume point.
+    torch.save(
+        {**first, "metadata": {**first["metadata"], "best_update": 2}},
+        original / "checkpoints/best.pt",
+    )
+    earlier = diffusion.train_head(
+        config,
+        root,
+        data,
+        data,
+        reference,
+        settings,
+        "diffusion",
+        None,
+        score,
+        resume_from=original / "checkpoints/update-000001.pt",
+    )
+    preserved = torch.load(earlier / "checkpoints/best.pt", weights_only=True)
+    at_resume = torch.load(original / "checkpoints/update-000000.pt", weights_only=True)
+    assert all(
+        torch.equal(value, preserved["model"][key]) for key, value in at_resume["model"].items()
+    )
     # A changed objective/sampling protocol cannot silently continue this checkpoint.
     import pytest
 
