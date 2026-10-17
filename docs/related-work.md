@@ -1,5 +1,16 @@
 # Related work and positioning
 
+- **Learned world representations.** Ha and Schmidhuber's
+  [World Models (2018)](https://arxiv.org/abs/1803.10122) studies compressed
+  spatial/temporal representations. This project investigates the learning and
+  evaluation of prediction components.
+- **Recurrent sequence encoding.** Cho et al.'s
+  [RNN Encoder-Decoder work (2014)](https://arxiv.org/abs/1406.1078) provides
+  background for recurrent sequence representations and joint optimization.
+  The implemented history summarizer uses a GRU.
+- **Action-conditioned pixel motion.** Finn, Goodfellow and Levine
+  [study visual prediction with explicit pixel motion (2016)](https://arxiv.org/abs/1605.07157).
+  This provides prior context for the appearance/transport questions in phases C/D.
 - **BAIR visual prediction.** Ebert et al., *Self-Supervised Visual Planning
   with Temporal Skip Connections* (2017), provides the dataset context.
   [Paper](https://arxiv.org/abs/1710.05268).
@@ -20,12 +31,12 @@
   autoregressive latent-token prediction with a video diffusion decoder;
   [DIAMOND](https://arxiv.org/abs/2405.12399) uses diffusion for action-conditioned
   world modeling. These systems differ in data, training scale, representation
-  and tasks from this small residual-head pilot.
+  and tasks from this project's final residual-head comparison.
 - **Perceptual evaluation.** Zhang et al., *The Unreasonable Effectiveness of
   Deep Features as a Perceptual Metric* (2018), introduces the LPIPS framework.
   [Paper](https://arxiv.org/abs/1801.03924).
 
-This repository is an empirical implementation and matched comparison. It
+This repository is a sequence of development experiments and controlled comparisons. It
 does not replicate published paper scores or establish an algorithmic novelty.
 In particular, our diffusion head supplements a frozen conventional decoder;
 it is neither a replacement for all latent dynamics nor a scale-equivalent

@@ -1,0 +1,449 @@
+{
+  "status": {
+    "kind": "experiment-suite-recovery",
+    "purpose": "Finish frozen action ablation and report",
+    "status": "completed",
+    "started_at": "2026-10-16T16:10:32.355383+00:00",
+    "finished_at": "2026-10-16T16:10:43.425471+00:00"
+  },
+  "results": {
+    "tiny": {
+      "best_score": 0.0013764820741926087,
+      "best_update": 1950,
+      "updates_completed": 1950,
+      "initial_parameters_sha256": "1fb09c99eb7b65ea11c0d36771852aa43cafed32d9d041742bcbb8595d279462"
+    },
+    "history_baseline": {
+      "horizon_1": {
+        "recursive": {
+          "windows": 153,
+          "mse": 0.031088642082085796,
+          "changed_mse": 0.05572202715267933,
+          "changed_windows": 153,
+          "empty_changed_windows": 0
+        },
+        "refreshed": {
+          "windows": 153,
+          "mse": 0.031088642082085796,
+          "changed_mse": 0.05572202715267933,
+          "changed_windows": 153,
+          "empty_changed_windows": 0
+        },
+        "copy": {
+          "windows": 153,
+          "mse": 0.022115507805436543,
+          "changed_mse": 0.08711357129542949,
+          "changed_windows": 153,
+          "empty_changed_windows": 0
+        }
+      },
+      "horizon_20": {
+        "recursive": {
+          "windows": 153,
+          "mse": 0.0858696399414851,
+          "changed_mse": 0.09363096689476687,
+          "changed_windows": 153,
+          "empty_changed_windows": 0
+        },
+        "refreshed": {
+          "windows": 153,
+          "mse": 0.029993968802729462,
+          "changed_mse": 0.03951162415757483,
+          "changed_windows": 153,
+          "empty_changed_windows": 0
+        },
+        "copy": {
+          "windows": 153,
+          "mse": 0.05806142179404988,
+          "changed_mse": 0.12248905136986496,
+          "changed_windows": 153,
+          "empty_changed_windows": 0
+        }
+      }
+    },
+    "one_step_control": {
+      "best_score": 0.03167212456248953,
+      "best_update": 2570,
+      "updates_completed": 2570,
+      "initial_parameters_sha256": "1fb09c99eb7b65ea11c0d36771852aa43cafed32d9d041742bcbb8595d279462"
+    },
+    "multi_step": {
+      "best_score": 0.030975665053794302,
+      "best_update": 2570,
+      "updates_completed": 2570,
+      "initial_parameters_sha256": "1fb09c99eb7b65ea11c0d36771852aa43cafed32d9d041742bcbb8595d279462"
+    },
+    "history_one_step_control": {
+      "horizon_1": {
+        "recursive": {
+          "windows": 153,
+          "mse": 0.03191641673713533,
+          "changed_mse": 0.05664645350885158,
+          "changed_windows": 153,
+          "empty_changed_windows": 0
+        },
+        "refreshed": {
+          "windows": 153,
+          "mse": 0.03191641673713533,
+          "changed_mse": 0.05664645350885158,
+          "changed_windows": 153,
+          "empty_changed_windows": 0
+        },
+        "copy": {
+          "windows": 153,
+          "mse": 0.022115507805436543,
+          "changed_mse": 0.08711357129542949,
+          "changed_windows": 153,
+          "empty_changed_windows": 0
+        }
+      },
+      "horizon_20": {
+        "recursive": {
+          "windows": 153,
+          "mse": 0.07793879937502293,
+          "changed_mse": 0.0831817182547906,
+          "changed_windows": 153,
+          "empty_changed_windows": 0
+        },
+        "refreshed": {
+          "windows": 153,
+          "mse": 0.03084499230669215,
+          "changed_mse": 0.04026506992142185,
+          "changed_windows": 153,
+          "empty_changed_windows": 0
+        },
+        "copy": {
+          "windows": 153,
+          "mse": 0.05806142179404988,
+          "changed_mse": 0.12248905136986496,
+          "changed_windows": 153,
+          "empty_changed_windows": 0
+        }
+      }
+    },
+    "history_multi_step": {
+      "horizon_1": {
+        "recursive": {
+          "windows": 153,
+          "mse": 0.030731628326321737,
+          "changed_mse": 0.05332644946045346,
+          "changed_windows": 153,
+          "empty_changed_windows": 0
+        },
+        "refreshed": {
+          "windows": 153,
+          "mse": 0.030731628326321737,
+          "changed_mse": 0.05332644946045346,
+          "changed_windows": 153,
+          "empty_changed_windows": 0
+        },
+        "copy": {
+          "windows": 153,
+          "mse": 0.022115507805436543,
+          "changed_mse": 0.08711357129542949,
+          "changed_windows": 153,
+          "empty_changed_windows": 0
+        }
+      },
+      "horizon_20": {
+        "recursive": {
+          "windows": 153,
+          "mse": 0.05600460959610596,
+          "changed_mse": 0.08178633525724115,
+          "changed_windows": 153,
+          "empty_changed_windows": 0
+        },
+        "refreshed": {
+          "windows": 153,
+          "mse": 0.03017641306897394,
+          "changed_mse": 0.039064873716020895,
+          "changed_windows": 153,
+          "empty_changed_windows": 0
+        },
+        "copy": {
+          "windows": 153,
+          "mse": 0.05806142179404988,
+          "changed_mse": 0.12248905136986496,
+          "changed_windows": 153,
+          "empty_changed_windows": 0
+        }
+      }
+    },
+    "actions_one_step_control": {
+      "horizon_1": {
+        "correct": {
+          "windows": 153,
+          "mse": 0.03191641673713533,
+          "changed_mse": 0.05664645350885158,
+          "changed_windows": 153,
+          "empty_changed_windows": 0
+        },
+        "shuffled_future": {
+          "windows": 153,
+          "mse": 0.03275829674736931,
+          "changed_mse": 0.059061425561511435,
+          "changed_windows": 153,
+          "empty_changed_windows": 0
+        },
+        "shuffled_past": {
+          "windows": 153,
+          "mse": 0.03192905389575982,
+          "changed_mse": 0.05674019530172052,
+          "changed_windows": 153,
+          "empty_changed_windows": 0
+        },
+        "shuffled_both": {
+          "windows": 153,
+          "mse": 0.032820681243940115,
+          "changed_mse": 0.0592435199913441,
+          "changed_windows": 153,
+          "empty_changed_windows": 0
+        },
+        "repeated_future": {
+          "windows": 153,
+          "mse": 0.03191641673713533,
+          "changed_mse": 0.05664645350885158,
+          "changed_windows": 153,
+          "empty_changed_windows": 0
+        },
+        "copy": {
+          "windows": 153,
+          "mse": 0.022115507805436543,
+          "changed_mse": 0.08711357129542949,
+          "changed_windows": 153,
+          "empty_changed_windows": 0
+        }
+      },
+      "horizon_20": {
+        "correct": {
+          "windows": 153,
+          "mse": 0.07793879937502293,
+          "changed_mse": 0.0831817182547906,
+          "changed_windows": 153,
+          "empty_changed_windows": 0
+        },
+        "shuffled_future": {
+          "windows": 153,
+          "mse": 0.08418830377019308,
+          "changed_mse": 0.09235240716268034,
+          "changed_windows": 153,
+          "empty_changed_windows": 0
+        },
+        "shuffled_past": {
+          "windows": 153,
+          "mse": 0.07794348832244187,
+          "changed_mse": 0.08318490199014253,
+          "changed_windows": 153,
+          "empty_changed_windows": 0
+        },
+        "shuffled_both": {
+          "windows": 153,
+          "mse": 0.08420847865198952,
+          "changed_mse": 0.09236743802728217,
+          "changed_windows": 153,
+          "empty_changed_windows": 0
+        },
+        "repeated_future": {
+          "windows": 153,
+          "mse": 0.08214493789801411,
+          "changed_mse": 0.08913566091773557,
+          "changed_windows": 153,
+          "empty_changed_windows": 0
+        },
+        "copy": {
+          "windows": 153,
+          "mse": 0.05806142179404988,
+          "changed_mse": 0.12248905136986496,
+          "changed_windows": 153,
+          "empty_changed_windows": 0
+        }
+      }
+    },
+    "actions_multi_step": {
+      "horizon_1": {
+        "correct": {
+          "windows": 153,
+          "mse": 0.030731628326321737,
+          "changed_mse": 0.05332644946045346,
+          "changed_windows": 153,
+          "empty_changed_windows": 0
+        },
+        "shuffled_future": {
+          "windows": 153,
+          "mse": 0.033266361498462606,
+          "changed_mse": 0.06095684872441042,
+          "changed_windows": 153,
+          "empty_changed_windows": 0
+        },
+        "shuffled_past": {
+          "windows": 153,
+          "mse": 0.03074361776531327,
+          "changed_mse": 0.05339882161249133,
+          "changed_windows": 153,
+          "empty_changed_windows": 0
+        },
+        "shuffled_both": {
+          "windows": 153,
+          "mse": 0.03332993567135988,
+          "changed_mse": 0.06112092756514066,
+          "changed_windows": 153,
+          "empty_changed_windows": 0
+        },
+        "repeated_future": {
+          "windows": 153,
+          "mse": 0.030731628326321737,
+          "changed_mse": 0.05332644946045346,
+          "changed_windows": 153,
+          "empty_changed_windows": 0
+        },
+        "copy": {
+          "windows": 153,
+          "mse": 0.022115507805436543,
+          "changed_mse": 0.08711357129542949,
+          "changed_windows": 153,
+          "empty_changed_windows": 0
+        }
+      },
+      "horizon_20": {
+        "correct": {
+          "windows": 153,
+          "mse": 0.05600460959610596,
+          "changed_mse": 0.08178633525724115,
+          "changed_windows": 153,
+          "empty_changed_windows": 0
+        },
+        "shuffled_future": {
+          "windows": 153,
+          "mse": 0.05983803956921584,
+          "changed_mse": 0.08665054992717855,
+          "changed_windows": 153,
+          "empty_changed_windows": 0
+        },
+        "shuffled_past": {
+          "windows": 153,
+          "mse": 0.05594381752113501,
+          "changed_mse": 0.08171549272644364,
+          "changed_windows": 153,
+          "empty_changed_windows": 0
+        },
+        "shuffled_both": {
+          "windows": 153,
+          "mse": 0.05992158169985986,
+          "changed_mse": 0.08683314089194621,
+          "changed_windows": 153,
+          "empty_changed_windows": 0
+        },
+        "repeated_future": {
+          "windows": 153,
+          "mse": 0.06419514215800887,
+          "changed_mse": 0.0886930403317891,
+          "changed_windows": 153,
+          "empty_changed_windows": 0
+        },
+        "copy": {
+          "windows": 153,
+          "mse": 0.05806142179404988,
+          "changed_mse": 0.12248905136986496,
+          "changed_windows": 153,
+          "empty_changed_windows": 0
+        }
+      }
+    },
+    "no_actions": {
+      "best_score": 0.03138708943623963,
+      "best_update": 2570,
+      "updates_completed": 2570,
+      "initial_parameters_sha256": "1fb09c99eb7b65ea11c0d36771852aa43cafed32d9d041742bcbb8595d279462"
+    },
+    "actions_no_actions": {
+      "horizon_1": {
+        "correct": {
+          "windows": 153,
+          "mse": 0.031619910649906574,
+          "changed_mse": 0.05781780224707392,
+          "changed_windows": 153,
+          "empty_changed_windows": 0
+        },
+        "shuffled_future": {
+          "windows": 153,
+          "mse": 0.031619910649906574,
+          "changed_mse": 0.05781780224707392,
+          "changed_windows": 153,
+          "empty_changed_windows": 0
+        },
+        "shuffled_past": {
+          "windows": 153,
+          "mse": 0.031619910649906574,
+          "changed_mse": 0.05781780224707392,
+          "changed_windows": 153,
+          "empty_changed_windows": 0
+        },
+        "shuffled_both": {
+          "windows": 153,
+          "mse": 0.031619910649906574,
+          "changed_mse": 0.05781780224707392,
+          "changed_windows": 153,
+          "empty_changed_windows": 0
+        },
+        "repeated_future": {
+          "windows": 153,
+          "mse": 0.031619910649906574,
+          "changed_mse": 0.05781780224707392,
+          "changed_windows": 153,
+          "empty_changed_windows": 0
+        },
+        "copy": {
+          "windows": 153,
+          "mse": 0.022115507805436543,
+          "changed_mse": 0.08711357129542949,
+          "changed_windows": 153,
+          "empty_changed_windows": 0
+        }
+      },
+      "horizon_20": {
+        "correct": {
+          "windows": 153,
+          "mse": 0.08947190182173953,
+          "changed_mse": 0.08826494192570643,
+          "changed_windows": 153,
+          "empty_changed_windows": 0
+        },
+        "shuffled_future": {
+          "windows": 153,
+          "mse": 0.08947190182173953,
+          "changed_mse": 0.08826494192570643,
+          "changed_windows": 153,
+          "empty_changed_windows": 0
+        },
+        "shuffled_past": {
+          "windows": 153,
+          "mse": 0.08947190182173953,
+          "changed_mse": 0.08826494192570643,
+          "changed_windows": 153,
+          "empty_changed_windows": 0
+        },
+        "shuffled_both": {
+          "windows": 153,
+          "mse": 0.08947190182173953,
+          "changed_mse": 0.08826494192570643,
+          "changed_windows": 153,
+          "empty_changed_windows": 0
+        },
+        "repeated_future": {
+          "windows": 153,
+          "mse": 0.08947190182173953,
+          "changed_mse": 0.08826494192570643,
+          "changed_windows": 153,
+          "empty_changed_windows": 0
+        },
+        "copy": {
+          "windows": 153,
+          "mse": 0.05806142179404988,
+          "changed_mse": 0.12248905136986496,
+          "changed_windows": 153,
+          "empty_changed_windows": 0
+        }
+      }
+    }
+  }
+}

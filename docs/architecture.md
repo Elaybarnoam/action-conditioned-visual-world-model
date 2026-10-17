@@ -1,5 +1,23 @@
 # Architecture and code map
 
+## Model progression across milestones
+
+| Stage | Learned system | Main implementation |
+|---|---|---|
+| Initial model | CNN features, GRU vector state, action MLP transition, direct transpose-convolution decoder | src/model/world_model.py, encoder.py, memory.py, dynamics.py, decoder.py |
+| Reconstruction control | Image encoding/decoding with a current-image fitting target | src/model/reconstruction.py |
+| Appearance model | Observed multiscale features added to the future-latent decoder | src/model/appearance.py |
+| Transport model | Source copy, learned warp and generated-image mixture | src/model/transport.py |
+| Spatial alternative | ConvGRU spatial state and spatial transition with the controlled renderer | src/model/spatial.py |
+| Detail variants | Bounded/aligned transport, balanced/boundary objectives and horizon curriculum | src/model/transport.py, src/training/detail.py |
+| Final residual heads | Frozen appearance backbone plus deterministic or diffusion U-Net correction | src/model/diffusion.py |
+
+The [development record](development-record.md) explains each architecture's
+inputs, training objective and experiments. The [checkpoint lineage](../results/checkpoint-lineage.json)
+distinguishes warm starts, resumed optimizers, fresh initialization and the
+frozen backbone references actually saved by the training code. The detailed
+shapes below describe the final selected backbone and residual heads.
+
 ## Shared frozen backbone
 
 ```mermaid

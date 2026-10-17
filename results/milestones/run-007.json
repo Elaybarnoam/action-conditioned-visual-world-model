@@ -1,0 +1,94 @@
+{
+  "status": {
+    "kind": "training",
+    "purpose": "First joint one-step visual world-model experiment",
+    "status": "completed",
+    "started_at": "2026-10-16T15:22:42.676388+00:00",
+    "finished_at": "2026-10-16T15:25:06.407929+00:00"
+  },
+  "results": {
+    "history": [
+      {
+        "epoch": 0,
+        "training_mse": null,
+        "validation_mse": 0.09376223036378568,
+        "copy_mse": 0.01968022427881514,
+        "seconds": 4.7941520000458695
+      },
+      {
+        "epoch": 1,
+        "training_mse": 0.0538034999135989,
+        "validation_mse": 0.051131025547702894,
+        "copy_mse": 0.01968022427881514,
+        "seconds": 11.167150599998422
+      },
+      {
+        "epoch": 2,
+        "training_mse": 0.048402096863067866,
+        "validation_mse": 0.046587698616472585,
+        "copy_mse": 0.01968022427881514,
+        "seconds": 11.906113100005314
+      },
+      {
+        "epoch": 3,
+        "training_mse": 0.04271060749392816,
+        "validation_mse": 0.04253141188897763,
+        "copy_mse": 0.01968022427881514,
+        "seconds": 12.239441699988674
+      },
+      {
+        "epoch": 4,
+        "training_mse": 0.03868171128954433,
+        "validation_mse": 0.03953005478230974,
+        "copy_mse": 0.01968022427881514,
+        "seconds": 11.986017999995966
+      },
+      {
+        "epoch": 5,
+        "training_mse": 0.035991010965238386,
+        "validation_mse": 0.03654224970070861,
+        "copy_mse": 0.01968022427881514,
+        "seconds": 12.967572399997152
+      },
+      {
+        "epoch": 6,
+        "training_mse": 0.032637448655957656,
+        "validation_mse": 0.033700043023456014,
+        "copy_mse": 0.01968022427881514,
+        "seconds": 13.102644000027794
+      },
+      {
+        "epoch": 7,
+        "training_mse": 0.030314911856520466,
+        "validation_mse": 0.03237988629316954,
+        "copy_mse": 0.01968022427881514,
+        "seconds": 12.457725999993272
+      },
+      {
+        "epoch": 8,
+        "training_mse": 0.029188539237279584,
+        "validation_mse": 0.0319367281166229,
+        "copy_mse": 0.01968022427881514,
+        "seconds": 15.145009899977595
+      },
+      {
+        "epoch": 9,
+        "training_mse": 0.028188958834286803,
+        "validation_mse": 0.030977830019366135,
+        "copy_mse": 0.01968022427881514,
+        "seconds": 15.507024999998976
+      },
+      {
+        "epoch": 10,
+        "training_mse": 0.0275190475155205,
+        "validation_mse": 0.031055058639848507,
+        "copy_mse": 0.01968022427881514,
+        "seconds": 15.523254100000486
+      }
+    ],
+    "best_epoch": 9,
+    "best_validation_mse": 0.030977830019366135,
+    "elapsed_seconds": 141.13609490002273,
+    "peak_cuda_memory_bytes": 252878848
+  }
+}

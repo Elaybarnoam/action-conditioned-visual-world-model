@@ -1,53 +1,124 @@
-# Action-Conditioned Visual Prediction
+# Learning Action-Conditioned Visual World Models
 
-### Deterministic and Diffusion Residual Decoders on BAIR
+### From camera observations and recurrent dynamics to multistep prediction and image generation
 
 [![CI](https://github.com/Elaybarnoam/action-conditioned-visual-world-model/actions/workflows/ci.yml/badge.svg)](https://github.com/Elaybarnoam/action-conditioned-visual-world-model/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/code-MIT-blue.svg)](LICENSE)
-[![Research release](https://img.shields.io/badge/research-v1.0.0-blue.svg)](https://github.com/Elaybarnoam/action-conditioned-visual-world-model/releases/tag/v1.0.0)
+[![Research release](https://img.shields.io/badge/research-v1.1.0-blue.svg)](https://github.com/Elaybarnoam/action-conditioned-visual-world-model/releases/tag/v1.1.0)
 
 **Frozen empirical research software:** matched controls, explicit mathematics,
-saved predictions, per-window scores, model artifacts and negative results.
-
-![Source, actual future, original model, deterministic U-Net and all diffusion samples](results/figures/example-03.png)
-
-BAIR imagery: Ebert et al. (2017), CC BY 4.0. Predictions, captions and layout
-are derived outputs. Every fixed diffusion sample is shown.
+the complete implementation history, saved predictions, per-window scores,
+every saved checkpoint, model artifacts and negative results.
 
 ## Abstract
 
-We study how image-generation heads affect perceptual fidelity and target
-accuracy in action-conditioned visual prediction. A CNN/GRU world model
-summarizes eight observed frames and past actions, predicts a next latent
-state from a supplied action, and decodes a coarse next image. Holding this
-trained backbone fixed, we compare identically initialized conditional
-residual U-Nets: a deterministic head trained with RGB squared error and a
-v-parameterized diffusion head sampled with DDIM. Both train for 6,000 updates
-on a 10,000-recording BAIR subset with matched architecture, data order and
-fresh optimizers. On 1,122 validation windows, the deterministic head reduces
-MSE by 33.96% and LPIPS by 53.54%. Diffusion reduces LPIPS by 61.96% and yields
-sharper inspected samples, but increases MSE by 24.71% and changed-region error
-by 40.98%. The study identifies a useful deterministic rendering improvement
-and a perceptual-fidelity/target-accuracy tradeoff at this budget. Evidence is
-limited to one training seed, one-step prediction and validation reuse for
-checkpoint selection.
+This project develops and investigates a visual world model that predicts
+future camera observations from an observed image/action history and supplied
+future actions. Starting from random weights, we implement a CNN encoder,
+GRU memory, action-conditioned latent transition and image decoder, then
+study fitting, temporal generalization, action dependence, data scaling,
+appearance preservation, motion transport and probabilistic image generation.
+The BAIR training subset grows from 205 to 10,000 recordings while its original
+validation and official-test recording identities remain fixed. Initial
+one-step training improves over random weights but loses to copying the last
+frame; three-step supervision and expanded training improve recursive errors.
+Later experiments investigate persistent blur through reconstruction controls,
+loss/capacity changes, observed appearance, copy/warp/generate rendering,
+spatial memory, flow diagnostics and curriculum training. The final matched
+residual-head comparison finds a deterministic accuracy improvement and a
+diffusion perceptual-fidelity/target-accuracy tradeoff. The release preserves
+the entire experimental progression, including failures, evaluations,
+numerical predictions and all saved checkpoints. Findings remain conditional
+on the reported budgets, limited training replications and reused holdouts.
 
 ## Research question and contributions
 
-**How do deterministic and diffusion residual heads affect detail and accuracy
-when the temporal backbone and conditioning are held fixed?**
+**How can a compact learned model turn observed images and actions into useful
+future predictions, and which interventions improve its dynamics and rendering?**
 
-- A paired architecture/initialization/data-order controlled comparison.
+- An implementation from data acquisition through CNN/GRU representation,
+  latent dynamics, decoding, joint training and recursive evaluation.
+- Controlled studies of temporal supervision, action use, data scaling,
+  appearance access, transport, spatial memory, losses and curriculum.
+- A final paired deterministic/diffusion residual-head comparison.
 - Precise separation of physical state, observed history, latent dynamics,
   coarse rendering and stochastic residual generation.
 - Individual-sample scoring, action controls, recording-level descriptive
   bootstrap intervals, preserved failures and historical ablations.
-- A dependency-free demo and checksum-pinned weights with reproduction tools.
+- A dependency-free demo, complete run/checkpoint catalog and checksum-pinned
+  historical artifacts with reproduction and inspection tools.
 
 This is empirical research software. No new diffusion algorithm, leaderboard
 record, peer-review acceptance or general causal-physics capability is claimed.
 
-## Main findings
+## Project milestones and measured progression
+
+| Milestone | Implementation / research question | Saved evidence and conclusion |
+|---|---|---|
+| 0–3: foundations | Python setup, verified BAIR records, CNN features, GRU memory | run-001–004: inspectable data and random component snapshots |
+| 4–9: first complete model | Joint encoder/memory/dynamics/decoder training and frozen evaluation | run-005–009: saturation diagnosed; corrected run-007 improves over random weights but trails copying |
+| Temporal/action diagnosis | Tiny fitting, refreshed history, one- versus three-step supervision, action interventions and trained no-action control | run-010–021: tiny fit succeeds; three-step training improves recursive error; failures and recovery preserved |
+| Data expansion | Exact 10,000-recording training set, immutable holdouts, packed loader | run-022–032: expanded model lowers test h20 MSE from 0.054927 to 0.046178; one-step still trails copy |
+| B: blur investigation | Reconstruction, additional optimization, MSE versus L1+gradient, latent width | run-034–050: pixel and boundary improvements have different tradeoffs; run-042 selected |
+| C: appearance and motion | Observed feature adapters, copy/warp/generate rendering, action controls, ConvGRU, confirmation | run-052–082: run-056 appearance model selected; transport/spatial candidates fail promotion guards |
+| D: detail and transport | Single/multi-window fits, synthetic flow, bounded/aligned rendering, balanced losses and curriculum | run-084–112: sharp fitting is possible; transport repair and rollout gains do not satisfy all accuracy guards |
+| E: residual generation | Frozen run-056 backbone with matched deterministic and diffusion U-Nets | run-113–124: deterministic improves all five final metrics; diffusion improves LPIPS with worse pixel/change error |
+| Inspection tools | Interactive original-model and saved-comparison viewers | run-033/051/083/125: exploratory session artifacts, explicitly distinct from aggregate benchmarks |
+
+The [milestone research report](docs/project-history.md) explains each decision,
+its mathematical/experimental role and its evidence. The
+[complete development record](docs/development-record.md) retains the detailed
+original formulations, protocols, results and commands. The
+[125-run catalog](docs/run-catalog.md), [checkpoint registry](results/checkpoint-registry.csv)
+and [archive manifest](results/history-manifest.json) locate every saved artifact.
+Different stages use different windows, horizons and selection rules; their
+metrics should be interpreted within their own controlled comparisons.
+
+## Findings across the complete project
+
+1. **Learning and useful prediction are different tests.** The first corrected
+   model lowers test MSE from 0.095703 at random initialization to 0.030591,
+   while copying reaches 0.019174.
+2. **Temporal supervision matters.** Matched three-step training lowers
+   validation recursive h20 MSE from 0.077939 to 0.056005. It also uses more
+   supervised target frames per update.
+3. **Expanded training helps at the measured budget.** The 10,000-recording
+   model improves recursive test errors and beats copying at longer horizons;
+   the comparison changes both data diversity and optimization budget.
+4. **Rendering is a substantial limitation.** Observed appearance and later
+   deterministic residual rendering improve image quality. Flow repair,
+   spatial memory and loss changes do not automatically improve every metric.
+5. **Sharpness and target correspondence can diverge.** The final diffusion
+   samples improve LPIPS while worsening pixel and changed-region error.
+
+See the historical reports for negative results and stage-specific limits.
+
+<details>
+<summary>Original training, temporal-control and expanded-data evidence</summary>
+
+Initial random-to-trained validation history (run-007):
+
+![Initial training learning curve](results/figures/history-initial-training.png)
+
+Matched one-step versus three-step training (run-020):
+
+![Matched temporal-supervision controls](results/figures/history-temporal-controls.png)
+
+Expanded-data recursive test comparison (run-032):
+
+![Expanded-data recursive comparison](results/figures/history-expanded-data.png)
+
+These figures retain their original protocols; they are separate comparisons.
+
+</details>
+
+## Final milestone: matched residual-head results
+
+![Source, actual future, original model, deterministic U-Net and all diffusion samples](results/figures/example-03.png)
+
+This panel illustrates the final milestone E. BAIR imagery: Ebert et al.
+(2017), CC BY 4.0. Predictions, captions and layout are derived outputs.
+Every fixed diffusion sample is shown.
 
 Lower is better except SSIM. Diffusion scores include all three samples per
 window; no sample is chosen using the recorded answer.
@@ -71,6 +142,33 @@ The [experiment report](docs/experiments.md) includes uncertainty intervals,
 negative findings, compute, claim-to-evidence mapping and all limitations.
 
 ## Architecture and mathematical overview
+
+The original task is a partially observed, action-conditioned prediction
+problem. Physical state $s_t$ is unavailable; observed history is
+$h_t=(o_{t-7},a_{t-7},\ldots,a_{t-1},o_t)$. The learned system computes
+
+$$
+z_t=E_\phi(h_t),\qquad
+\hat z_{t+k}=T_\psi(\hat z_{t+k-1},a_{t+k-1}),\qquad
+\hat o_{t+k}=D_\omega(\hat z_{t+k}),\quad \hat z_t=z_t.
+$$
+
+Baseline training updates encoder, recurrent memory, dynamics and decoder
+jointly through image supervision. The one- or multistep objective is
+
+$$
+\mathcal L_H=\frac1H\sum_{k=1}^{H}
+\operatorname{mean}\left[(\hat o_{t+k}-o_{t+k})^2\right],
+\qquad H\in\{1,3\}.
+$$
+
+Recursive evaluation supplies future actions without future real images;
+refresh-history evaluation supplies additional observations and answers a
+different question. Later appearance and transport variants enrich decoding
+with observed spatial features; the final residual heads enrich rendering
+again. The [development record](docs/development-record.md#problem-formulation)
+defines baseline history, gradients, multistep supervision and evaluation.
+The following diagram shows the final architecture reached by this progression.
 
 ```mermaid
 flowchart LR
@@ -115,7 +213,7 @@ $$
 
 $$
 \mathcal L_{\mathrm{diff}}=
-\mathbb E[\operatorname{mean}(v_\theta(r_n,n,c_t)-v_n)^2].
+\mathbb E[\operatorname{mean}((v_\theta(r_n,n,c_t)-v_n)^2)].
 $$
 
 The target constructs training corruption/supervision only. Inference starts
@@ -126,7 +224,7 @@ The [full formulation](docs/formulation.md) defines all symbols, time indexing,
 shapes, objectives, cosine schedule, DDIM steps, EMA and metrics. The
 [architecture document](docs/architecture.md) provides layer shapes and pseudocode.
 
-## Dataset and protocol
+## Dataset and final-milestone protocol
 
 | Item | Frozen setting |
 |---|---|
@@ -160,6 +258,37 @@ no inference or training and displays all three samples without averaging.
 
 ## Released models and reproduction
 
+### Complete research history
+
+```bash
+python -m src.history list
+# Restore every saved artifact of one milestone run:
+python -m src.history fetch --run run-030
+python -m src.history fetch --run run-056
+# Or restore a single saved training state:
+python -m src.history fetch --run run-121 --file checkpoints/update-003000.pt
+```
+
+History restoration uses only Python's standard library, verifies archive and
+file hashes, and restores checkpoint aliases as their original logical names.
+It includes initial, intermediate, selected and latest saved states, Adam/RNG
+state where originally recorded, numerical evaluation outputs, plots and
+failure records. Shared objects are deduplicated across archive parts.
+See [history artifact instructions](docs/history-artifacts.md) for storage,
+provenance, lineage and historical loading boundaries.
+
+After restoring run-030 and preparing the matching expanded dataset, the
+original inference viewer can inspect that earlier model:
+
+```bash
+uv run --locked python -m src.viewer --checkpoint data/history/runs/run-030/checkpoints/best.pt --dataset data/bair-10000/prepared
+```
+
+The [development record](docs/development-record.md#interactive-prediction-viewer)
+documents its observations, actions, targets and inference boundaries.
+
+### Final-model inference and controlled reproduction
+
 Install [uv](https://docs.astral.sh/uv/getting-started/installation/), then:
 
 ```bash
@@ -190,6 +319,12 @@ Model executions create dedicated ignored evaluation/runs/run-NNN records.
 
 ## Evidence and documentation
 
+- [End-to-end milestone report](docs/project-history.md),
+  [complete development record](docs/development-record.md),
+  [every run](docs/run-catalog.md), [every saved PT file](results/checkpoint-registry.csv),
+  [checkpoint lineage](results/checkpoint-lineage.json),
+  [complete history downloads](docs/history-artifacts.md).
+
 - [Main table](results/main-results.csv), [all score rows](results/per-window/),
   [bootstrap](results/recording-bootstrap.json), [curves](results/figures/learning-curves.png).
 - [Frozen protocol](results/protocols/phase-e.json), [release hashes](results/release-manifest.json),
@@ -205,7 +340,9 @@ publication evidence is under results/.
 
 ## Intended use and citation
 
-This one-seed, one-step study supports research and education. Sharpness, low
+This project supports research and education. Its final head study uses one
+training seed and one-step prediction; earlier stages include recursive
+evaluation and a limited confirmation experiment. Sharpness, low
 LPIPS and action sensitivity do not establish calibrated uncertainty, causal
 dynamics or reliable robot control. See [limitations](docs/limitations.md).
 

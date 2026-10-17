@@ -1,5 +1,40 @@
 # Reproducing the release
 
+## Complete project and historical evidence
+
+Version v1.1.0 publishes the complete project history. Start with the
+[milestone report](project-history.md), [development record](development-record.md)
+and [run/checkpoint archive](history-artifacts.md). The commands below continue
+to use the smaller, unchanged v1.0.0 final-model assets.
+
+```bash
+python -m src.history list
+python -m src.history fetch --run run-007
+python -m src.history fetch --run run-030
+python -m src.history fetch --run run-056
+```
+
+Every historical stage's implementation remains in the repository:
+
+| Responsibility | Entry point / configuration |
+|---|---|
+| Setup and data verification | src.setup_check, src.inspect_data |
+| Separate encoder/memory inspection | src.inspect_encoder, src.inspect_memory |
+| Original joint training and frozen evaluation | src.train, src.evaluate; configs/train.json |
+| Tiny/history/multistep/action controls | src.experiment; configs/experiments.json |
+| Expanded training pipeline | src.scale; configs/scale.json |
+| Blur/capacity experiments | src.blur_suite; configs/blur-experiments.json |
+| Appearance/motion/spatial experiments | src.appearance_suite; configs/appearance-experiments.json |
+| Detail/transport/curriculum experiments | src.detail_suite; configs/detail-experiments.json |
+| Final controlled residual-head experiment | src.diffusion_suite; configs/diffusion-experiments.json |
+
+Use each module's `--help` and the historical narrative before explicitly
+starting a new experiment. Defaults can acquire data or train. Historical
+configurations reference earlier run paths and frozen protocols; configure
+new workspace paths and resolve original/public checkpoint identities through
+the catalog. Restoring saved evidence does not retrain a stage or automatically
+promise bitwise continuation of every historical implementation.
+
 Run commands from the repository root. Version v1.0.0 freezes the reported
 experiments. Training runs only when --retrain is explicit.
 

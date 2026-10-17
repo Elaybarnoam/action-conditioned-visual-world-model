@@ -1,0 +1,212 @@
+{
+  "status": {
+    "kind": "evaluation",
+    "purpose": "Frozen checkpoint comparison on test",
+    "status": "completed",
+    "started_at": "2026-10-16T15:25:06.413817+00:00",
+    "finished_at": "2026-10-16T15:25:33.880600+00:00"
+  },
+  "results": {
+    "split": "test",
+    "checkpoints": {
+      "checkpoint-00-epoch-000": {
+        "path": "evaluation/runs/run-007/checkpoints/epoch-000.pt",
+        "sha256": "62911bb0a1fb865bac63669d96e363216304778228ec3670694850970af6ada2",
+        "epoch": 0,
+        "metadata": {
+          "training_run": "evaluation/runs/run-007",
+          "dataset_manifest_sha256": "53a1ce80f2ea13d9db035aa3b7a6b3043df54f6c342fbf32e174d879202148b7",
+          "validation_mse": 0.09376223036378568,
+          "source_sha256": "d7fbb439ab301f7bb8f452ad6ce1348a3ecb3c789924da7cacf93dbd3147c6f9"
+        }
+      },
+      "checkpoint-01-epoch-009": {
+        "path": "evaluation/runs/run-007/checkpoints/best.pt",
+        "sha256": "a156090132114c27611b9724fb65cbff25fcfd1f8667439780ee2069ea78fb0d",
+        "epoch": 9,
+        "metadata": {
+          "training_run": "evaluation/runs/run-007",
+          "dataset_manifest_sha256": "53a1ce80f2ea13d9db035aa3b7a6b3043df54f6c342fbf32e174d879202148b7",
+          "validation_mse": 0.030977830019366135,
+          "source_sha256": "d7fbb439ab301f7bb8f452ad6ce1348a3ecb3c789924da7cacf93dbd3147c6f9"
+        }
+      }
+    },
+    "reports": {
+      "checkpoint-00-epoch-000": {
+        "one_step": {
+          "model": {
+            "windows": 5632,
+            "mse": 0.09570323313528206,
+            "changed_mse": 0.06634483431334581,
+            "changed_windows": 5623,
+            "empty_changed_windows": 9
+          },
+          "copy": {
+            "windows": 5632,
+            "mse": 0.01917414619064511,
+            "changed_mse": 0.08199012875365232,
+            "changed_windows": 5623,
+            "empty_changed_windows": 9
+          }
+        },
+        "recursive": {
+          "1": {
+            "model": {
+              "windows": 768,
+              "mse": 0.09593119203539875,
+              "changed_mse": 0.06765370081484434,
+              "changed_windows": 768,
+              "empty_changed_windows": 0
+            },
+            "copy": {
+              "windows": 768,
+              "mse": 0.021251303558133355,
+              "changed_mse": 0.08756334485754753,
+              "changed_windows": 768,
+              "empty_changed_windows": 0
+            }
+          },
+          "5": {
+            "model": {
+              "windows": 768,
+              "mse": 0.09569488049116141,
+              "changed_mse": 0.07273477556009311,
+              "changed_windows": 768,
+              "empty_changed_windows": 0
+            },
+            "copy": {
+              "windows": 768,
+              "mse": 0.041078289951959356,
+              "changed_mse": 0.11545575447235024,
+              "changed_windows": 768,
+              "empty_changed_windows": 0
+            }
+          },
+          "10": {
+            "model": {
+              "windows": 768,
+              "mse": 0.09577712642203551,
+              "changed_mse": 0.07461314698351391,
+              "changed_windows": 768,
+              "empty_changed_windows": 0
+            },
+            "copy": {
+              "windows": 768,
+              "mse": 0.04859339312588418,
+              "changed_mse": 0.12066883807710838,
+              "changed_windows": 768,
+              "empty_changed_windows": 0
+            }
+          },
+          "20": {
+            "model": {
+              "windows": 768,
+              "mse": 0.09558481020212639,
+              "changed_mse": 0.07637291674715622,
+              "changed_windows": 768,
+              "empty_changed_windows": 0
+            },
+            "copy": {
+              "windows": 768,
+              "mse": 0.05523016160744495,
+              "changed_mse": 0.12467698844557162,
+              "changed_windows": 768,
+              "empty_changed_windows": 0
+            }
+          }
+        },
+        "changed_region_epsilon": 0.05,
+        "recursive_starts_per_episode": 3,
+        "note": "One-step uses all eligible starts; recursive horizons share fixed starts."
+      },
+      "checkpoint-01-epoch-009": {
+        "one_step": {
+          "model": {
+            "windows": 5632,
+            "mse": 0.030590710100361983,
+            "changed_mse": 0.05682839232550912,
+            "changed_windows": 5623,
+            "empty_changed_windows": 9
+          },
+          "copy": {
+            "windows": 5632,
+            "mse": 0.01917414619064511,
+            "changed_mse": 0.08199012875365232,
+            "changed_windows": 5623,
+            "empty_changed_windows": 9
+          }
+        },
+        "recursive": {
+          "1": {
+            "model": {
+              "windows": 768,
+              "mse": 0.030926422280269133,
+              "changed_mse": 0.058047415397595614,
+              "changed_windows": 768,
+              "empty_changed_windows": 0
+            },
+            "copy": {
+              "windows": 768,
+              "mse": 0.021251303558133355,
+              "changed_mse": 0.08756334485754753,
+              "changed_windows": 768,
+              "empty_changed_windows": 0
+            }
+          },
+          "5": {
+            "model": {
+              "windows": 768,
+              "mse": 0.07683852090849541,
+              "changed_mse": 0.0927690146296906,
+              "changed_windows": 768,
+              "empty_changed_windows": 0
+            },
+            "copy": {
+              "windows": 768,
+              "mse": 0.041078289951959356,
+              "changed_mse": 0.11545575447235024,
+              "changed_windows": 768,
+              "empty_changed_windows": 0
+            }
+          },
+          "10": {
+            "model": {
+              "windows": 768,
+              "mse": 0.08564668644006208,
+              "changed_mse": 0.10016282546954851,
+              "changed_windows": 768,
+              "empty_changed_windows": 0
+            },
+            "copy": {
+              "windows": 768,
+              "mse": 0.04859339312588418,
+              "changed_mse": 0.12066883807710838,
+              "changed_windows": 768,
+              "empty_changed_windows": 0
+            }
+          },
+          "20": {
+            "model": {
+              "windows": 768,
+              "mse": 0.08596492803189903,
+              "changed_mse": 0.09744165064087913,
+              "changed_windows": 768,
+              "empty_changed_windows": 0
+            },
+            "copy": {
+              "windows": 768,
+              "mse": 0.05523016160744495,
+              "changed_mse": 0.12467698844557162,
+              "changed_windows": 768,
+              "empty_changed_windows": 0
+            }
+          }
+        },
+        "changed_region_epsilon": 0.05,
+        "recursive_starts_per_episode": 3,
+        "note": "One-step uses all eligible starts; recursive horizons share fixed starts."
+      }
+    }
+  }
+}

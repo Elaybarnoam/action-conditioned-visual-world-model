@@ -1,0 +1,385 @@
+{
+  "status": {
+    "kind": "expanded-data-evaluation",
+    "purpose": "Frozen test comparison of training data sizes",
+    "status": "completed",
+    "started_at": "2026-10-16T18:54:09.795280+00:00",
+    "finished_at": "2026-10-16T18:54:52.592281+00:00"
+  },
+  "results": {
+    "split": "test",
+    "reports": {
+      "reference-205-records": {
+        "one_step": {
+          "model": {
+            "windows": 5632,
+            "mse": 0.030324834470858066,
+            "changed_mse": 0.055360007840658386,
+            "changed_windows": 5623,
+            "empty_changed_windows": 9
+          },
+          "copy": {
+            "windows": 5632,
+            "mse": 0.01917414619064511,
+            "changed_mse": 0.08199012875365232,
+            "changed_windows": 5623,
+            "empty_changed_windows": 9
+          }
+        },
+        "recursive": {
+          "1": {
+            "model": {
+              "windows": 768,
+              "mse": 0.0306397688339833,
+              "changed_mse": 0.056262438649961645,
+              "changed_windows": 768,
+              "empty_changed_windows": 0
+            },
+            "copy": {
+              "windows": 768,
+              "mse": 0.021251303558133355,
+              "changed_mse": 0.08756334485754753,
+              "changed_windows": 768,
+              "empty_changed_windows": 0
+            }
+          },
+          "5": {
+            "model": {
+              "windows": 768,
+              "mse": 0.03735970639051326,
+              "changed_mse": 0.0638488642774367,
+              "changed_windows": 768,
+              "empty_changed_windows": 0
+            },
+            "copy": {
+              "windows": 768,
+              "mse": 0.041078289951959356,
+              "changed_mse": 0.11545575447235024,
+              "changed_windows": 768,
+              "empty_changed_windows": 0
+            }
+          },
+          "10": {
+            "model": {
+              "windows": 768,
+              "mse": 0.04571539501193911,
+              "changed_mse": 0.07545158125867601,
+              "changed_windows": 768,
+              "empty_changed_windows": 0
+            },
+            "copy": {
+              "windows": 768,
+              "mse": 0.04859339312588418,
+              "changed_mse": 0.12066883807710838,
+              "changed_windows": 768,
+              "empty_changed_windows": 0
+            }
+          },
+          "20": {
+            "model": {
+              "windows": 768,
+              "mse": 0.05492708670499269,
+              "changed_mse": 0.08649209684032637,
+              "changed_windows": 768,
+              "empty_changed_windows": 0
+            },
+            "copy": {
+              "windows": 768,
+              "mse": 0.05523016160744495,
+              "changed_mse": 0.12467698844557162,
+              "changed_windows": 768,
+              "empty_changed_windows": 0
+            }
+          }
+        },
+        "changed_region_epsilon": 0.05,
+        "recursive_starts_per_episode": 3,
+        "note": "One-step uses all eligible starts; recursive horizons share fixed starts."
+      },
+      "random-weights": {
+        "one_step": {
+          "model": {
+            "windows": 5632,
+            "mse": 0.09570323313528206,
+            "changed_mse": 0.06634483431334581,
+            "changed_windows": 5623,
+            "empty_changed_windows": 9
+          },
+          "copy": {
+            "windows": 5632,
+            "mse": 0.01917414619064511,
+            "changed_mse": 0.08199012875365232,
+            "changed_windows": 5623,
+            "empty_changed_windows": 9
+          }
+        },
+        "recursive": {
+          "1": {
+            "model": {
+              "windows": 768,
+              "mse": 0.09593119203539875,
+              "changed_mse": 0.06765370081484434,
+              "changed_windows": 768,
+              "empty_changed_windows": 0
+            },
+            "copy": {
+              "windows": 768,
+              "mse": 0.021251303558133355,
+              "changed_mse": 0.08756334485754753,
+              "changed_windows": 768,
+              "empty_changed_windows": 0
+            }
+          },
+          "5": {
+            "model": {
+              "windows": 768,
+              "mse": 0.09569488049116141,
+              "changed_mse": 0.07273477556009311,
+              "changed_windows": 768,
+              "empty_changed_windows": 0
+            },
+            "copy": {
+              "windows": 768,
+              "mse": 0.041078289951959356,
+              "changed_mse": 0.11545575447235024,
+              "changed_windows": 768,
+              "empty_changed_windows": 0
+            }
+          },
+          "10": {
+            "model": {
+              "windows": 768,
+              "mse": 0.09577712642203551,
+              "changed_mse": 0.07461314698351391,
+              "changed_windows": 768,
+              "empty_changed_windows": 0
+            },
+            "copy": {
+              "windows": 768,
+              "mse": 0.04859339312588418,
+              "changed_mse": 0.12066883807710838,
+              "changed_windows": 768,
+              "empty_changed_windows": 0
+            }
+          },
+          "20": {
+            "model": {
+              "windows": 768,
+              "mse": 0.09558481020212639,
+              "changed_mse": 0.07637291674715622,
+              "changed_windows": 768,
+              "empty_changed_windows": 0
+            },
+            "copy": {
+              "windows": 768,
+              "mse": 0.05523016160744495,
+              "changed_mse": 0.12467698844557162,
+              "changed_windows": 768,
+              "empty_changed_windows": 0
+            }
+          }
+        },
+        "changed_region_epsilon": 0.05,
+        "recursive_starts_per_episode": 3,
+        "note": "One-step uses all eligible starts; recursive horizons share fixed starts."
+      },
+      "trained-10000-records": {
+        "one_step": {
+          "model": {
+            "windows": 5632,
+            "mse": 0.023890936145769294,
+            "changed_mse": 0.041453018404035584,
+            "changed_windows": 5623,
+            "empty_changed_windows": 9
+          },
+          "copy": {
+            "windows": 5632,
+            "mse": 0.01917414619064511,
+            "changed_mse": 0.08199012875365232,
+            "changed_windows": 5623,
+            "empty_changed_windows": 9
+          }
+        },
+        "recursive": {
+          "1": {
+            "model": {
+              "windows": 768,
+              "mse": 0.02392207129135689,
+              "changed_mse": 0.04157550484645375,
+              "changed_windows": 768,
+              "empty_changed_windows": 0
+            },
+            "copy": {
+              "windows": 768,
+              "mse": 0.021251303558133355,
+              "changed_mse": 0.08756334485754753,
+              "changed_windows": 768,
+              "empty_changed_windows": 0
+            }
+          },
+          "5": {
+            "model": {
+              "windows": 768,
+              "mse": 0.029247490860143444,
+              "changed_mse": 0.04716496764255377,
+              "changed_windows": 768,
+              "empty_changed_windows": 0
+            },
+            "copy": {
+              "windows": 768,
+              "mse": 0.041078289951959356,
+              "changed_mse": 0.11545575447235024,
+              "changed_windows": 768,
+              "empty_changed_windows": 0
+            }
+          },
+          "10": {
+            "model": {
+              "windows": 768,
+              "mse": 0.03624334653674547,
+              "changed_mse": 0.057645133720749676,
+              "changed_windows": 768,
+              "empty_changed_windows": 0
+            },
+            "copy": {
+              "windows": 768,
+              "mse": 0.04859339312588418,
+              "changed_mse": 0.12066883807710838,
+              "changed_windows": 768,
+              "empty_changed_windows": 0
+            }
+          },
+          "20": {
+            "model": {
+              "windows": 768,
+              "mse": 0.04617760885472914,
+              "changed_mse": 0.0701026614527412,
+              "changed_windows": 768,
+              "empty_changed_windows": 0
+            },
+            "copy": {
+              "windows": 768,
+              "mse": 0.05523016160744495,
+              "changed_mse": 0.12467698844557162,
+              "changed_windows": 768,
+              "empty_changed_windows": 0
+            }
+          }
+        },
+        "changed_region_epsilon": 0.05,
+        "recursive_starts_per_episode": 3,
+        "note": "One-step uses all eligible starts; recursive horizons share fixed starts."
+      }
+    },
+    "checkpoints": {
+      "reference-205-records": {
+        "path": "evaluation/runs/run-014/checkpoints/best.pt",
+        "sha256": "682e90eaec118ec8cd147614cd6fd39ce21afd3ff70f2ec90ad2aeb25684fec5",
+        "metadata": {
+          "training_run": "evaluation/runs/run-014",
+          "dataset_manifest_sha256": "53a1ce80f2ea13d9db035aa3b7a6b3043df54f6c342fbf32e174d879202148b7",
+          "source_sha256": "410b6b5bbba649e1516940b76ad667d064745c748ffb6b43a2433b2bb1fbbf0a",
+          "initial_parameters_sha256": "1fb09c99eb7b65ea11c0d36771852aa43cafed32d9d041742bcbb8595d279462",
+          "training_horizon": 3,
+          "model_kind": "world_model",
+          "ignore_actions": false,
+          "update": 2570,
+          "selection_mse": 0.030975665053794302
+        },
+        "config": {
+          "seed": 3,
+          "device": "cuda:0",
+          "dtype": "float32",
+          "batch_size": 16,
+          "context_length": 8,
+          "image_channels": 3,
+          "image_height": 64,
+          "image_width": 64,
+          "action_size": 4,
+          "feature_size": 256,
+          "latent_size": 128,
+          "check_learning_rate": 0.1,
+          "runs_directory": "evaluation/runs",
+          "epochs": 10,
+          "learning_rate": 0.0003,
+          "gradient_clip": 10.0,
+          "changed_region_epsilon": 0.05,
+          "normalize_features": true,
+          "ignore_actions": false
+        }
+      },
+      "random-weights": {
+        "path": "evaluation/runs/run-030/checkpoints/update-000000.pt",
+        "sha256": "f1c40701951fa6c0f07ff3cd4ff2bbcf665d1fd26cad0b9560a81a8dceba8934",
+        "metadata": {
+          "training_run": "evaluation/runs/run-030",
+          "dataset_manifest_sha256": "198376e49c0cd94b1163e52321504f4118ea79443b7d32d4100add7db3072649",
+          "source_sha256": "59caa2c0c2eae387b1509782ecd4780e1c4f4e066b9c6d5309c65e42f69d3876",
+          "initial_parameters_sha256": "1fb09c99eb7b65ea11c0d36771852aa43cafed32d9d041742bcbb8595d279462",
+          "training_horizon": 3,
+          "model_kind": "world_model",
+          "ignore_actions": false,
+          "update": 0,
+          "selection_mse": 0.09376223036378568
+        },
+        "config": {
+          "seed": 3,
+          "device": "cuda:0",
+          "dtype": "float32",
+          "batch_size": 16,
+          "context_length": 8,
+          "image_channels": 3,
+          "image_height": 64,
+          "image_width": 64,
+          "action_size": 4,
+          "feature_size": 256,
+          "latent_size": 128,
+          "check_learning_rate": 0.1,
+          "runs_directory": "evaluation/runs",
+          "epochs": 1,
+          "learning_rate": 0.0003,
+          "gradient_clip": 10.0,
+          "changed_region_epsilon": 0.05,
+          "normalize_features": true,
+          "ignore_actions": false
+        }
+      },
+      "trained-10000-records": {
+        "path": "evaluation/runs/run-030/checkpoints/best.pt",
+        "sha256": "72e318c8cd6c3ebcf743764aa70d279dea4991423ca4dd0529e2791e42ccd17c",
+        "metadata": {
+          "training_run": "evaluation/runs/run-030",
+          "dataset_manifest_sha256": "198376e49c0cd94b1163e52321504f4118ea79443b7d32d4100add7db3072649",
+          "source_sha256": "59caa2c0c2eae387b1509782ecd4780e1c4f4e066b9c6d5309c65e42f69d3876",
+          "initial_parameters_sha256": "1fb09c99eb7b65ea11c0d36771852aa43cafed32d9d041742bcbb8595d279462",
+          "training_horizon": 3,
+          "model_kind": "world_model",
+          "ignore_actions": false,
+          "update": 12500,
+          "selection_mse": 0.025019801471634715
+        },
+        "config": {
+          "seed": 3,
+          "device": "cuda:0",
+          "dtype": "float32",
+          "batch_size": 16,
+          "context_length": 8,
+          "image_channels": 3,
+          "image_height": 64,
+          "image_width": 64,
+          "action_size": 4,
+          "feature_size": 256,
+          "latent_size": 128,
+          "check_learning_rate": 0.1,
+          "runs_directory": "evaluation/runs",
+          "epochs": 1,
+          "learning_rate": 0.0003,
+          "gradient_clip": 10.0,
+          "changed_region_epsilon": 0.05,
+          "normalize_features": true,
+          "ignore_actions": false
+        }
+      }
+    }
+  }
+}

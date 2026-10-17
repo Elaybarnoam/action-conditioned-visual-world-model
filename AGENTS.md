@@ -2,7 +2,10 @@
 
 ## Frozen scientific release
 
-This repository publishes the v1.0.0 BAIR residual-decoder study. Before
+This repository publishes the complete BAIR visual world-model project:
+foundations, joint training, temporal/action diagnosis, scaling and phases B–E.
+For scope, historical results, checkpoint lineage or milestone changes, read
+docs/project-history.md and docs/history-artifacts.md. Before
 changing model, training, data or scoring behavior, read docs/formulation.md
 and docs/experiments.md. Preserve frozen outputs and release hashes in results/;
 new experiments get new configurations and evaluation/runs/ records.

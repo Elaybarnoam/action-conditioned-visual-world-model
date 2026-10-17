@@ -1,0 +1,25 @@
+{
+  "version": "v1.1.0",
+  "run_coverage": "run-001 through run-125",
+  "totals": {
+    "runs": 125,
+    "files": 8134,
+    "pt_files": 707,
+    "training_checkpoint_files": 455,
+    "unique_objects": 6309,
+    "download_bytes": 10184671041
+  },
+  "all_archive_object_hashes_verified": true,
+  "private_string_scan": "passed",
+  "every_exported_pt_tensor_verified_unchanged": true,
+  "local_tests_passed": 175,
+  "ruff_python_files": 93,
+  "local_single_checkpoint_restore": {
+    "run": "run-121",
+    "checkpoint": "checkpoints/update-003000.pt",
+    "model_optimizer_ema_rng_tensors_identical": true,
+    "original_sha256": "c59c392b095229a986aae8994a947a51f795e9f6531c5e4ddd45ca7e6d290748",
+    "public_sha256": "5bc0de1c663289fe3f107b917ac8e88f03f5686c69501ca07985995bb5da158d"
+  },
+  "scope_note": "Publication and restoration checks; no new training or benchmark results."
+}

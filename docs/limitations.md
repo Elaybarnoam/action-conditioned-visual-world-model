@@ -1,5 +1,10 @@
 # Limitations and intended interpretation
 
+These detailed limits focus on the final residual-head study. Earlier stages
+have their own data sizes, horizons, comparisons and selection rules in the
+[milestone report](project-history.md) and [development record](development-record.md).
+Their official-test reuse and limited confirmation experiment remain disclosed.
+
 1. **One training seed in the main comparison.** Three noise seeds are repeated
    sampling of one diffusion checkpoint. Bootstrap intervals describe variation
    over the 51 recordings, conditional on the trained weights.

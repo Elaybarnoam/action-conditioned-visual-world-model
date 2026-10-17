@@ -1,5 +1,11 @@
 # Experiments, findings and evidence audit
 
+This document details the final phase-E comparison. The complete project,
+including initial training, scaling and phases B–D, is reported in the
+[milestone history](project-history.md) and
+[full development record](development-record.md). All saved checkpoints and
+evaluations are available through the [complete archive](history-artifacts.md).
+
 ## Scope and experimental units
 
 The main study is phase E: a paired one-step pilot on a fixed BAIR subset.

@@ -1,8 +1,13 @@
-# Model card: frozen BAIR residual-decoder pilot, v1.0.0
+# Final-model card: frozen BAIR residual-decoder pilot
 
 **Maintainer:** Elay Barnoam. **Type:** research software and trained prediction
 weights. **Code/model license:** MIT. **Source imagery:** BAIR CC BY 4.0,
 with attribution and modifications in THIRD_PARTY_NOTICES.md.
+
+The complete project and earlier model variants are described in the
+[milestone report](project-history.md) and [development record](development-record.md).
+Every saved historical state is listed in the [checkpoint registry](../results/checkpoint-registry.csv).
+This card describes the final three models specifically.
 
 ## Models
 

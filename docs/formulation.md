@@ -1,6 +1,10 @@
 # Mathematical formulation
 
-This document specifies the released implementation. It separates the physical
+This document specifies the final phase-E implementation. The original
+baseline and multistep learning formulation are preserved in the
+[complete development record](development-record.md#problem-formulation), with
+their relationship to later variants in the [milestone report](project-history.md).
+It separates the physical
 environment, observed evidence, learned temporal state and image generation.
 Earlier experiment variants are described in [experiments](experiments.md).
 

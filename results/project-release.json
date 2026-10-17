@@ -1,0 +1,18 @@
+{
+  "version": "v1.1.0",
+  "scope": "Complete retained visual world-model research project, foundations through phases B-E",
+  "history_manifest": "results/history-manifest.json",
+  "history_manifest_sha256": "d33778c08209569b6ad1c397871e0d262288ebe66265eed99c05f45923261b33",
+  "history_totals": {
+    "runs": 125,
+    "files": 8134,
+    "pt_files": 707,
+    "training_checkpoint_files": 455,
+    "unique_objects": 6309,
+    "download_bytes": 10184671041
+  },
+  "final_model_inference_package": "v1.0.0",
+  "frozen_scientific_outputs_changed": false,
+  "historical_training_predates_git": true,
+  "private_local_plans_and_caches_published": false
+}

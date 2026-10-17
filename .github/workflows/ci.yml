@@ -33,3 +33,4 @@ jobs:
         run: |
           python -m src.publication verify
           python -m src.evaluation.publication --check
+          python -m src.history verify

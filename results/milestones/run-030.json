@@ -1,0 +1,123 @@
+{
+  "status": {
+    "kind": "controlled-training",
+    "purpose": "10000-record three-step training",
+    "status": "completed",
+    "started_at": "2026-10-16T18:45:28.917072+00:00",
+    "finished_at": "2026-10-16T18:53:39.621084+00:00"
+  },
+  "results": {
+    "history": [
+      {
+        "update": 0,
+        "selection_mse": 0.09376223036378568,
+        "copy_mse": 0.01968022427881514,
+        "training_objective": null,
+        "elapsed_seconds": 7.068104400008451
+      },
+      {
+        "update": 1000,
+        "selection_mse": 0.04278291509206176,
+        "copy_mse": 0.01968022427881514,
+        "training_objective": 0.04836245799064636,
+        "elapsed_seconds": 43.686742199992295
+      },
+      {
+        "update": 2000,
+        "selection_mse": 0.0381461908599219,
+        "copy_mse": 0.01968022427881514,
+        "training_objective": 0.039339329164475204,
+        "elapsed_seconds": 80.49599399999715
+      },
+      {
+        "update": 3000,
+        "selection_mse": 0.03427427800441968,
+        "copy_mse": 0.01968022427881514,
+        "training_objective": 0.03544167281500995,
+        "elapsed_seconds": 117.19329659995856
+      },
+      {
+        "update": 4000,
+        "selection_mse": 0.03199204145856002,
+        "copy_mse": 0.01968022427881514,
+        "training_objective": 0.0330822008959949,
+        "elapsed_seconds": 153.64007679995848
+      },
+      {
+        "update": 5000,
+        "selection_mse": 0.029447953433376105,
+        "copy_mse": 0.01968022427881514,
+        "training_objective": 0.031558516807854174,
+        "elapsed_seconds": 190.6691275999765
+      },
+      {
+        "update": 6000,
+        "selection_mse": 0.027912960105547398,
+        "copy_mse": 0.01968022427881514,
+        "training_objective": 0.03015948734804988,
+        "elapsed_seconds": 228.06933229998685
+      },
+      {
+        "update": 7000,
+        "selection_mse": 0.02720100508501451,
+        "copy_mse": 0.01968022427881514,
+        "training_objective": 0.02935058225132525,
+        "elapsed_seconds": 268.671174899966
+      },
+      {
+        "update": 8000,
+        "selection_mse": 0.027439129947221533,
+        "copy_mse": 0.01968022427881514,
+        "training_objective": 0.02875195670872927,
+        "elapsed_seconds": 307.66713189997245
+      },
+      {
+        "update": 9000,
+        "selection_mse": 0.026220675447454374,
+        "copy_mse": 0.01968022427881514,
+        "training_objective": 0.028225508250296117,
+        "elapsed_seconds": 346.453287399956
+      },
+      {
+        "update": 10000,
+        "selection_mse": 0.025666526300457446,
+        "copy_mse": 0.01968022427881514,
+        "training_objective": 0.027779366608709097,
+        "elapsed_seconds": 383.8030596000026
+      },
+      {
+        "update": 11000,
+        "selection_mse": 0.025506839518885188,
+        "copy_mse": 0.01968022427881514,
+        "training_objective": 0.0274380842410028,
+        "elapsed_seconds": 421.0723170999554
+      },
+      {
+        "update": 12000,
+        "selection_mse": 0.025065524828970537,
+        "copy_mse": 0.01968022427881514,
+        "training_objective": 0.027170731773599983,
+        "elapsed_seconds": 458.50182929995935
+      },
+      {
+        "update": 12500,
+        "selection_mse": 0.025019801471634715,
+        "copy_mse": 0.01968022427881514,
+        "training_objective": 0.026787864971905946,
+        "elapsed_seconds": 481.27293099998496
+      }
+    ],
+    "best_update": 12500,
+    "best_score": 0.025019801471634715,
+    "numeric_fit_target_achieved": false,
+    "numeric_fit_threshold": null,
+    "initial_parameters_sha256": "1fb09c99eb7b65ea11c0d36771852aa43cafed32d9d041742bcbb8595d279462",
+    "updates_completed": 12500,
+    "max_updates": 12500,
+    "horizon": 3,
+    "ignore_actions": false,
+    "examples_seen": 200000,
+    "supervised_frames_seen": 600000,
+    "peak_cuda_memory_bytes": 272442368
+  }
+}

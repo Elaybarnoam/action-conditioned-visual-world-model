@@ -2,6 +2,7 @@
 
 import csv
 import json
+import re
 import shutil
 import zipfile
 from pathlib import Path
@@ -21,6 +22,15 @@ VERSION = "v1.0.0"
 def portable(value):
     """Normalize local provenance strings in public COPIES, preserving tuple/RNG types."""
     if isinstance(value, str):
+        # Tracebacks and embedded JSON sometimes quote Windows paths more than once.
+        escaped_depths = (8, 4, 2) if "\\" in str(PROJECT_ROOT) else ()
+        for depth in escaped_depths:
+            for separator in ("\\", "/"):
+                escaped_project = str(PROJECT_ROOT).replace("\\", separator * depth)
+                escaped_home = str(Path.home()).replace("\\", separator * depth)
+                value = value.replace(escaped_project + separator * depth, "")
+                value = value.replace(escaped_project, "<project>")
+                value = value.replace(escaped_home, "<user-home>")
         for prefix in (
             str(PROJECT_ROOT) + "\\",
             str(PROJECT_ROOT) + "/",
@@ -31,7 +41,7 @@ def portable(value):
         for home in (str(Path.home()), str(Path.home()).replace("\\", "/")):
             value = value.replace(home, "<user-home>")
         if "\\" in value and ("evaluation\\" in value or "data\\" in value or ".venv\\" in value):
-            value = value.replace("\\", "/")
+            value = re.sub(r"\\+", "/", value)
         return value
     if isinstance(value, dict):
         return {key: portable(item) for key, item in value.items()}
