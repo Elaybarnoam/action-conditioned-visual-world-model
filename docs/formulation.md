@@ -106,7 +106,7 @@ $$
 $$
 \mathcal L_{\mathrm{det}}(\theta)
 =\mathbb E_{(h_t,a_t,o_{t+1})\sim\mathcal D_{\mathrm{train}}}
-\left[\operatorname{mean}(\hat o_{t+1}^{\mathrm{det}}-o_{t+1})^2\right].
+\left[\operatorname{mean}\left((\hat o_{t+1}^{\mathrm{det}}-o_{t+1})^2\right)\right].
 $$
 
 Only $\theta$ receives gradients. The final head convolution is initially zero,
@@ -145,7 +145,7 @@ The denoiser minimizes
 $$
 \mathcal L_{\mathrm{diff}}(\theta)
 =\mathbb E_{\mathcal D,n,\epsilon}
-\left[\operatorname{mean}\left(v_\theta(r_n,n,c_t)-v_n\right)^2\right].
+\left[\operatorname{mean}\left((v_\theta(r_n,n,c_t)-v_n)^2\right)\right].
 $$
 
 Here v is a diffusion parameterization, not robot velocity. The real future
