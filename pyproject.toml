@@ -1,0 +1,43 @@
+[project]
+name = "visual-world-model"
+version = "0.1.0"
+description = "A module-by-module visual world model learning practice"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "torch==2.13.0",
+    "numpy>=2,<3",
+    "tfrecord>=1.14.6",
+    "google-crc32c>=1.9.0",
+    "pillow>=12.3.0",
+    "matplotlib>=3.10,<4",
+    "torchvision>=0.28.0",
+    "lpips==0.1.4",
+]
+
+[dependency-groups]
+dev = ["pytest>=8,<10", "ruff>=0.14,<1"]
+
+[tool.uv]
+package = false
+link-mode = "copy"
+
+[[tool.uv.index]]
+name = "pytorch-cu130"
+url = "https://download.pytorch.org/whl/cu130"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu130" }
+torchvision = { index = "pytorch-cu130" }
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+extend-exclude = ["data", "evaluation/runs"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]

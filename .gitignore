@@ -1,0 +1,21 @@
+# Local working plan.
+/PLAN.md
+[Pp][Ll][Aa][Nn]*.md
+*_PLAN.md
+*_plan.md
+[Pp][Ll][Aa][Nn][Ss]/
+/.venv/
+/data/
+/evaluation/runs/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.cache/
+.uv-cache/
+.mypy_cache/
+.hypothesis/
+.ipynb_checkpoints/
+cache/
+caches/
+*.log

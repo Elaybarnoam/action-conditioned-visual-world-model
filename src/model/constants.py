@@ -1,0 +1,10 @@
+"""Architecture constants for the initial four-layer visual encoder."""
+
+IMAGE_CHANNELS = 3
+IMAGE_SIZE = 64
+CONV_CHANNELS = (32, 64, 128, 128)
+KERNEL_SIZE = 4
+STRIDE = 2
+PADDING = 1
+FINAL_SPATIAL_SIZE = 4
+FLATTENED_SIZE = CONV_CHANNELS[-1] * FINAL_SPATIAL_SIZE**2

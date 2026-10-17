@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>World model · Frame explorer</title>
+<style>
+:root{color-scheme:dark;font-family:system-ui,sans-serif;background:#10151e;color:#ecf1fa}
+*{box-sizing:border-box}body{max-width:1260px;margin:auto;padding:36px 26px}
+header{display:flex;align-items:center;justify-content:space-between;gap:16px}h1{font-size:28px;margin:8px 0}
+.eyebrow{color:#8eb9ff;font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase}
+.muted,small{color:#a4b1c6}.badge{border:1px solid #354459;border-radius:20px;padding:7px 12px;font-size:12px}
+.toolbar{display:flex;gap:14px;align-items:end;flex-wrap:wrap;margin:26px 0 14px;padding:18px;background:#1a2230;border-radius:12px}
+label{display:grid;gap:8px;font-size:13px;color:#b8c7dd}select,input,button{font:inherit;border:1px solid #40516a;border-radius:7px;padding:9px 12px;background:#202d40;color:#ecf1fa}
+select{max-width:350px}input{width:85px}button{cursor:pointer}button:hover{background:#344964}button:disabled{opacity:.4;cursor:default}
+#status{min-height:24px;font-size:13px;color:#b8c7dd}#status.error{color:#ffacac}
+.panels{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:12px}
+.card{background:#1a2230;border:1px solid #2c394e;border-radius:12px;padding:16px;min-width:0}
+.card h2{font-size:16px;margin:0 0 5px}.card img{display:block;width:100%;aspect-ratio:1;object-fit:contain;image-rendering:pixelated;border-radius:6px;margin:14px 0;background:#111825}
+.pred{border-color:#567cc1}.metrics{font-variant-numeric:tabular-nums;font-size:13px;min-height:20px}
+.action{margin:18px 0;display:flex;gap:20px;align-items:center;flex-wrap:wrap}.values{display:flex;gap:12px;flex-wrap:wrap}.value{background:#202d40;padding:10px 15px;border-radius:8px;min-width:125px}.value span{display:block;font-size:12px;color:#a4b1c6}.value strong{display:block;margin-top:6px;font:16px ui-monospace,monospace}
+.history{display:grid;grid-template-columns:repeat(8,1fr);gap:10px;margin-top:15px}.history img{width:100%;image-rendering:pixelated;border-radius:5px}.history figcaption{font-size:12px;color:#a4b1c6;margin-top:5px;text-align:center}figure{margin:0}
+footer{font-size:12px;color:#a4b1c6;line-height:1.7;margin-top:24px}kbd{border:1px solid #40516a;border-radius:4px;padding:1px 5px}
+@media(max-width:720px){body{padding:20px 14px}.panels{grid-template-columns:1fr}.history{grid-template-columns:repeat(4,1fr)}header{align-items:start}.card img{max-height:350px}}
+</style>
+</head>
+<body>
+<header><div><div class="eyebrow">Visual world model</div><h1>Frame explorer</h1><div class="muted">What happens next, given the observed history and action?</div></div><span class="badge">Frozen weights · One step</span></header>
+<div class="toolbar">
+<label>Held-out recording<select id="episode" aria-label="Recording"></select></label>
+<label>Current frame t<input id="frame" type="number" value="7" aria-label="Current frame"></label>
+<button id="previous" aria-label="Previous frame">← Previous</button><button id="next" aria-label="Next frame">Next →</button>
+<button id="random">Random example</button><span id="session" class="muted"></span>
+</div>
+<div id="status" role="status" aria-live="polite">Loading model information…</div>
+<div class="panels">
+<section class="card"><h2>Current image · o_t</h2><small id="currentLabel">Last frame of the observed history</small><img id="current" alt="Current camera image"><div class="metrics" id="copyScore"></div></section>
+<section class="card"><h2>Actual next image · o_(t+1)</h2><small id="actualLabel">Recorded target</small><img id="actual" alt="Actual next camera image"><div class="metrics">Ground truth · Used only for comparison</div></section>
+<section class="card pred"><h2>Model prediction · ô_(t+1)</h2><small>Generated from the predicted latent state</small><img id="predicted" alt="Model predicted next camera image"><div class="metrics" id="modelScore"></div></section>
+</div>
+<details id="renderDetails" class="card" style="margin-top:18px" hidden><summary>Motion rendering components</summary><p class="muted">Masks show how much each source contributes. Flow colors encode horizontal and vertical sampling offsets; neutral is no movement.</p><div id="renderComponents" class="panels"></div></details>
+<div class="action"><div><strong>Recorded action a_t</strong><br><small>Applied between these two frames</small></div><div id="actions" class="values"></div></div>
+<section class="card"><h2>Observed context → current latent state z_t</h2><small id="contextLabel">The model uses this history and its past actions.</small><div id="history" class="history"></div></section>
+<footer id="footer"><div id="source" style="overflow-wrap:anywhere"></div>64 × 64 RGB, enlarged without smoothing. MSE compares normalized pixels with the actual next image.<br>
+Copy MSE repeats the current image as its prediction. Each step uses a fresh observed history; this view is not a recursive rollout.<br>
+Use <kbd>←</kbd> and <kbd>→</kbd> to step through frames. Actions are recorded raw values, not editable controls.</footer>
+<script>
+const $=id=>document.getElementById(id);
+let info,busy=false,shown=null;
+const controls=['episode','frame','previous','next','random'];
+async function get(url){const response=await fetch(url);const data=await response.json();if(!response.ok)throw Error(data.error||'Request failed');return data;}
+function lock(value){busy=value;controls.forEach(id=>$(id).disabled=value);if(!value&&info){$('previous').disabled=Number($('frame').value)<=info.first_frame;$('next').disabled=Number($('frame').value)>=info.last_frame;}}
+async function show(){
+ if(busy)return;
+ const episode=Number($('episode').value),frame=Number($('frame').value);
+ if(!Number.isInteger(frame)||frame<info.first_frame||frame>info.last_frame){$('status').className='error';$('status').textContent=`Choose a frame from ${info.first_frame} to ${info.last_frame}.`;return;}
+ lock(true);$('status').className='';$('status').textContent='Predicting…';
+ try{
+  const d=await get(`/api/example?episode=${episode}&frame=${frame}`);
+  ['current','actual','predicted'].forEach(id=>$(id).src=d[id]);
+  $('renderComponents').replaceChildren();const components=Object.entries(d.components||{});$('renderDetails').hidden=components.length===0;components.forEach(([name,src])=>{const figure=document.createElement('figure');figure.className='card';const caption=document.createElement('figcaption');caption.textContent=name;const image=document.createElement('img');image.src=src;image.alt=name;figure.append(caption,image);$('renderComponents').append(figure);});
+  $('currentLabel').textContent=`Frame ${d.current_frame} · Available to the model`;
+  $('actualLabel').textContent=`Frame ${d.target_frame} · Not supplied to the model`;
+  $('modelScore').textContent=`Prediction MSE ${d.model_mse.toFixed(6)}`;
+  $('copyScore').textContent=`Copy-last-frame MSE ${d.copy_mse.toFixed(6)}`;
+  $('actions').replaceChildren();
+  ['Δx','Δy','Gripper close duration','Lift duration'].forEach((name,i)=>{const box=document.createElement('div');box.className='value';const label=document.createElement('span');label.textContent=name;const value=document.createElement('strong');value.textContent=d.action[i].toFixed(5);box.append(label,value);$('actions').append(box);});
+  $('history').replaceChildren();d.context.forEach((src,i)=>{const figure=document.createElement('figure');const image=document.createElement('img');image.src=src;image.alt=`Context frame ${d.start_frame+i}`;const caption=document.createElement('figcaption');caption.textContent=`t = ${d.start_frame+i}`;figure.append(image,caption);$('history').append(figure);});
+  $('contextLabel').textContent=`${info.context_length} real frames + ${info.context_length-1} past actions → z_${frame}. Then action a_${frame} → predicted frame ${d.target_frame}.`;
+  $('status').textContent=`Recording ${episode+1} / ${info.episodes.length} · ${d.episode_id} · ${d.model_mse<d.copy_mse?'Model has lower MSE than copying on this example.':'Copying has lower or equal MSE on this example.'}`;
+  shown={episode,frame};
+ }catch(error){$('status').className='error';$('status').textContent=error.message;if(shown){$('episode').value=shown.episode;$('frame').value=shown.frame;}}
+ finally{lock(false);}
+}
+$('episode').onchange=show;$('frame').onchange=show;
+$('previous').onclick=()=>{$('frame').value=Number($('frame').value)-1;show();};
+$('next').onclick=()=>{$('frame').value=Number($('frame').value)+1;show();};
+$('random').onclick=()=>{$('episode').value=Math.floor(Math.random()*info.episodes.length);$('frame').value=info.first_frame+Math.floor(Math.random()*(info.last_frame-info.first_frame+1));show();};
+document.addEventListener('keydown',e=>{if(busy||!info||['INPUT','SELECT','TEXTAREA','BUTTON'].includes(e.target.tagName))return;if(e.key==='ArrowLeft'||e.key==='ArrowRight'){e.preventDefault();const button=$(e.key==='ArrowLeft'?'previous':'next');if(!button.disabled)button.click();}});
+lock(true);
+get('/api/info').then(data=>{info=data;data.episodes.forEach((id,i)=>{const option=document.createElement('option');option.value=i;option.textContent=`${i+1} · ${id}`;$('episode').append(option);});$('frame').min=data.first_frame;$('frame').max=data.last_frame;$('frame').value=data.first_frame;$('session').textContent=`Session ${data.run}`;$('source').textContent=data.source?`Split: ${data.source.split} · Device: ${data.source.device} · Checkpoint: ${data.source.checkpoint}`:'';lock(false);show();}).catch(error=>{$('status').className='error';$('status').textContent=error.message;});
+</script>
+</body>
+</html>
