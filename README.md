@@ -10,6 +10,10 @@
 the complete implementation history, saved predictions, per-window scores,
 every saved checkpoint, model artifacts and negative results.
 
+**New experiment:** [higher-resolution DROID pilot](docs/droid-experiment.md).
+Its data protocol and run records are separate from the frozen BAIR study below;
+the first baseline is trained and evaluated, with mixed accuracy/detail results.
+
 ## Abstract
 
 This project develops and investigates a visual world model that predicts

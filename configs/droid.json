@@ -1,0 +1,13 @@
+{
+  "dataset": "droid_100/1.0.0",
+  "camera": "exterior_image_1_left",
+  "context_length": 8,
+  "split_seed": 17,
+  "train_episodes": 80,
+  "validation_episodes": 10,
+  "test_episodes": 10,
+  "data_directory": "data/droid",
+  "runs_directory": "evaluation/runs/droid",
+  "action_fields": ["cartesian_velocity", "gripper_position"],
+  "image_shape_hwc": [180, 320, 3]
+}

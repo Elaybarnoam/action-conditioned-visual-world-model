@@ -1,0 +1,16 @@
+{
+  "seed": 3,
+  "device": "cuda:0",
+  "data_directory": "data/droid",
+  "runs_directory": "evaluation/runs/droid",
+  "epochs": 3,
+  "batch_size": 8,
+  "learning_rate": 0.0003,
+  "gradient_clip": 10.0,
+  "checkpoint_interval": 500,
+  "workers": 2,
+  "tiny_updates": 800,
+  "tiny_learning_rate": 0.001,
+  "tiny_copy_ratio_gate": 0.5,
+  "changed_region_epsilon": 0.05
+}
