@@ -1,0 +1,32 @@
+{
+  "selected-test-h10": {
+    "maximum_absolute_error": 1.1920928955078125e-07,
+    "tolerance": 0.0001,
+    "fixture_sha256": "2b7abc49af839025a5a42915ac0776c8dacf5ca384d6cc1e5e896d67dd8d045b",
+    "checkpoint_sha256": "746f5f83eca88a384f80c568fada20d32f353b7ed2c41a7e9945fa8363805d1e"
+  },
+  "selected-test-h40": {
+    "maximum_absolute_error": 1.7881393432617188e-07,
+    "tolerance": 0.0001,
+    "fixture_sha256": "96d8ed915e24c0418e2663c60ca830c22fefbbe1727ea595c1b9356a60a3af50",
+    "checkpoint_sha256": "746f5f83eca88a384f80c568fada20d32f353b7ed2c41a7e9945fa8363805d1e"
+  },
+  "unselected-validation-spatial_outage": {
+    "maximum_absolute_error": 0.0,
+    "tolerance": 0.0001,
+    "fixture_sha256": "13da5842ad397f3b7b79ee93e6ed44af0786898ecf7bf03e30ccfecf11b40711",
+    "checkpoint_sha256": "aa92ad5fee5a52c0cf6467b4d92f187aaa4ad26fc11da77fdb10dd3ac3d751c5"
+  },
+  "unselected-validation-vector_outage": {
+    "maximum_absolute_error": 0.0,
+    "tolerance": 0.0001,
+    "fixture_sha256": "ceef70ac6fe8089c3bd98a35ceeec812c08f8634897602e03673a4683cbfac11",
+    "checkpoint_sha256": "28971765686b60085d0634847be8e5df113f9bf50c958cbd7b5be40bb95c42fd"
+  },
+  "training-memorization": {
+    "maximum_absolute_error": 0.0,
+    "tolerance": 0.0001,
+    "fixture_sha256": "195d316257810fa6b410672f3026bb7ddf8eab31388712aa111b360516aa79cd",
+    "checkpoint_sha256": "33a40114e525ec3d6d7ce802638037fce41373894b19a0c0540092d3976dd430"
+  }
+}

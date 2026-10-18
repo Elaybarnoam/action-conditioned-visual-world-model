@@ -1,0 +1,8 @@
+{
+  "original_recordings": 100,
+  "reserved_test_recordings": 20,
+  "recording_identity_overlap": 0,
+  "exact_image_array_overlap": 0,
+  "exact_image_action_array_overlap": 0,
+  "scope": "Exact recording IDs and decoded-array contents; not scene/session independence"
+}

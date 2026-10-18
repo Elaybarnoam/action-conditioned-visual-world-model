@@ -1,0 +1,19 @@
+{
+  "seed": 3,
+  "seeds": [3, 7, 11],
+  "device": "cuda:0",
+  "data_directory": "data/camera-outage",
+  "runs_directory": "evaluation/runs/camera-outage",
+  "context": 8,
+  "recovery": 3,
+  "train_horizons": [1, 3, 5, 10],
+  "eval_horizons": [1, 3, 5, 10, 20, 40],
+  "updates": 600,
+  "batch_size": 2,
+  "learning_rate": 0.0005,
+  "checkpoint_interval": 100,
+  "tiny_updates": 600,
+  "variant": "spatial_outage",
+  "new_test_recordings": 20,
+  "baseline_run": "evaluation/runs/droid/run-004"
+}

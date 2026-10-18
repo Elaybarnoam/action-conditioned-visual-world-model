@@ -40,6 +40,22 @@ recorded in results/protocols/phase-e.json. The relevant libraries retain their
 own notices. Other runtime packages are referenced in pyproject.toml/uv.lock;
 their source or binary distributions are installed through package registries.
 
+## DROID imagery and derived camera-outage artifacts
+
+DROID: A Large-Scale In-The-Wild Robot Manipulation Dataset, Khazatsky et al.
+(2024), is released under Creative Commons Attribution 4.0 International.
+
+- [DROID project and authors](https://droid-dataset.github.io/)
+- [Original paper and licensing statement](https://www.jiajunwu.com/papers/droid_rss.pdf)
+- [CC BY 4.0 terms](https://creativecommons.org/licenses/by/4.0/)
+
+Our artifacts select recordings, decode the publisher's face-blurred 320 by 180
+images, select temporal windows, generate predictions and calculate errors.
+Viewer panels, GIFs and replay fixtures include attributed derived imagery.
+Raw recordings remain on the original host and in ignored local data storage.
+Code licensing does not supersede the data license. DROID evaluation uses frozen
+AlexNet LPIPS and torchvision weights; those external weights are not bundled.
+
 ## Algorithms and authorship
 
 DDPM, DDIM, v parameterization, CNNs, GRUs and U-Nets are established methods.

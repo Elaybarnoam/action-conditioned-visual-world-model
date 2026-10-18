@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "initial_outage_mse": 0.021776974201202393,
+  "copy_outage_mse": 0.021749023348093033,
+  "best_outage_mse": 0.004417996853590012,
+  "best_update": 600,
+  "scope": "Training memorization check, not generalization"
+}

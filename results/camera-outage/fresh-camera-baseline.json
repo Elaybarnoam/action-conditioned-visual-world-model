@@ -1,0 +1,284 @@
+{
+  "1": {
+    "outage": {
+      "mse": 0.000979807658586651,
+      "changed_mse": 0.017029465201111243,
+      "gradient_mae": 0.010806617257185281,
+      "ssim": 0.9645479341348012,
+      "lpips": 0.02162383359391242,
+      "windows": 30,
+      "changed_valid_windows": 28
+    },
+    "return_forecast": {
+      "mse": 0.0012200432269310114,
+      "changed_mse": 0.015272827572108984,
+      "gradient_mae": 0.011304819133753578,
+      "ssim": 0.9582029561201731,
+      "lpips": 0.024100360134616493,
+      "windows": 30,
+      "changed_valid_windows": 29
+    },
+    "recovery_1": {
+      "mse": 0.0012372063067838705,
+      "changed_mse": 0.01770395056034128,
+      "gradient_mae": 0.01133560015199085,
+      "ssim": 0.9577356159687043,
+      "lpips": 0.025060774222947658,
+      "windows": 30,
+      "changed_valid_windows": 30
+    },
+    "recovery_2": {
+      "mse": 0.0013983337970178884,
+      "changed_mse": 0.02064548389365276,
+      "gradient_mae": 0.011423459509387612,
+      "ssim": 0.9553683698177338,
+      "lpips": 0.02656258982606232,
+      "windows": 30,
+      "changed_valid_windows": 30
+    },
+    "recovery_3": {
+      "mse": 0.0014215796482555257,
+      "changed_mse": 0.01811435210208098,
+      "gradient_mae": 0.011959825813149413,
+      "ssim": 0.9510173122088115,
+      "lpips": 0.02829968521061043,
+      "windows": 30,
+      "changed_valid_windows": 30
+    }
+  },
+  "3": {
+    "outage": {
+      "mse": 0.0012372063067838705,
+      "changed_mse": 0.013514564571308037,
+      "gradient_mae": 0.01133560015199085,
+      "ssim": 0.9577356159687043,
+      "lpips": 0.025060774222947658,
+      "windows": 30,
+      "changed_valid_windows": 29
+    },
+    "return_forecast": {
+      "mse": 0.0013983337970178884,
+      "changed_mse": 0.012377386718677977,
+      "gradient_mae": 0.011423459509387612,
+      "ssim": 0.9553683698177338,
+      "lpips": 0.02656258982606232,
+      "windows": 30,
+      "changed_valid_windows": 30
+    },
+    "recovery_1": {
+      "mse": 0.0014215796482555257,
+      "changed_mse": 0.01811435210208098,
+      "gradient_mae": 0.011959825813149413,
+      "ssim": 0.9510173122088115,
+      "lpips": 0.02829968521061043,
+      "windows": 30,
+      "changed_valid_windows": 30
+    },
+    "recovery_2": {
+      "mse": 0.0018359236373119833,
+      "changed_mse": 0.02017521165156116,
+      "gradient_mae": 0.01195498863235116,
+      "ssim": 0.9449629624684651,
+      "lpips": 0.03179490832456698,
+      "windows": 30,
+      "changed_valid_windows": 30
+    },
+    "recovery_3": {
+      "mse": 0.0019307936766078152,
+      "changed_mse": 0.02210620617702732,
+      "gradient_mae": 0.012344549208258589,
+      "ssim": 0.9417736291885376,
+      "lpips": 0.032284162115926544,
+      "windows": 30,
+      "changed_valid_windows": 29
+    }
+  },
+  "5": {
+    "outage": {
+      "mse": 0.0014215796482555257,
+      "changed_mse": 0.009941872432439899,
+      "gradient_mae": 0.011959825813149413,
+      "ssim": 0.9510173122088115,
+      "lpips": 0.02829968521061043,
+      "windows": 30,
+      "changed_valid_windows": 30
+    },
+    "return_forecast": {
+      "mse": 0.0018359236373119833,
+      "changed_mse": 0.011241069643680627,
+      "gradient_mae": 0.01195498863235116,
+      "ssim": 0.9449629624684651,
+      "lpips": 0.03179490832456698,
+      "windows": 30,
+      "changed_valid_windows": 30
+    },
+    "recovery_1": {
+      "mse": 0.0019307936766078152,
+      "changed_mse": 0.02210620617702732,
+      "gradient_mae": 0.012344549208258589,
+      "ssim": 0.9417736291885376,
+      "lpips": 0.032284162115926544,
+      "windows": 30,
+      "changed_valid_windows": 29
+    },
+    "recovery_2": {
+      "mse": 0.0019055330372793832,
+      "changed_mse": 0.019773050622704128,
+      "gradient_mae": 0.012167012722541889,
+      "ssim": 0.9425889074802398,
+      "lpips": 0.032567961428624885,
+      "windows": 30,
+      "changed_valid_windows": 30
+    },
+    "recovery_3": {
+      "mse": 0.001958576520337374,
+      "changed_mse": 0.02150060517456511,
+      "gradient_mae": 0.012290647827709715,
+      "ssim": 0.9424070179462433,
+      "lpips": 0.032811620264935,
+      "windows": 30,
+      "changed_valid_windows": 29
+    }
+  },
+  "10": {
+    "outage": {
+      "mse": 0.001808770613085168,
+      "changed_mse": 0.009614346244779881,
+      "gradient_mae": 0.01243925664263467,
+      "ssim": 0.9437282105286916,
+      "lpips": 0.03158132238313556,
+      "windows": 30,
+      "changed_valid_windows": 30
+    },
+    "return_forecast": {
+      "mse": 0.0017446621666749706,
+      "changed_mse": 0.00932172585647398,
+      "gradient_mae": 0.012827335406715672,
+      "ssim": 0.9417070110638937,
+      "lpips": 0.03134472677484155,
+      "windows": 30,
+      "changed_valid_windows": 30
+    },
+    "recovery_1": {
+      "mse": 0.0018348353344966502,
+      "changed_mse": 0.023160145315341652,
+      "gradient_mae": 0.012918587944780787,
+      "ssim": 0.9403782665729523,
+      "lpips": 0.032593149909128746,
+      "windows": 30,
+      "changed_valid_windows": 30
+    },
+    "recovery_2": {
+      "mse": 0.0018107900517255378,
+      "changed_mse": 0.02225269745880117,
+      "gradient_mae": 0.01285574318220218,
+      "ssim": 0.9416558563709259,
+      "lpips": 0.032122853312951824,
+      "windows": 30,
+      "changed_valid_windows": 30
+    },
+    "recovery_3": {
+      "mse": 0.002083025597312371,
+      "changed_mse": 0.024870482692494988,
+      "gradient_mae": 0.013155651496102412,
+      "ssim": 0.9368825097878773,
+      "lpips": 0.03392937139918407,
+      "windows": 30,
+      "changed_valid_windows": 30
+    }
+  },
+  "20": {
+    "outage": {
+      "mse": 0.0029194177865671613,
+      "changed_mse": 0.013743132261636978,
+      "gradient_mae": 0.013636975518117348,
+      "ssim": 0.924418701728185,
+      "lpips": 0.04047602103091776,
+      "windows": 30,
+      "changed_valid_windows": 30
+    },
+    "return_forecast": {
+      "mse": 0.00296993395180228,
+      "changed_mse": 0.013212819919378187,
+      "gradient_mae": 0.013796283506477873,
+      "ssim": 0.9230678002039592,
+      "lpips": 0.04114854233339429,
+      "windows": 30,
+      "changed_valid_windows": 30
+    },
+    "recovery_1": {
+      "mse": 0.0026577032809048736,
+      "changed_mse": 0.031164610913644235,
+      "gradient_mae": 0.013564423471689225,
+      "ssim": 0.92735023299853,
+      "lpips": 0.04046395538995663,
+      "windows": 30,
+      "changed_valid_windows": 30
+    },
+    "recovery_2": {
+      "mse": 0.002690450514880164,
+      "changed_mse": 0.029961258824914693,
+      "gradient_mae": 0.013589195907115936,
+      "ssim": 0.9262202024459839,
+      "lpips": 0.039027742591376105,
+      "windows": 30,
+      "changed_valid_windows": 30
+    },
+    "recovery_3": {
+      "mse": 0.002593339502103239,
+      "changed_mse": 0.030445285234600307,
+      "gradient_mae": 0.013502803910523654,
+      "ssim": 0.9303757349650065,
+      "lpips": 0.03571816897019744,
+      "windows": 30,
+      "changed_valid_windows": 30
+    }
+  },
+  "40": {
+    "outage": {
+      "mse": 0.0025106274185721605,
+      "changed_mse": 0.00845397949985151,
+      "gradient_mae": 0.01337977956670026,
+      "ssim": 0.9381978650887807,
+      "lpips": 0.03224712366548677,
+      "windows": 30,
+      "changed_valid_windows": 30
+    },
+    "return_forecast": {
+      "mse": 0.0021961919776610256,
+      "changed_mse": 0.007322242634351521,
+      "gradient_mae": 0.01342359110713005,
+      "ssim": 0.9407510201136271,
+      "lpips": 0.030968781157086293,
+      "windows": 30,
+      "changed_valid_windows": 30
+    },
+    "recovery_1": {
+      "mse": 0.0023264523454903006,
+      "changed_mse": 0.026307062804698945,
+      "gradient_mae": 0.013019309953475992,
+      "ssim": 0.9428746898969015,
+      "lpips": 0.03026139976767202,
+      "windows": 30,
+      "changed_valid_windows": 30
+    },
+    "recovery_2": {
+      "mse": 0.002240174760663649,
+      "changed_mse": 0.02396724671125412,
+      "gradient_mae": 0.012799151676396529,
+      "ssim": 0.9457701583703358,
+      "lpips": 0.02862246974060933,
+      "windows": 30,
+      "changed_valid_windows": 30
+    },
+    "recovery_3": {
+      "mse": 0.0017134433395767702,
+      "changed_mse": 0.0244022153201513,
+      "gradient_mae": 0.011427452539404232,
+      "ssim": 0.95724129875501,
+      "lpips": 0.02532470414104561,
+      "windows": 30,
+      "changed_valid_windows": 24
+    }
+  }
+}

@@ -1,0 +1,445 @@
+{
+  "context": 8,
+  "recovery": 3,
+  "horizons": [
+    1,
+    3,
+    5,
+    10,
+    20,
+    40
+  ],
+  "windows": {
+    "validation": [
+      {
+        "episode_id": "5f0285d87b4a5f8a752c05714f4075fa6fd1273e103340e923d0b7403a624b1f",
+        "start": 0
+      },
+      {
+        "episode_id": "5f0285d87b4a5f8a752c05714f4075fa6fd1273e103340e923d0b7403a624b1f",
+        "start": 52
+      },
+      {
+        "episode_id": "5f0285d87b4a5f8a752c05714f4075fa6fd1273e103340e923d0b7403a624b1f",
+        "start": 105
+      },
+      {
+        "episode_id": "726fa04c859a1bff904362ab7395b82f55a4cd5c8572a1d003fdea7e0957113b",
+        "start": 0
+      },
+      {
+        "episode_id": "726fa04c859a1bff904362ab7395b82f55a4cd5c8572a1d003fdea7e0957113b",
+        "start": 272
+      },
+      {
+        "episode_id": "726fa04c859a1bff904362ab7395b82f55a4cd5c8572a1d003fdea7e0957113b",
+        "start": 544
+      },
+      {
+        "episode_id": "b055fb38f7d20b63314d1de02711019aac033fd4f10b84e9108f92bf4f084ac8",
+        "start": 0
+      },
+      {
+        "episode_id": "b055fb38f7d20b63314d1de02711019aac033fd4f10b84e9108f92bf4f084ac8",
+        "start": 262
+      },
+      {
+        "episode_id": "b055fb38f7d20b63314d1de02711019aac033fd4f10b84e9108f92bf4f084ac8",
+        "start": 525
+      },
+      {
+        "episode_id": "7c65b06eeb1180f9bd6013df0da5f447f33ce62008a5eb9b1a301961fe88d9e1",
+        "start": 0
+      },
+      {
+        "episode_id": "7c65b06eeb1180f9bd6013df0da5f447f33ce62008a5eb9b1a301961fe88d9e1",
+        "start": 788
+      },
+      {
+        "episode_id": "7c65b06eeb1180f9bd6013df0da5f447f33ce62008a5eb9b1a301961fe88d9e1",
+        "start": 1575
+      },
+      {
+        "episode_id": "d16f3b04ed3a31f820ddf89c8f3271bb97363411662e06c696914ad3ce004ae6",
+        "start": 0
+      },
+      {
+        "episode_id": "d16f3b04ed3a31f820ddf89c8f3271bb97363411662e06c696914ad3ce004ae6",
+        "start": 81
+      },
+      {
+        "episode_id": "d16f3b04ed3a31f820ddf89c8f3271bb97363411662e06c696914ad3ce004ae6",
+        "start": 162
+      },
+      {
+        "episode_id": "ca5015540f4dea8fc494be14e2f673cceeb76d3d85af60ad45802cae7b2ebbc5",
+        "start": 0
+      },
+      {
+        "episode_id": "ca5015540f4dea8fc494be14e2f673cceeb76d3d85af60ad45802cae7b2ebbc5",
+        "start": 39
+      },
+      {
+        "episode_id": "ca5015540f4dea8fc494be14e2f673cceeb76d3d85af60ad45802cae7b2ebbc5",
+        "start": 78
+      },
+      {
+        "episode_id": "fa7341fbc11c7000365d69e97927a9e52ff9906af69664169e748dc0cadc2e0f",
+        "start": 0
+      },
+      {
+        "episode_id": "fa7341fbc11c7000365d69e97927a9e52ff9906af69664169e748dc0cadc2e0f",
+        "start": 60
+      },
+      {
+        "episode_id": "fa7341fbc11c7000365d69e97927a9e52ff9906af69664169e748dc0cadc2e0f",
+        "start": 119
+      },
+      {
+        "episode_id": "0edf8a113f75f1d253941ac8431463ba1785e49416921c79b67b00d42f25746f",
+        "start": 0
+      },
+      {
+        "episode_id": "0edf8a113f75f1d253941ac8431463ba1785e49416921c79b67b00d42f25746f",
+        "start": 60
+      },
+      {
+        "episode_id": "0edf8a113f75f1d253941ac8431463ba1785e49416921c79b67b00d42f25746f",
+        "start": 121
+      },
+      {
+        "episode_id": "1d5292862b34a7669b377a0331926c87f6b14b26b594c196e122a17e92d8928b",
+        "start": 0
+      },
+      {
+        "episode_id": "1d5292862b34a7669b377a0331926c87f6b14b26b594c196e122a17e92d8928b",
+        "start": 126
+      },
+      {
+        "episode_id": "1d5292862b34a7669b377a0331926c87f6b14b26b594c196e122a17e92d8928b",
+        "start": 252
+      },
+      {
+        "episode_id": "eaafde371e04bc14f734de5b3c53e281c3553f252e0c686656906d335cb86bcc",
+        "start": 0
+      },
+      {
+        "episode_id": "eaafde371e04bc14f734de5b3c53e281c3553f252e0c686656906d335cb86bcc",
+        "start": 68
+      },
+      {
+        "episode_id": "eaafde371e04bc14f734de5b3c53e281c3553f252e0c686656906d335cb86bcc",
+        "start": 137
+      }
+    ],
+    "test": [
+      {
+        "episode_id": "26912afb783cdebf9666445fb952939db7ab114408ed7ea9f4094ec1843859e6",
+        "start": 0
+      },
+      {
+        "episode_id": "26912afb783cdebf9666445fb952939db7ab114408ed7ea9f4094ec1843859e6",
+        "start": 94
+      },
+      {
+        "episode_id": "26912afb783cdebf9666445fb952939db7ab114408ed7ea9f4094ec1843859e6",
+        "start": 188
+      },
+      {
+        "episode_id": "a8a01c463aeea6ac20a3c2fd9d0e5c6ca56042dcb4364bcf57b59cede0608594",
+        "start": 0
+      },
+      {
+        "episode_id": "a8a01c463aeea6ac20a3c2fd9d0e5c6ca56042dcb4364bcf57b59cede0608594",
+        "start": 70
+      },
+      {
+        "episode_id": "a8a01c463aeea6ac20a3c2fd9d0e5c6ca56042dcb4364bcf57b59cede0608594",
+        "start": 141
+      },
+      {
+        "episode_id": "dcd5359208d23cbffe2dd3679134a0451e143446ac6baf4bcccb5f8e60756013",
+        "start": 0
+      },
+      {
+        "episode_id": "dcd5359208d23cbffe2dd3679134a0451e143446ac6baf4bcccb5f8e60756013",
+        "start": 94
+      },
+      {
+        "episode_id": "dcd5359208d23cbffe2dd3679134a0451e143446ac6baf4bcccb5f8e60756013",
+        "start": 187
+      },
+      {
+        "episode_id": "d39cb5c4402d6d2f0e6e8dc970d7256ad87b7e571d3937b96e8a9f90a26047f0",
+        "start": 0
+      },
+      {
+        "episode_id": "d39cb5c4402d6d2f0e6e8dc970d7256ad87b7e571d3937b96e8a9f90a26047f0",
+        "start": 308
+      },
+      {
+        "episode_id": "d39cb5c4402d6d2f0e6e8dc970d7256ad87b7e571d3937b96e8a9f90a26047f0",
+        "start": 615
+      },
+      {
+        "episode_id": "eb156432ec71b07202489898e97dc0e1fcf9da86e17168fcdceb2787972ac2c2",
+        "start": 0
+      },
+      {
+        "episode_id": "eb156432ec71b07202489898e97dc0e1fcf9da86e17168fcdceb2787972ac2c2",
+        "start": 116
+      },
+      {
+        "episode_id": "eb156432ec71b07202489898e97dc0e1fcf9da86e17168fcdceb2787972ac2c2",
+        "start": 231
+      },
+      {
+        "episode_id": "32915c00db3accc61ba0078d3370a809f724fdd84729178691bd31848a3fdc93",
+        "start": 0
+      },
+      {
+        "episode_id": "32915c00db3accc61ba0078d3370a809f724fdd84729178691bd31848a3fdc93",
+        "start": 49
+      },
+      {
+        "episode_id": "32915c00db3accc61ba0078d3370a809f724fdd84729178691bd31848a3fdc93",
+        "start": 98
+      },
+      {
+        "episode_id": "feb570262a539cd566dd1fcf8051af4ba77eeeceb4c8714d28f61b50ad713ec4",
+        "start": 0
+      },
+      {
+        "episode_id": "feb570262a539cd566dd1fcf8051af4ba77eeeceb4c8714d28f61b50ad713ec4",
+        "start": 65
+      },
+      {
+        "episode_id": "feb570262a539cd566dd1fcf8051af4ba77eeeceb4c8714d28f61b50ad713ec4",
+        "start": 130
+      },
+      {
+        "episode_id": "8504b53891590992670057b95f92363fc6329cb4f278e5580f2df861aeef1526",
+        "start": 0
+      },
+      {
+        "episode_id": "8504b53891590992670057b95f92363fc6329cb4f278e5580f2df861aeef1526",
+        "start": 44
+      },
+      {
+        "episode_id": "8504b53891590992670057b95f92363fc6329cb4f278e5580f2df861aeef1526",
+        "start": 89
+      },
+      {
+        "episode_id": "720bb4f2a1cc707b53e464dc513ea87e9227d74fb00d3115ff8755c5e0fc6d54",
+        "start": 0
+      },
+      {
+        "episode_id": "720bb4f2a1cc707b53e464dc513ea87e9227d74fb00d3115ff8755c5e0fc6d54",
+        "start": 117
+      },
+      {
+        "episode_id": "720bb4f2a1cc707b53e464dc513ea87e9227d74fb00d3115ff8755c5e0fc6d54",
+        "start": 234
+      },
+      {
+        "episode_id": "5c3680f05f9eb6e2ba1a89b63a3dca9d93ef5f07c262a6d35605d54e792456d3",
+        "start": 0
+      },
+      {
+        "episode_id": "5c3680f05f9eb6e2ba1a89b63a3dca9d93ef5f07c262a6d35605d54e792456d3",
+        "start": 12
+      },
+      {
+        "episode_id": "5c3680f05f9eb6e2ba1a89b63a3dca9d93ef5f07c262a6d35605d54e792456d3",
+        "start": 23
+      },
+      {
+        "episode_id": "6b10ace26e2c7426ce1dd8b277e7fa1a29e0da957e0433fa9c8c6c66d7ebaf03",
+        "start": 0
+      },
+      {
+        "episode_id": "6b10ace26e2c7426ce1dd8b277e7fa1a29e0da957e0433fa9c8c6c66d7ebaf03",
+        "start": 142
+      },
+      {
+        "episode_id": "6b10ace26e2c7426ce1dd8b277e7fa1a29e0da957e0433fa9c8c6c66d7ebaf03",
+        "start": 285
+      },
+      {
+        "episode_id": "13b4023e1c5d3ce456e5f52405c29e54987ea858d57fb556bb2c3f1b9bd0b146",
+        "start": 0
+      },
+      {
+        "episode_id": "13b4023e1c5d3ce456e5f52405c29e54987ea858d57fb556bb2c3f1b9bd0b146",
+        "start": 64
+      },
+      {
+        "episode_id": "13b4023e1c5d3ce456e5f52405c29e54987ea858d57fb556bb2c3f1b9bd0b146",
+        "start": 129
+      },
+      {
+        "episode_id": "89f6943ace5d20004c9a1a4fd7fc5e368aeffef789c3f89d99413f6e327c9546",
+        "start": 0
+      },
+      {
+        "episode_id": "89f6943ace5d20004c9a1a4fd7fc5e368aeffef789c3f89d99413f6e327c9546",
+        "start": 89
+      },
+      {
+        "episode_id": "89f6943ace5d20004c9a1a4fd7fc5e368aeffef789c3f89d99413f6e327c9546",
+        "start": 178
+      },
+      {
+        "episode_id": "3dee11035c38a3da195b0df9628ca15efd0c0c89fd2eef026d98cfb71a906e49",
+        "start": 0
+      },
+      {
+        "episode_id": "3dee11035c38a3da195b0df9628ca15efd0c0c89fd2eef026d98cfb71a906e49",
+        "start": 104
+      },
+      {
+        "episode_id": "3dee11035c38a3da195b0df9628ca15efd0c0c89fd2eef026d98cfb71a906e49",
+        "start": 207
+      },
+      {
+        "episode_id": "569753875d0743f52908beb945e5ed76f055162a2c8edbd72e81046e762a67ac",
+        "start": 0
+      },
+      {
+        "episode_id": "569753875d0743f52908beb945e5ed76f055162a2c8edbd72e81046e762a67ac",
+        "start": 56
+      },
+      {
+        "episode_id": "569753875d0743f52908beb945e5ed76f055162a2c8edbd72e81046e762a67ac",
+        "start": 113
+      },
+      {
+        "episode_id": "18619cb4614c853331545385a659e3d9cb3e83a7b641f453c002a148614e3fd4",
+        "start": 0
+      },
+      {
+        "episode_id": "18619cb4614c853331545385a659e3d9cb3e83a7b641f453c002a148614e3fd4",
+        "start": 70
+      },
+      {
+        "episode_id": "18619cb4614c853331545385a659e3d9cb3e83a7b641f453c002a148614e3fd4",
+        "start": 139
+      },
+      {
+        "episode_id": "af2c1640acf676ff7e93ee98d24b49cfa746a68a1552ae0871ea23588c0adcb9",
+        "start": 0
+      },
+      {
+        "episode_id": "af2c1640acf676ff7e93ee98d24b49cfa746a68a1552ae0871ea23588c0adcb9",
+        "start": 82
+      },
+      {
+        "episode_id": "af2c1640acf676ff7e93ee98d24b49cfa746a68a1552ae0871ea23588c0adcb9",
+        "start": 163
+      },
+      {
+        "episode_id": "2d292025d0d6236adaff32e7572cb5f41e005e2a8374faf398904ad433b1f0a0",
+        "start": 0
+      },
+      {
+        "episode_id": "2d292025d0d6236adaff32e7572cb5f41e005e2a8374faf398904ad433b1f0a0",
+        "start": 63
+      },
+      {
+        "episode_id": "2d292025d0d6236adaff32e7572cb5f41e005e2a8374faf398904ad433b1f0a0",
+        "start": 126
+      },
+      {
+        "episode_id": "4bfcce04c0b60665ffddf78b9c503eb983e4089b9b468b8308ff999d000e48e2",
+        "start": 0
+      },
+      {
+        "episode_id": "4bfcce04c0b60665ffddf78b9c503eb983e4089b9b468b8308ff999d000e48e2",
+        "start": 390
+      },
+      {
+        "episode_id": "4bfcce04c0b60665ffddf78b9c503eb983e4089b9b468b8308ff999d000e48e2",
+        "start": 781
+      },
+      {
+        "episode_id": "d8037441a68b84f3ce9bf942c9472fa590bbf34fc028ba5c8e87af524fb0ac67",
+        "start": 0
+      },
+      {
+        "episode_id": "d8037441a68b84f3ce9bf942c9472fa590bbf34fc028ba5c8e87af524fb0ac67",
+        "start": 100
+      },
+      {
+        "episode_id": "d8037441a68b84f3ce9bf942c9472fa590bbf34fc028ba5c8e87af524fb0ac67",
+        "start": 201
+      }
+    ]
+  },
+  "excluded": {
+    "validation": [],
+    "test": []
+  },
+  "selection_horizon": 10,
+  "selection": "Lowest H10 MSE within +10% copy boundary and +5% copy changed error; fallback normalized metric sum",
+  "freshness": "H unavailable frames, then return observation and three recovery forecasts",
+  "test_policy": "Freeze all selected models before evaluating any new test recording",
+  "training_config": {
+    "seed": 3,
+    "seeds": [
+      3,
+      7,
+      11
+    ],
+    "device": "cuda:0",
+    "data_directory": "data/camera-outage",
+    "runs_directory": "evaluation/runs/camera-outage",
+    "context": 8,
+    "recovery": 3,
+    "train_horizons": [
+      1,
+      3,
+      5,
+      10
+    ],
+    "eval_horizons": [
+      1,
+      3,
+      5,
+      10,
+      20,
+      40
+    ],
+    "updates": 600,
+    "batch_size": 2,
+    "learning_rate": 0.0005,
+    "checkpoint_interval": 100,
+    "tiny_updates": 600,
+    "variant": "spatial_outage",
+    "new_test_recordings": 20,
+    "baseline_run": "evaluation/runs/droid/run-004"
+  },
+  "variants": {
+    "vector_outage": [
+      "vector",
+      false,
+      0.0
+    ],
+    "spatial_outage": [
+      "spatial",
+      false,
+      0.0
+    ],
+    "spatial_observed": [
+      "spatial",
+      true,
+      0.0
+    ],
+    "spatial_detail": [
+      "spatial",
+      false,
+      0.05
+    ]
+  },
+  "dataset_sha256": "336676e537b535fbd95126f96145905506cd7001f36c7ca0b2fbc2d672b19643",
+  "protocol_sha256": "d6842b5b35371bdf31422605b12cce704b3682663bbb7f48356b3170eda1e881"
+}

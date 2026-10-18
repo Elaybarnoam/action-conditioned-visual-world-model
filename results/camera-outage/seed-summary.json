@@ -1,0 +1,126 @@
+{
+  "validation": {
+    "vector_outage": {
+      "seeds": [
+        3,
+        7,
+        11
+      ],
+      "h10_mse_per_seed": [
+        0.010266042354002518,
+        0.010559296527450595,
+        0.01029678737783494
+      ],
+      "mean": 0.01037404208642935,
+      "std": 0.00016116984848657068,
+      "scope": "Training-seed variation, separate from recording bootstrap"
+    },
+    "spatial_outage": {
+      "seeds": [
+        3,
+        7,
+        11
+      ],
+      "h10_mse_per_seed": [
+        0.010357340585809045,
+        0.010407151760106596,
+        0.01037278395233443
+      ],
+      "mean": 0.01037909209941669,
+      "std": 2.5497702071634085e-05,
+      "scope": "Training-seed variation, separate from recording bootstrap"
+    },
+    "spatial_observed": {
+      "seeds": [
+        3,
+        7,
+        11
+      ],
+      "h10_mse_per_seed": [
+        0.010357340585809045,
+        0.010407151760106596,
+        0.01037278395233443
+      ],
+      "mean": 0.01037909209941669,
+      "std": 2.5497702071634085e-05,
+      "scope": "Training-seed variation, separate from recording bootstrap"
+    },
+    "spatial_detail": {
+      "seeds": [
+        3,
+        7,
+        11
+      ],
+      "h10_mse_per_seed": [
+        0.010357340585809045,
+        0.010407151760106596,
+        0.01037278395233443
+      ],
+      "mean": 0.01037909209941669,
+      "std": 2.5497702071634085e-05,
+      "scope": "Training-seed variation, separate from recording bootstrap"
+    }
+  },
+  "test": {
+    "vector_outage": {
+      "seeds": [
+        3,
+        7,
+        11
+      ],
+      "h10_mse_per_seed": [
+        0.0068294531787008355,
+        0.007045487817716397,
+        0.006858697779413584
+      ],
+      "mean": 0.006911212925276938,
+      "std": 0.00011720120188135026,
+      "scope": "Training-seed variation, separate from recording bootstrap"
+    },
+    "spatial_outage": {
+      "seeds": [
+        3,
+        7,
+        11
+      ],
+      "h10_mse_per_seed": [
+        0.00687490706089496,
+        0.006933207196076789,
+        0.0068939393294082645
+      ],
+      "mean": 0.006900684528793337,
+      "std": 2.9729610266755603e-05,
+      "scope": "Training-seed variation, separate from recording bootstrap"
+    },
+    "spatial_observed": {
+      "seeds": [
+        3,
+        7,
+        11
+      ],
+      "h10_mse_per_seed": [
+        0.00687490706089496,
+        0.006933207196076789,
+        0.0068939393294082645
+      ],
+      "mean": 0.006900684528793337,
+      "std": 2.9729610266755603e-05,
+      "scope": "Training-seed variation, separate from recording bootstrap"
+    },
+    "spatial_detail": {
+      "seeds": [
+        3,
+        7,
+        11
+      ],
+      "h10_mse_per_seed": [
+        0.00687490706089496,
+        0.006933207196076789,
+        0.0068939393294082645
+      ],
+      "mean": 0.006900684528793337,
+      "std": 2.9729610266755603e-05,
+      "scope": "Training-seed variation, separate from recording bootstrap"
+    }
+  }
+}

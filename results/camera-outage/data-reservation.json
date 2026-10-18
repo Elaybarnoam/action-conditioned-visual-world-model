@@ -1,0 +1,5 @@
+{
+  "run": "evaluation/runs/camera-outage/run-001",
+  "manifest_sha256": "3ab9a1cdee2348e77edeeb73682fb8ddf431fc0152ceb7a7b83f3ac1fb26a97d",
+  "scope": "Reservation completed before model development; exact manifest byte match"
+}

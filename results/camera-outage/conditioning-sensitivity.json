@@ -1,0 +1,581 @@
+{
+  "scope": "Post-study descriptive validation of unselected latest states. Output differences, not target errors; no causal interpretation or retuning.",
+  "scores": [
+    {
+      "variant": "vector_outage",
+      "seed": 3,
+      "mode": "zero_past",
+      "stage": "outage",
+      "prediction_mse_to_normal": 1.7963302280175644e-09,
+      "prediction_mae_to_normal": 2.562513087885539e-05
+    },
+    {
+      "variant": "vector_outage",
+      "seed": 3,
+      "mode": "zero_past",
+      "stage": "recovery_1",
+      "prediction_mse_to_normal": 9.708350889338532e-16,
+      "prediction_mae_to_normal": 1.910045951033131e-08
+    },
+    {
+      "variant": "vector_outage",
+      "seed": 3,
+      "mode": "zero_future",
+      "stage": "outage",
+      "prediction_mse_to_normal": 1.027234195897601e-06,
+      "prediction_mae_to_normal": 0.0007063929833141931
+    },
+    {
+      "variant": "vector_outage",
+      "seed": 3,
+      "mode": "zero_future",
+      "stage": "recovery_1",
+      "prediction_mse_to_normal": 1.5628589358499093e-08,
+      "prediction_mae_to_normal": 8.124310379571398e-05
+    },
+    {
+      "variant": "vector_outage",
+      "seed": 3,
+      "mode": "reset",
+      "stage": "outage",
+      "prediction_mse_to_normal": 0.0,
+      "prediction_mae_to_normal": 0.0
+    },
+    {
+      "variant": "vector_outage",
+      "seed": 3,
+      "mode": "reset",
+      "stage": "recovery_1",
+      "prediction_mse_to_normal": 1.745203555003627e-07,
+      "prediction_mae_to_normal": 0.0003749833990392896
+    },
+    {
+      "variant": "vector_outage",
+      "seed": 7,
+      "mode": "zero_past",
+      "stage": "outage",
+      "prediction_mse_to_normal": 1.3424426637739332e-09,
+      "prediction_mae_to_normal": 2.4773556964419187e-05
+    },
+    {
+      "variant": "vector_outage",
+      "seed": 7,
+      "mode": "zero_past",
+      "stage": "recovery_1",
+      "prediction_mse_to_normal": 3.609219282887201e-15,
+      "prediction_mae_to_normal": 3.806540571638095e-08
+    },
+    {
+      "variant": "vector_outage",
+      "seed": 7,
+      "mode": "zero_future",
+      "stage": "outage",
+      "prediction_mse_to_normal": 1.505418776481804e-06,
+      "prediction_mae_to_normal": 0.0009593455336774545
+    },
+    {
+      "variant": "vector_outage",
+      "seed": 7,
+      "mode": "zero_future",
+      "stage": "recovery_1",
+      "prediction_mse_to_normal": 5.405396439774809e-09,
+      "prediction_mae_to_normal": 5.569758285067413e-05
+    },
+    {
+      "variant": "vector_outage",
+      "seed": 7,
+      "mode": "reset",
+      "stage": "outage",
+      "prediction_mse_to_normal": 0.0,
+      "prediction_mae_to_normal": 0.0
+    },
+    {
+      "variant": "vector_outage",
+      "seed": 7,
+      "mode": "reset",
+      "stage": "recovery_1",
+      "prediction_mse_to_normal": 1.851505167222341e-07,
+      "prediction_mae_to_normal": 0.0003759614697628422
+    },
+    {
+      "variant": "vector_outage",
+      "seed": 11,
+      "mode": "zero_past",
+      "stage": "outage",
+      "prediction_mse_to_normal": 6.33698232948701e-10,
+      "prediction_mae_to_normal": 1.8151266855663075e-05
+    },
+    {
+      "variant": "vector_outage",
+      "seed": 11,
+      "mode": "zero_past",
+      "stage": "recovery_1",
+      "prediction_mse_to_normal": 1.5725212987890389e-16,
+      "prediction_mae_to_normal": 4.5428612464408025e-09
+    },
+    {
+      "variant": "vector_outage",
+      "seed": 11,
+      "mode": "zero_future",
+      "stage": "outage",
+      "prediction_mse_to_normal": 2.594372457457676e-07,
+      "prediction_mae_to_normal": 0.0003780119991764271
+    },
+    {
+      "variant": "vector_outage",
+      "seed": 11,
+      "mode": "zero_future",
+      "stage": "recovery_1",
+      "prediction_mse_to_normal": 3.0219725624669457e-09,
+      "prediction_mae_to_normal": 4.08555031602494e-05
+    },
+    {
+      "variant": "vector_outage",
+      "seed": 11,
+      "mode": "reset",
+      "stage": "outage",
+      "prediction_mse_to_normal": 0.0,
+      "prediction_mae_to_normal": 0.0
+    },
+    {
+      "variant": "vector_outage",
+      "seed": 11,
+      "mode": "reset",
+      "stage": "recovery_1",
+      "prediction_mse_to_normal": 4.4232042019827965e-09,
+      "prediction_mae_to_normal": 5.000106736285185e-05
+    },
+    {
+      "variant": "spatial_outage",
+      "seed": 3,
+      "mode": "zero_past",
+      "stage": "outage",
+      "prediction_mse_to_normal": 3.0921365034617135e-10,
+      "prediction_mae_to_normal": 1.0696613736627114e-05
+    },
+    {
+      "variant": "spatial_outage",
+      "seed": 3,
+      "mode": "zero_past",
+      "stage": "recovery_1",
+      "prediction_mse_to_normal": 5.185832600491403e-15,
+      "prediction_mae_to_normal": 2.054417781819732e-08
+    },
+    {
+      "variant": "spatial_outage",
+      "seed": 3,
+      "mode": "zero_future",
+      "stage": "outage",
+      "prediction_mse_to_normal": 2.497782066512855e-07,
+      "prediction_mae_to_normal": 0.0003450696342042647
+    },
+    {
+      "variant": "spatial_outage",
+      "seed": 3,
+      "mode": "zero_future",
+      "stage": "recovery_1",
+      "prediction_mse_to_normal": 1.7872665515385652e-09,
+      "prediction_mae_to_normal": 2.867267220002153e-05
+    },
+    {
+      "variant": "spatial_outage",
+      "seed": 3,
+      "mode": "reset",
+      "stage": "outage",
+      "prediction_mse_to_normal": 0.0,
+      "prediction_mae_to_normal": 0.0
+    },
+    {
+      "variant": "spatial_outage",
+      "seed": 3,
+      "mode": "reset",
+      "stage": "recovery_1",
+      "prediction_mse_to_normal": 1.335983151074897e-10,
+      "prediction_mae_to_normal": 8.730496786787019e-06
+    },
+    {
+      "variant": "spatial_outage",
+      "seed": 7,
+      "mode": "zero_past",
+      "stage": "outage",
+      "prediction_mse_to_normal": 6.519879226785097e-09,
+      "prediction_mae_to_normal": 4.42241398711e-05
+    },
+    {
+      "variant": "spatial_outage",
+      "seed": 7,
+      "mode": "zero_past",
+      "stage": "recovery_1",
+      "prediction_mse_to_normal": 4.822829425430402e-14,
+      "prediction_mae_to_normal": 1.0614282090296949e-07
+    },
+    {
+      "variant": "spatial_outage",
+      "seed": 7,
+      "mode": "zero_future",
+      "stage": "outage",
+      "prediction_mse_to_normal": 2.6356760488492153e-06,
+      "prediction_mae_to_normal": 0.0009241799833641077
+    },
+    {
+      "variant": "spatial_outage",
+      "seed": 7,
+      "mode": "zero_future",
+      "stage": "recovery_1",
+      "prediction_mse_to_normal": 3.087015314172381e-08,
+      "prediction_mae_to_normal": 9.765350043077585e-05
+    },
+    {
+      "variant": "spatial_outage",
+      "seed": 7,
+      "mode": "reset",
+      "stage": "outage",
+      "prediction_mse_to_normal": 0.0,
+      "prediction_mae_to_normal": 0.0
+    },
+    {
+      "variant": "spatial_outage",
+      "seed": 7,
+      "mode": "reset",
+      "stage": "recovery_1",
+      "prediction_mse_to_normal": 6.632814869567127e-09,
+      "prediction_mae_to_normal": 5.560137330273089e-05
+    },
+    {
+      "variant": "spatial_outage",
+      "seed": 11,
+      "mode": "zero_past",
+      "stage": "outage",
+      "prediction_mse_to_normal": 9.928878348719978e-10,
+      "prediction_mae_to_normal": 1.8678507147266524e-05
+    },
+    {
+      "variant": "spatial_outage",
+      "seed": 11,
+      "mode": "zero_past",
+      "stage": "recovery_1",
+      "prediction_mse_to_normal": 1.9170378869114045e-15,
+      "prediction_mae_to_normal": 1.4749036788182698e-08
+    },
+    {
+      "variant": "spatial_outage",
+      "seed": 11,
+      "mode": "zero_future",
+      "stage": "outage",
+      "prediction_mse_to_normal": 9.669437065854918e-07,
+      "prediction_mae_to_normal": 0.0006156261411282078
+    },
+    {
+      "variant": "spatial_outage",
+      "seed": 11,
+      "mode": "zero_future",
+      "stage": "recovery_1",
+      "prediction_mse_to_normal": 7.660066286482858e-09,
+      "prediction_mae_to_normal": 5.6059430517052536e-05
+    },
+    {
+      "variant": "spatial_outage",
+      "seed": 11,
+      "mode": "reset",
+      "stage": "outage",
+      "prediction_mse_to_normal": 0.0,
+      "prediction_mae_to_normal": 0.0
+    },
+    {
+      "variant": "spatial_outage",
+      "seed": 11,
+      "mode": "reset",
+      "stage": "recovery_1",
+      "prediction_mse_to_normal": 5.129547055634139e-10,
+      "prediction_mae_to_normal": 1.636033290803122e-05
+    },
+    {
+      "variant": "spatial_observed",
+      "seed": 3,
+      "mode": "zero_past",
+      "stage": "outage",
+      "prediction_mse_to_normal": 1.4030823746994751e-06,
+      "prediction_mae_to_normal": 0.0007367093756329268
+    },
+    {
+      "variant": "spatial_observed",
+      "seed": 3,
+      "mode": "zero_past",
+      "stage": "recovery_1",
+      "prediction_mse_to_normal": 2.0244483683621025e-10,
+      "prediction_mae_to_normal": 6.4749147493140905e-06
+    },
+    {
+      "variant": "spatial_observed",
+      "seed": 3,
+      "mode": "zero_future",
+      "stage": "outage",
+      "prediction_mse_to_normal": 7.211668570429689e-05,
+      "prediction_mae_to_normal": 0.00576117309780481
+    },
+    {
+      "variant": "spatial_observed",
+      "seed": 3,
+      "mode": "zero_future",
+      "stage": "recovery_1",
+      "prediction_mse_to_normal": 1.1100953514864287e-06,
+      "prediction_mae_to_normal": 0.0007099967060639756
+    },
+    {
+      "variant": "spatial_observed",
+      "seed": 3,
+      "mode": "reset",
+      "stage": "outage",
+      "prediction_mse_to_normal": 0.0,
+      "prediction_mae_to_normal": 0.0
+    },
+    {
+      "variant": "spatial_observed",
+      "seed": 3,
+      "mode": "reset",
+      "stage": "recovery_1",
+      "prediction_mse_to_normal": 4.933132855988731e-07,
+      "prediction_mae_to_normal": 0.0006091072393852907
+    },
+    {
+      "variant": "spatial_observed",
+      "seed": 7,
+      "mode": "zero_past",
+      "stage": "outage",
+      "prediction_mse_to_normal": 2.882913912780581e-09,
+      "prediction_mae_to_normal": 3.5727636259252904e-05
+    },
+    {
+      "variant": "spatial_observed",
+      "seed": 7,
+      "mode": "zero_past",
+      "stage": "recovery_1",
+      "prediction_mse_to_normal": 4.617230917206053e-15,
+      "prediction_mae_to_normal": 3.8047510556952585e-08
+    },
+    {
+      "variant": "spatial_observed",
+      "seed": 7,
+      "mode": "zero_future",
+      "stage": "outage",
+      "prediction_mse_to_normal": 2.6777861937906284e-06,
+      "prediction_mae_to_normal": 0.0010583120892988518
+    },
+    {
+      "variant": "spatial_observed",
+      "seed": 7,
+      "mode": "zero_future",
+      "stage": "recovery_1",
+      "prediction_mse_to_normal": 4.303260245641649e-08,
+      "prediction_mae_to_normal": 0.00012451874842251225
+    },
+    {
+      "variant": "spatial_observed",
+      "seed": 7,
+      "mode": "reset",
+      "stage": "outage",
+      "prediction_mse_to_normal": 0.0,
+      "prediction_mae_to_normal": 0.0
+    },
+    {
+      "variant": "spatial_observed",
+      "seed": 7,
+      "mode": "reset",
+      "stage": "recovery_1",
+      "prediction_mse_to_normal": 4.247624033407172e-09,
+      "prediction_mae_to_normal": 4.2836439160964804e-05
+    },
+    {
+      "variant": "spatial_observed",
+      "seed": 11,
+      "mode": "zero_past",
+      "stage": "outage",
+      "prediction_mse_to_normal": 1.376509385606015e-10,
+      "prediction_mae_to_normal": 6.015874253269733e-06
+    },
+    {
+      "variant": "spatial_observed",
+      "seed": 11,
+      "mode": "zero_past",
+      "stage": "recovery_1",
+      "prediction_mse_to_normal": 1.6233443586794456e-16,
+      "prediction_mae_to_normal": 4.412080589766276e-09
+    },
+    {
+      "variant": "spatial_observed",
+      "seed": 11,
+      "mode": "zero_future",
+      "stage": "outage",
+      "prediction_mse_to_normal": 1.3030091441379455e-07,
+      "prediction_mae_to_normal": 0.00019225650915662604
+    },
+    {
+      "variant": "spatial_observed",
+      "seed": 11,
+      "mode": "zero_future",
+      "stage": "recovery_1",
+      "prediction_mse_to_normal": 1.2262301931377043e-09,
+      "prediction_mae_to_normal": 1.900043556967527e-05
+    },
+    {
+      "variant": "spatial_observed",
+      "seed": 11,
+      "mode": "reset",
+      "stage": "outage",
+      "prediction_mse_to_normal": 0.0,
+      "prediction_mae_to_normal": 0.0
+    },
+    {
+      "variant": "spatial_observed",
+      "seed": 11,
+      "mode": "reset",
+      "stage": "recovery_1",
+      "prediction_mse_to_normal": 1.274338717304387e-10,
+      "prediction_mae_to_normal": 7.77392957994986e-06
+    },
+    {
+      "variant": "spatial_detail",
+      "seed": 3,
+      "mode": "zero_past",
+      "stage": "outage",
+      "prediction_mse_to_normal": 7.734927000580445e-09,
+      "prediction_mae_to_normal": 4.464208046783824e-05
+    },
+    {
+      "variant": "spatial_detail",
+      "seed": 3,
+      "mode": "zero_past",
+      "stage": "recovery_1",
+      "prediction_mse_to_normal": 1.6592937746588759e-12,
+      "prediction_mae_to_normal": 3.2376198775274647e-07
+    },
+    {
+      "variant": "spatial_detail",
+      "seed": 3,
+      "mode": "zero_future",
+      "stage": "outage",
+      "prediction_mse_to_normal": 2.711765776316118e-06,
+      "prediction_mae_to_normal": 0.0009807615725245947
+    },
+    {
+      "variant": "spatial_detail",
+      "seed": 3,
+      "mode": "zero_future",
+      "stage": "recovery_1",
+      "prediction_mse_to_normal": 2.1125962271449176e-08,
+      "prediction_mae_to_normal": 9.672451192273001e-05
+    },
+    {
+      "variant": "spatial_detail",
+      "seed": 3,
+      "mode": "reset",
+      "stage": "outage",
+      "prediction_mse_to_normal": 0.0,
+      "prediction_mae_to_normal": 0.0
+    },
+    {
+      "variant": "spatial_detail",
+      "seed": 3,
+      "mode": "reset",
+      "stage": "recovery_1",
+      "prediction_mse_to_normal": 1.4543008042267047e-08,
+      "prediction_mae_to_normal": 0.00010231908017885872
+    },
+    {
+      "variant": "spatial_detail",
+      "seed": 7,
+      "mode": "zero_past",
+      "stage": "outage",
+      "prediction_mse_to_normal": 3.247200461558436e-09,
+      "prediction_mae_to_normal": 3.862335591406918e-05
+    },
+    {
+      "variant": "spatial_detail",
+      "seed": 7,
+      "mode": "zero_past",
+      "stage": "recovery_1",
+      "prediction_mse_to_normal": 6.335716627764859e-15,
+      "prediction_mae_to_normal": 4.3583458612476515e-08
+    },
+    {
+      "variant": "spatial_detail",
+      "seed": 7,
+      "mode": "zero_future",
+      "stage": "outage",
+      "prediction_mse_to_normal": 3.3398157264959614e-06,
+      "prediction_mae_to_normal": 0.001358887906826567
+    },
+    {
+      "variant": "spatial_detail",
+      "seed": 7,
+      "mode": "zero_future",
+      "stage": "recovery_1",
+      "prediction_mse_to_normal": 3.291061236576169e-08,
+      "prediction_mae_to_normal": 0.00013942192686045018
+    },
+    {
+      "variant": "spatial_detail",
+      "seed": 7,
+      "mode": "reset",
+      "stage": "outage",
+      "prediction_mse_to_normal": 0.0,
+      "prediction_mae_to_normal": 0.0
+    },
+    {
+      "variant": "spatial_detail",
+      "seed": 7,
+      "mode": "reset",
+      "stage": "recovery_1",
+      "prediction_mse_to_normal": 2.988423986975223e-09,
+      "prediction_mae_to_normal": 4.1115665711307275e-05
+    },
+    {
+      "variant": "spatial_detail",
+      "seed": 11,
+      "mode": "zero_past",
+      "stage": "outage",
+      "prediction_mse_to_normal": 9.390150752088799e-10,
+      "prediction_mae_to_normal": 1.557855437492132e-05
+    },
+    {
+      "variant": "spatial_detail",
+      "seed": 11,
+      "mode": "zero_past",
+      "stage": "recovery_1",
+      "prediction_mse_to_normal": 1.6652640731712368e-15,
+      "prediction_mae_to_normal": 1.2515006653224247e-08
+    },
+    {
+      "variant": "spatial_detail",
+      "seed": 11,
+      "mode": "zero_future",
+      "stage": "outage",
+      "prediction_mse_to_normal": 9.0475645599201e-07,
+      "prediction_mae_to_normal": 0.0006191188850304268
+    },
+    {
+      "variant": "spatial_detail",
+      "seed": 11,
+      "mode": "zero_future",
+      "stage": "recovery_1",
+      "prediction_mse_to_normal": 5.305927854171397e-09,
+      "prediction_mae_to_normal": 4.7751144753268214e-05
+    },
+    {
+      "variant": "spatial_detail",
+      "seed": 11,
+      "mode": "reset",
+      "stage": "outage",
+      "prediction_mse_to_normal": 0.0,
+      "prediction_mae_to_normal": 0.0
+    },
+    {
+      "variant": "spatial_detail",
+      "seed": 11,
+      "mode": "reset",
+      "stage": "recovery_1",
+      "prediction_mse_to_normal": 5.188422299434725e-10,
+      "prediction_mae_to_normal": 1.5153239246501471e-05
+    }
+  ]
+}

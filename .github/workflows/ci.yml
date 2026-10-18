@@ -34,3 +34,4 @@ jobs:
           python -m src.publication verify
           python -m src.evaluation.publication --check
           python -m src.history verify
+          python -m src.outage_report --verify

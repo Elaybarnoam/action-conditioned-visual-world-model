@@ -1,0 +1,10 @@
+{
+  "study": "evaluation/runs/camera-outage/run-002",
+  "protocol_sha256": "d6842b5b35371bdf31422605b12cce704b3682663bbb7f48356b3170eda1e881",
+  "selected_initial_runs": 12,
+  "training_runs": 12,
+  "updates": 7200,
+  "target_frame_exposures": 104992,
+  "training_seconds": 3926.8497426999384,
+  "scope": "Selected checkpoints define test results. Latest-state validation and tiny fitting are descriptive development evidence, not replacement test estimates."
+}

@@ -1,0 +1,16 @@
+{
+  "sources": [
+    {
+      "panel": "validation-failure-0.png",
+      "source": "evaluation/runs/camera-outage/run-040/videos/DEVELOPMENT-WORST-H40-validation-spatial_outage-1d5292862b34-252-h40.pt",
+      "source_sha256": "524f0b1373d2bb3649fe5c5514fa3ebc1f346fd7b0851ee1b250abf48c9d4210",
+      "scope": "Unselected latest spatial seed 3; worst validation cases, not test"
+    },
+    {
+      "panel": "validation-failure-1.png",
+      "source": "evaluation/runs/camera-outage/run-040/videos/DEVELOPMENT-WORST-H40-validation-spatial_outage-726fa04c859a-0-h40.pt",
+      "source_sha256": "e12bf51a07e7a7658ee99948accaef7cdf4f96ff0f6b0ad0e080496625c915f4",
+      "scope": "Unselected latest spatial seed 3; worst validation cases, not test"
+    }
+  ]
+}

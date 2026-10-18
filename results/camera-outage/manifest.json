@@ -1,0 +1,117 @@
+{
+  "files": {
+    "action-normalization.json": {
+      "sha256": "63daaba2540630a6c317d0bda9177c98bb26d719107426fb42f1d03725e1b286",
+      "bytes": 6217
+    },
+    "checkpoint-selection.json": {
+      "sha256": "0ff9bddf38af148f705905f8c1f6a057d5fd7772af9c600fb29a7ff802cd0fed",
+      "bytes": 45176
+    },
+    "checkpoint-selection.png": {
+      "sha256": "6cb46162bf7675be81d0d2042615bd4ad70a8291a60ea7ffd56650be5d5d82bc",
+      "bytes": 189745
+    },
+    "conditioning-sensitivity.json": {
+      "sha256": "500faa5a79ea827d9190ad91e4f042903aa057ef48d45b4ab2df0fb177cc5c8c",
+      "bytes": 16473
+    },
+    "config.json": {
+      "sha256": "214c5241502e2ae06cd9c9e27914d7c14a8151b92c59e7ce455b6a091ec430e7",
+      "bytes": 558
+    },
+    "core-source-identity.json": {
+      "sha256": "bf46dd4781f87be5099eddba77f850e6c43194f00b498b7f1fb8c27ea2a36fd9",
+      "bytes": 7224
+    },
+    "data-reservation.json": {
+      "sha256": "edae1bf42b267c0b6a590cbeb8940a18a7585378f5e0c63b3c04b1b1f75c58ee",
+      "bytes": 230
+    },
+    "dataset-manifest.json": {
+      "sha256": "2425bbe0dd63bd095f5210625507e8f8325c00bfaa3af856c634bc2120552e69",
+      "bytes": 94084
+    },
+    "failure-panels.json": {
+      "sha256": "5ed671a88dc795c93b27dfa96913faa0d9ad8c9fc6013d0947a47a9dadfe077f",
+      "bytes": 754
+    },
+    "fresh-camera-baseline.json": {
+      "sha256": "29a518eb738ed98e4807a9ba867eff40bac7cafb7148a8a7baf0995e1cd35d79",
+      "bytes": 8312
+    },
+    "frozen-checkpoints.json": {
+      "sha256": "9adaa9e6c3b98922ce456257958070e86e3fba03396dd8b9ce58eddcb5f51703",
+      "bytes": 3481
+    },
+    "latency.json": {
+      "sha256": "adb3a1690586ce4d6ab84eba20f8ad3806b681e1c68e6274d2e6969bdbeb76dd",
+      "bytes": 2887
+    },
+    "outage-curves.png": {
+      "sha256": "7e5912ff2f6cb055301eb2d02d98116f7d5a1a10beff99833ea685e0331bd0ae",
+      "bytes": 113996
+    },
+    "per-recording.json": {
+      "sha256": "1282e152ad494e4c895cf8a3a567e9f7e05f430f6bdcede7b8aac62c9ba518a0",
+      "bytes": 5026916
+    },
+    "protocol.json": {
+      "sha256": "492be3572654e65f6d7c1b4851985f3de98b3d7c094043a7df406d62e457deb1",
+      "bytes": 13117
+    },
+    "replay-verification.json": {
+      "sha256": "facd47d5b7cfd650939ec3336404015d51d0588f2f1122a810af878f14eb90eb",
+      "bytes": 1442
+    },
+    "report.md": {
+      "sha256": "64e6f405301ffed4bb8227b5cd2c0f5c198ddd434763988aaf70b53c23b83089",
+      "bytes": 1646
+    },
+    "reservation-audit.json": {
+      "sha256": "8fb9611ab445e8e2cdc93ff47dd8a83f79db0152d0d2e36262512c866bc90d3c",
+      "bytes": 270
+    },
+    "results.json": {
+      "sha256": "254c687d3e8282e8f2d3e6cce5981c1f5a25f26034c0262e221ebfc7f774fbc3",
+      "bytes": 249442
+    },
+    "seed-summary.json": {
+      "sha256": "13e97795a5c4c04ce7875fc06926520bca1fa20b4a876f29194a2b37070dfc77",
+      "bytes": 2956
+    },
+    "summary.json": {
+      "sha256": "9503521366c8b52895f7f1d617bb5bc375009d2ae37b52c6908bbabe3086d258",
+      "bytes": 462
+    },
+    "test-models.json": {
+      "sha256": "b91c73f797eb3f2d7c41d2cadadab00789666008eee7bc53124904cc70effe40",
+      "bytes": 132419
+    },
+    "tiny-fit.json": {
+      "sha256": "c0e41e36af7885c8552e8a9cdc1f9a1f287ef6ff6e9cb8eb870aba713204743a",
+      "bytes": 237
+    },
+    "training.json": {
+      "sha256": "e545d656ca8db28b49414fadf6f69836e058654ff5722fd3a1eccd989c428722",
+      "bytes": 7544
+    },
+    "unselected-latest-validation.json": {
+      "sha256": "bae39ecf08372cf815193a925cb2fa9ef9daaa566d7c4fdd97dcf9438841bb9c",
+      "bytes": 127706
+    },
+    "validation-controls.json": {
+      "sha256": "947b8c8f307c51100a26b18e37451f7650073476e7706fe22cc676315805938d",
+      "bytes": 214070
+    },
+    "validation-failure-0.png": {
+      "sha256": "2e4d26befcfbd7761e49201fe3e87fece6182b51e4b39e974163fe8228faf6f0",
+      "bytes": 1097911
+    },
+    "validation-failure-1.png": {
+      "sha256": "3aeb7c044517213305750a69b51f0560fbf57de0d6436ed1cf2a049f38e361f4",
+      "bytes": 1279994
+    }
+  },
+  "scope": "Separate camera-outage study; frozen BAIR release unchanged"
+}

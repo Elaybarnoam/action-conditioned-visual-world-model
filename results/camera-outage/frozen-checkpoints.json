@@ -1,0 +1,102 @@
+{
+  "models": [
+    {
+      "label": "vector_outage-seed-3",
+      "run": "evaluation/runs/camera-outage/run-004",
+      "checkpoint_sha256": "b8275168147036ecd1e3d719caf7c0bfa5fe50d213112ce627e425f0c64e8832",
+      "best_update": 0,
+      "variant": "vector_outage",
+      "seed": 3
+    },
+    {
+      "label": "vector_outage-seed-7",
+      "run": "evaluation/runs/camera-outage/run-005",
+      "checkpoint_sha256": "2c5660d91d31583d4238cb4bc2bf3681d8222af068e42ef19c64fc049c5bfb78",
+      "best_update": 0,
+      "variant": "vector_outage",
+      "seed": 7
+    },
+    {
+      "label": "vector_outage-seed-11",
+      "run": "evaluation/runs/camera-outage/run-006",
+      "checkpoint_sha256": "697472c126273c66ecedb65e0a20c8d099bec8a30c74e5492104542e60c9ad8c",
+      "best_update": 0,
+      "variant": "vector_outage",
+      "seed": 11
+    },
+    {
+      "label": "spatial_outage-seed-3",
+      "run": "evaluation/runs/camera-outage/run-007",
+      "checkpoint_sha256": "746f5f83eca88a384f80c568fada20d32f353b7ed2c41a7e9945fa8363805d1e",
+      "best_update": 0,
+      "variant": "spatial_outage",
+      "seed": 3
+    },
+    {
+      "label": "spatial_outage-seed-7",
+      "run": "evaluation/runs/camera-outage/run-008",
+      "checkpoint_sha256": "27e5b197af76f0c8faac8d72fb0b18bad578f8c17b3a4478449cd9f149f46c0e",
+      "best_update": 0,
+      "variant": "spatial_outage",
+      "seed": 7
+    },
+    {
+      "label": "spatial_outage-seed-11",
+      "run": "evaluation/runs/camera-outage/run-009",
+      "checkpoint_sha256": "b9764e26b2ebc356dbdbd9195fd8a0fa5abdc21c2d7b16a8a5cebd175eadd3b0",
+      "best_update": 0,
+      "variant": "spatial_outage",
+      "seed": 11
+    },
+    {
+      "label": "spatial_observed-seed-3",
+      "run": "evaluation/runs/camera-outage/run-010",
+      "checkpoint_sha256": "eca8893c36680ca83a1487f06adacd11f86bca7b48d8fb38c9b1b80aff9ed5b6",
+      "best_update": 0,
+      "variant": "spatial_observed",
+      "seed": 3
+    },
+    {
+      "label": "spatial_observed-seed-7",
+      "run": "evaluation/runs/camera-outage/run-011",
+      "checkpoint_sha256": "65826b3222381ec9aafae4c1a2bcfb5cf91039fe35803386a60d0aea482253b8",
+      "best_update": 0,
+      "variant": "spatial_observed",
+      "seed": 7
+    },
+    {
+      "label": "spatial_observed-seed-11",
+      "run": "evaluation/runs/camera-outage/run-012",
+      "checkpoint_sha256": "a87b6187e834e271fc5f8e38ecd397aabadc59fb6458f4ebe0a75c43675e5ca4",
+      "best_update": 0,
+      "variant": "spatial_observed",
+      "seed": 11
+    },
+    {
+      "label": "spatial_detail-seed-3",
+      "run": "evaluation/runs/camera-outage/run-013",
+      "checkpoint_sha256": "fcf5e3d853045d246bfc4e84cef495574899d06d8bf24a15237ae2fae51f8c34",
+      "best_update": 0,
+      "variant": "spatial_detail",
+      "seed": 3
+    },
+    {
+      "label": "spatial_detail-seed-7",
+      "run": "evaluation/runs/camera-outage/run-014",
+      "checkpoint_sha256": "778dd1c32e0d3d99d69270417971d7f89162f95a00a9b12443f48eaceb2bd0f5",
+      "best_update": 0,
+      "variant": "spatial_detail",
+      "seed": 7
+    },
+    {
+      "label": "spatial_detail-seed-11",
+      "run": "evaluation/runs/camera-outage/run-015",
+      "checkpoint_sha256": "e275c423aed347d5b4b6a83d40e00c79038527a9d950bcafcdada281db98a67c",
+      "best_update": 0,
+      "variant": "spatial_detail",
+      "seed": 11
+    }
+  ],
+  "protocol_sha256": "d6842b5b35371bdf31422605b12cce704b3682663bbb7f48356b3170eda1e881",
+  "test_has_been_scored": false
+}

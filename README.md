@@ -14,6 +14,16 @@ every saved checkpoint, model artifacts and negative results.
 Its data protocol and run records are separate from the frozen BAIR study below;
 the first baseline is trained and evaluated, with mixed accuracy/detail results.
 
+**Camera-outage study:** [persistent prediction and observation correction](docs/camera-outage-study.md).
+This separate experiment studies action-conditioned forecasts while camera images
+are unavailable, then corrects memory when observations return. It compares vector
+and spatial recurrent state, observed versus outage training, and a detail loss
+across three training seeds, with a newly reserved recording-disjoint test set.
+The bounded pilot has a negative selection result: all twelve runs retain initial
+weights because trained checkpoints fail the fixed boundary-quality guard.
+[Saved evidence](results/camera-outage/report.md) includes the failures, validation
+controls, test scores and replay checks; it does not establish a useful outage predictor.
+
 ## Abstract
 
 This project develops and investigates a visual world model that predicts

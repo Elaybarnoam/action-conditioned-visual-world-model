@@ -1,0 +1,86 @@
+{
+  "vector_outage-seed-3": {
+    "batch_size": 1,
+    "steps": 40,
+    "seconds": 0.24430999998003244,
+    "milliseconds_per_step": 6.107749999500811,
+    "scope": "Warm persistent prediction/render, excludes data loading and metrics"
+  },
+  "vector_outage-seed-7": {
+    "batch_size": 1,
+    "steps": 40,
+    "seconds": 0.21688540000468493,
+    "milliseconds_per_step": 5.422135000117123,
+    "scope": "Warm persistent prediction/render, excludes data loading and metrics"
+  },
+  "vector_outage-seed-11": {
+    "batch_size": 1,
+    "steps": 40,
+    "seconds": 0.21714640001300722,
+    "milliseconds_per_step": 5.428660000325181,
+    "scope": "Warm persistent prediction/render, excludes data loading and metrics"
+  },
+  "spatial_outage-seed-3": {
+    "batch_size": 1,
+    "steps": 40,
+    "seconds": 0.2218657999765128,
+    "milliseconds_per_step": 5.54664499941282,
+    "scope": "Warm persistent prediction/render, excludes data loading and metrics"
+  },
+  "spatial_outage-seed-7": {
+    "batch_size": 1,
+    "steps": 40,
+    "seconds": 0.2264496999559924,
+    "milliseconds_per_step": 5.66124249889981,
+    "scope": "Warm persistent prediction/render, excludes data loading and metrics"
+  },
+  "spatial_outage-seed-11": {
+    "batch_size": 1,
+    "steps": 40,
+    "seconds": 0.23570149997249246,
+    "milliseconds_per_step": 5.892537499312311,
+    "scope": "Warm persistent prediction/render, excludes data loading and metrics"
+  },
+  "spatial_observed-seed-3": {
+    "batch_size": 1,
+    "steps": 40,
+    "seconds": 0.22524820000398904,
+    "milliseconds_per_step": 5.631205000099726,
+    "scope": "Warm persistent prediction/render, excludes data loading and metrics"
+  },
+  "spatial_observed-seed-7": {
+    "batch_size": 1,
+    "steps": 40,
+    "seconds": 0.24249659990891814,
+    "milliseconds_per_step": 6.062414997722954,
+    "scope": "Warm persistent prediction/render, excludes data loading and metrics"
+  },
+  "spatial_observed-seed-11": {
+    "batch_size": 1,
+    "steps": 40,
+    "seconds": 0.24827310000546277,
+    "milliseconds_per_step": 6.206827500136569,
+    "scope": "Warm persistent prediction/render, excludes data loading and metrics"
+  },
+  "spatial_detail-seed-3": {
+    "batch_size": 1,
+    "steps": 40,
+    "seconds": 0.23722480004653335,
+    "milliseconds_per_step": 5.930620001163334,
+    "scope": "Warm persistent prediction/render, excludes data loading and metrics"
+  },
+  "spatial_detail-seed-7": {
+    "batch_size": 1,
+    "steps": 40,
+    "seconds": 0.22822370007634163,
+    "milliseconds_per_step": 5.705592501908541,
+    "scope": "Warm persistent prediction/render, excludes data loading and metrics"
+  },
+  "spatial_detail-seed-11": {
+    "batch_size": 1,
+    "steps": 40,
+    "seconds": 0.23024010006338358,
+    "milliseconds_per_step": 5.7560025015845895,
+    "scope": "Warm persistent prediction/render, excludes data loading and metrics"
+  }
+}
